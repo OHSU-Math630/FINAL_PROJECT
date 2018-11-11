@@ -1,0 +1,75 @@
+---
+title: "Data_Delivery"
+author: "Nathaniel Evans, Win-Chun Lin, Alfonso Poire"
+date: "November 11, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(reticulate)
+library(haven)
+```
+
+# MATH 630 GROUP PROJECT
+## PART 2 : DATA DELIVERY 
+### GROUP 7 : Nate Evans, Win-Chun Lin, Alfonso Poire 
+### PAPER: [Hair cortisol levels, psychological stress and psychopathological symptoms as predictors of postpartum depression](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182817) 
+### DATA: [sav file](https://figshare.com/articles/PPD_hairCortisol_PlosOne_sav/5255848/1) 
+### TIDY DATA: [csv file](link)
+### CODE BOOK: [excel file?](link)
+
+#### The purpose of this R markdown script is to produce the following components, as detailed in the Ellis & Leek paper, with respect to our paper. For all the links to work, it is best to clone the the [github repository](https://github.com/OHSU-Math630/FINAL_PROJECT) and access this script within the cloned file strucutre (located: FINAL_PROJECT/postpartum_depression_predicition/P2/group7_DataDelivery.Rmd). 
+
+1. The raw data : <span style="color: red"> This is provided in the link above, and/or as the .sav file uploaded to sakai </span>
+2. A tidy data set (Wickham 2014) : <span style="color: red"> This will be proided in the link above as well as uploaded to sakai, depending on file structure, the link may be broken </span>
+3. A code book describing each variable and its values in the tidy data set. [do this for all variables that will be part of your replication analyses] <span style="color: red"> describe ??? </span>
+4. An explicit and exact recipe you used to go from 1 -> 2,3.  <span style="color: red"> This rmd script serves as the recipe from 1 -> 2,3 </span>
+
+
+#Generating a tidy dataset 
+#### The first step we took to produce a tidy dataset was to translate the variable names from english to spanish, to do this, we first attempted a programatic method; Using the google translate API, each variable name was attempted to translate from Spanish to English. 
+
+```{r import data, convert to csv}
+path = "./../../data/PPD_hairCortisol_PlosOne_.sav"
+
+dataset= read_sav(path)
+
+write.csv(dataset, file = "./../../data/data_span.csv")
+```
+
+```{python}
+import googletrans as gt 
+import pandas as pd
+
+data = pd.read_csv('./../../data/data_span.csv',encoding = "ISO-8859-1")
+
+trans = gt.Translator()
+
+with open("./../../data/data_programatic_translation.csv", 'w') as f: 
+  f.write('original, translated\n')
+  for old_col in data.columns.values:  
+    new_col = trans.translate(old_col, src = 'spanish', dest='en').text
+    f.write(old_col + ',' + new_col + '\n')
+    
+    data.rename(columns = {old_col:new_col}, inplace = True)
+  
+data.to_csv( "./../../data/data_eng.csv" )
+```
+
+#### This produces two files, first, a new dataset csv with the header names translated (attempted) and two, a csv documenting the original variable name and the translated variable name. </br> 
+
+[english csv](./../../data/eng.csv)
+[translation mapping](./../../data/data_programatic_translation.csv)
+
+### ALL VARIABLES WE NEED TO INCLUDE IN OUR DATASET
+#### These listed variables are those required to reproduce the paper plots or extend the study. 
+
+
+
+
+
+
