@@ -12,6 +12,8 @@ library(dplyr)
 library(ggplot2)
 library(reticulate)
 library(haven)
+library(codebook)
+library(knitr)
 ```
 
 # MATH 630 GROUP PROJECT
@@ -62,12 +64,72 @@ data.to_csv( "./../../data/data_eng.csv" )
 
 #### This produces two files, first, a new dataset csv with the header names translated (attempted) and two, a csv documenting the original variable name and the translated variable name. </br> 
 
-[english csv](./../../data/eng.csv)
+[english csv](./../../data/data_eng.csv)  
 [translation mapping](./../../data/data_programatic_translation.csv)
 
 ### ALL VARIABLES WE NEED TO INCLUDE IN OUR DATASET
 #### These listed variables are those required to reproduce the paper plots or extend the study. 
 
+![Paper Variables](https://journals.plos.org/plosone/article/figure/image?size=large&id=info:doi/10.1371/journal.pone.0182817.t001) 
+
+###We will try to manually review, translate and generate a [codebook](https://cran.r-project.org/web/packages/codebook/codebook.pdf) (Good tutorial: [github](https://github.com/rubenarslan/codebook)) in the following steps. 
+
+```{r} 
+df = read.csv("./../../data/data_eng.csv", header = TRUE)
+df %>% variable.names()
+df <- df %>% select(-X, -Unnamed..0) 
+
+# THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES
+
+
+
+my_codebook <- codebook(df)
+
+knit(my_codebook, "./../../data/codebook.html") # not sure how to get this to knit! 
+
+#fh <- file("./../../data/codebook.html")
+#writeLines(my_codebook, fh)
+#close(fh)
+
+
+```
+
+```{r}
+  
+knit("./../../data/codebook.html", "./../../data/codebook2.html")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#REFERENCES 
+
+[1] codebook package: 
+
+Preprint
+Arslan, R. C. (2018). How to automatically generate rich codebooks from study metadata. doi:10.31234/osf.io/5qc6h
+
+Zenodo
+Arslan, R. C. (2018). Automatic codebooks from survey metadata (2018). URL https://github.com/rubenarslan/codebook. DOI
 
 
 
