@@ -14,6 +14,7 @@ library(reticulate)
 library(haven)
 library(codebook)
 library(knitr)
+library(rmarkdown)
 ```
 
 # MATH 630 GROUP PROJECT
@@ -79,27 +80,24 @@ df = read.csv("./../../data/data_eng.csv", header = TRUE)
 df %>% variable.names()
 df <- df %>% select(-X, -Unnamed..0) 
 
-# THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES
+# THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES (variable attribute data)
 
-
-
-my_codebook <- codebook(df)
-
-knit(my_codebook, "./../../data/codebook.html") # not sure how to get this to knit! 
-
-#fh <- file("./../../data/codebook.html")
-#writeLines(my_codebook, fh)
-#close(fh)
 
 
 ```
+```{r, echo=FALSE}
 
-```{r}
-  
-knit("./../../data/codebook.html", "./../../data/codebook2.html")
+knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE)
+my_codebook <- codebook(df) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
+knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = TRUE)
+
+fh<-file("tmp.Rmd")
+writeLines(my_codebook, fh)
+close(fh)
+
+render(input='tmp.Rmd', output_file = 'group7_codebook.html', output_dir = getwd() )
+
 ```
-
-
 
 
 
