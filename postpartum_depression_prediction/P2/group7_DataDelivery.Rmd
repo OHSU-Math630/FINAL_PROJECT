@@ -22,14 +22,14 @@ library(rmarkdown)
 ### GROUP 7 : Nate Evans, Win-Chun Lin, Alfonso Poire 
 ### PAPER: [Hair cortisol levels, psychological stress and psychopathological symptoms as predictors of postpartum depression](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182817) 
 ### DATA: [sav file](https://figshare.com/articles/PPD_hairCortisol_PlosOne_sav/5255848/1) 
-### TIDY DATA: [csv file](link)
-### CODE BOOK: [excel file?](link)
+### TIDY DATA: [csv file](./../../data/tidy_daya.csv)
+### CODE BOOK: [knitted html](./group7_codebook.html)
 
 #### The purpose of this R markdown script is to produce the following components, as detailed in the Ellis & Leek paper, with respect to our paper. For all the links to work, it is best to clone the the [github repository](https://github.com/OHSU-Math630/FINAL_PROJECT) and access this script within the cloned file strucutre (located: FINAL_PROJECT/postpartum_depression_predicition/P2/group7_DataDelivery.Rmd). 
 
 1. The raw data : <span style="color: red"> This is provided in the link above, and/or as the .sav file uploaded to sakai </span>
 2. A tidy data set (Wickham 2014) : <span style="color: red"> This will be proided in the link above as well as uploaded to sakai, depending on file structure, the link may be broken </span>
-3. A code book describing each variable and its values in the tidy data set. [do this for all variables that will be part of your replication analyses] <span style="color: red"> describe ??? </span>
+3. A code book describing each variable and its values in the tidy data set. [do this for all variables that will be part of your replication analyses] <span style="color: red"> This is in the form of a knitted html file, which can be found in the native file structure linked above or uploaded to sakai </span>
 4. An explicit and exact recipe you used to go from 1 -> 2,3.  <span style="color: red"> This rmd script serves as the recipe from 1 -> 2,3 </span>
 
 
@@ -79,8 +79,7 @@ data.to_csv( "./../../data/data_eng.csv" )
 
 ```{r} 
 df = read.csv("./../../data/data_eng.csv", header = TRUE)
-df %>% variable.names()
-df <- df %>% select(-X, -Unnamed..0) 
+#df %>% variable.names()
 
 # THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES (variable attribute data)
 ### couldn't find: Marital_status 
@@ -140,27 +139,36 @@ attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depre
 df <- df %>% mutate('depression_tri1' = DEPRESSION1)
 df <- df %>% mutate('depression_tri2' = DEPRESSION2)
 df <- df %>% mutate('depression_tri3' = DEPRESSION3)
-attr(c(df$depression_tri1, df$depression_tri2, df$depression_tri3), 'Description') <- 'antenatal depression during the 1st, 2nd or 3rd trimester.'
+attr(df$depression_tri1, 'Description') <- 'antenatal depression during the 1st trimester.'
+attr(df$depression_tri2, 'Description') <- 'antenatal depression during the 2nd trimester.'
+attr(df$depression_tri3, 'Description') <- 'antenatal depression during the 3rd trimester.'
 
 df <- df %>% mutate('epds' = EPDS)
 attr(df$epds, 'Description') <- 'continuous metric of postnatal depression'  #measurement name, type? 
 
 # --------- CORTISOL metrics 
 
-
-
-
+df <- df %>% mutate('cortisol_tri1' = Cortisol1) #WHAT IS LNCORTISOL1 ????? - Two metrics for coritsol??
+df <- df %>% mutate('cortisol_tri2' = Cortisol2)
+df <- df %>% mutate('cortisol_tri3' = Cortisol3)
+attr(df$cortisol_tri1, 'Description') <- 'Cortisol levels in mothers during pregnancy during the 1st trimester' # units??? look into lncortisol variable, which one should we be using? 
+attr(df$cortisol_tri2, 'Description') <- 'Cortisol levels in mothers during pregnancy during the 2nd trimester'
+attr(df$cortisol_tri3, 'Description') <- 'Cortisol levels in mothers during pregnancy during the 3rd trimester'
 
 # ---------- SELECT 
 
-df_tidy <- df %>% select(age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport, pet, dyed_hair, first_pregnancy, wanted_pregnancy, pregnancy_method, previous_miscarriage, fetus_sex)
+df_tidy <- df %>% select(age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport, pet, dyed_hair, first_pregnancy, wanted_pregnancy, pregnancy_method, previous_miscarriage, fetus_sex, epds, depression_tri1, depression_tri2, depression_tri3, cortisol_tri1, cortisol_tri2, cortisol_tri3 )
 
+#glimpse(df_tidy)
 
-glimpse(df_tidy)
-
+write.csv(df_tidy, file='./../../data/tidy_data.csv') # this might drop Description attribute 
+save(df_tidy, file='./../../data/tidy_data.Rdata') # this way we can always load it back as is. 
 
 ```
-```{r, echo=FALSE}
+
+## The tidy dataset can be found in the data directory, linked [here](./../../data/tidy_data.csv)
+
+```{r}
 
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE) #this has to go before the codebook() call, make sure echo=FALSE is included. 
 my_codebook <- codebook(df) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
@@ -175,6 +183,7 @@ render(input='tmp.Rmd', output_file = 'group7_codebook.html', output_dir = getwd
 ```
 
 ### The codebook is a knitted html file in the P2 folder and is linked [here](./group7_codebook.html)
+#### The dataframe __df_tidy__ has an attribute "Description" that can be accessed with fn: attribute(df$variable, "Description")
 
 
 
