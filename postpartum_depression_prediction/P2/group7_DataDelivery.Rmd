@@ -75,6 +75,8 @@ data.to_csv( "./../../data/data_eng.csv" )
 
 ###We will try to manually review, translate and generate a [codebook](https://cran.r-project.org/web/packages/codebook/codebook.pdf) (Good tutorial: [github](https://github.com/rubenarslan/codebook)) in the following steps. 
 
+## ALL of our raw data are numerics, where is the codebook mapping categorical -> numeric ??? like 'profession' 
+
 ```{r} 
 df = read.csv("./../../data/data_eng.csv", header = TRUE)
 df %>% variable.names()
@@ -83,13 +85,13 @@ df <- df %>% select(-X, -Unnamed..0)
 # THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES (variable attribute data)
 ### couldn't find: Marital_status 
 
-attr(df$Age, "Description") <- "The age of the mother"
+df <- df %>% mutate('age' = Age)
+attr(df$age, "Description") <- "The age of the mother"
 
-df <- df %>% mustate("nationality" = NationalityDicotomica)
+df <- df %>% mutate("nationality" = NationalityDicotomica)
 attr(df$NationalityDicotomica, 'Description') <- "The patient's nationality or country of origin at the time of pregnancy"
 
-df <- df %>% mutate('postpartum_depression' = depreposparto)
-attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother" ### ???? more?
+#df <- df %>% mutate('Marital_Status' = ) # CANT FIND THIS ONE
 
 df <- df %>% mutate('employed' = EmploymentSituationDico)
 attr(df$employed, 'Description') <- "Employment situation; is or is not employed at time of pregnancy"
@@ -97,18 +99,64 @@ attr(df$employed, 'Description') <- "Employment situation; is or is not employed
 df <- df %>% mutate('occupation' = Profession)
 attr(df$occupation, "Description") <- 'If employed, what was the mothers occupation at the time of pregnancy' 
 
-df <- df %>% mutate("education_Level" = Level_Studies) 
-attr(df$`Education Level`, 'Description') <- "The highest level of education that the mother had received at the time of pregnancy/study"
+df <- df %>% mutate("education_level" = Level_Studies) 
+attr(df$education_level, 'Description') <- "The highest level of education that the mother had received at the time of pregnancy/study"
 
 df <- df %>% mutate('sport' = Sport)
-attr(df$sport) <- 'tracking the physical activity of the mother; whether the mother played a sport (during pregnancy)' # ???
+attr(df$sport, 'Description') <- 'tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]' # ???
+
+df <- df %>% mutate('pet' = PetDicotomica)
+attr(df$pet, 'Description') <- 'designation for mothers with pets at time of pregnancy' 
+
+df <- df %>% mutate('dyed_hair' = Appearance)
+attr(df$dyed_hair, "Description") <- 'designation for mothers with dyed hair during pregnancy'  # I THINK this is right, need to check
+
+df <- df %>% mutate('first_pregnancy' = FirstPregnancy)
+attr(df$first_pregnancy, 'Description') <- 'primiparous; designation for mothers who are having a child for the first time'
+
+df <- df %>% mutate('wanted_pregnancy' = WantedPregnancyDico)
+attr(df$wanted_pregnancy, 'Description') <- 'Designation for mothers who desired the pregnancy (planned?)'
+
+
+df <- df %>% mutate('pregnancy_method' = PregnancyMethodDico)
+attr(df$pregnancy_method, 'Description') <- 'designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination' # PC term? also, lol on "spontaneous" 
+
+df <- df %>% mutate('previous_miscarriage' = PreviousMiscarriagesDico)
+attr(df$previous_miscarriage, 'Description') <- 'Designation for mothers who have had a miscarriage prior to the current pregnancy' 
+
+# df <- df %>% mutate('delivery' = ) # CANT FIND DELIVERY AND LABOR
+
+#df <- mutate('delivery_antisthesia' = )    # Not sure what this one is 
+
+df <- df %>% mutate('fetus_sex' = SexFetalDico)
+attr(df$fetus_sex, "Description") <- 'the sex of the fetus' # numeric mapping ???  
+
+# -------- DEPRESSION METRICS 
+
+df <- df %>% mutate('postpartum_depression' = depreposparto)
+attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother" ### ???? more?
+
+
+df <- df %>% mutate('depression_tri1' = DEPRESSION1)
+df <- df %>% mutate('depression_tri2' = DEPRESSION2)
+df <- df %>% mutate('depression_tri3' = DEPRESSION3)
+attr(c(df$depression_tri1, df$depression_tri2, df$depression_tri3), 'Description') <- 'antenatal depression during the 1st, 2nd or 3rd trimester.'
+
+df <- df %>% mutate('epds' = EPDS)
+attr(df$epds, 'Description') <- 'continuous metric of postnatal depression'  #measurement name, type? 
+
+# --------- CORTISOL metrics 
 
 
 
 
-df_tidy <- select(Age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport)
 
-#df <- df %>% mutate('Marital_Status' = ) # CANT FIND THIS ONE
+# ---------- SELECT 
+
+df_tidy <- df %>% select(age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport, pet, dyed_hair, first_pregnancy, wanted_pregnancy, pregnancy_method, previous_miscarriage, fetus_sex)
+
+
+glimpse(df_tidy)
 
 
 ```
