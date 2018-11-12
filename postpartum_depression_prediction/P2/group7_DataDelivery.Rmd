@@ -81,13 +81,40 @@ df %>% variable.names()
 df <- df %>% select(-X, -Unnamed..0) 
 
 # THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES (variable attribute data)
+### couldn't find: Marital_status 
 
+attr(df$Age, "Description") <- "The age of the mother"
+
+df <- df %>% mustate("nationality" = NationalityDicotomica)
+attr(df$NationalityDicotomica, 'Description') <- "The patient's nationality or country of origin at the time of pregnancy"
+
+df <- df %>% mutate('postpartum_depression' = depreposparto)
+attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother" ### ???? more?
+
+df <- df %>% mutate('employed' = EmploymentSituationDico)
+attr(df$employed, 'Description') <- "Employment situation; is or is not employed at time of pregnancy"
+
+df <- df %>% mutate('occupation' = Profession)
+attr(df$occupation, "Description") <- 'If employed, what was the mothers occupation at the time of pregnancy' 
+
+df <- df %>% mutate("education_Level" = Level_Studies) 
+attr(df$`Education Level`, 'Description') <- "The highest level of education that the mother had received at the time of pregnancy/study"
+
+df <- df %>% mutate('sport' = Sport)
+attr(df$sport) <- 'tracking the physical activity of the mother; whether the mother played a sport (during pregnancy)' # ???
+
+
+
+
+df_tidy <- select(Age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport)
+
+#df <- df %>% mutate('Marital_Status' = ) # CANT FIND THIS ONE
 
 
 ```
 ```{r, echo=FALSE}
 
-knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE)
+knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE) #this has to go before the codebook() call, make sure echo=FALSE is included. 
 my_codebook <- codebook(df) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = TRUE)
 
@@ -99,7 +126,7 @@ render(input='tmp.Rmd', output_file = 'group7_codebook.html', output_dir = getwd
 
 ```
 
-
+### The codebook is a knitted html file in the P2 folder and is linked [here](./group7_codebook.html)
 
 
 

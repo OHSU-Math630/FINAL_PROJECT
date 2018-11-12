@@ -54,9 +54,9 @@
 
 #### Summary statistics {#Age_summary}
 
-|name |data_type |missing |complete |n  |mean  |sd   |p0 |p25 |p50 |p75 |p100 |hist     |
-|:----|:---------|:-------|:--------|:--|:-----|:----|:--|:---|:---|:---|:----|:--------|
-|Age  |numeric   |29      |44       |73 |32.41 |3.88 |24 |30  |32  |36  |39   |<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583> |
+|name |data_type |missing |complete |n  |mean  |sd   |p0 |p25 |p50 |p75 |p100 |hist     |Description           |
+|:----|:---------|:-------|:--------|:--|:-----|:----|:--|:---|:---|:---|:----|:--------|:---------------------|
+|Age  |numeric   |29      |44       |73 |32.41 |3.88 |24 |30  |32  |36  |39   |<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583> |The age of the mother |
 
 
 
@@ -2715,6 +2715,7 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
+      "Description": "The age of the mother",
       "name": "Age",
       "data_summary": [
         {
