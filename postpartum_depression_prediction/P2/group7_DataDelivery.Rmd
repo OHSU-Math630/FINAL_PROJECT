@@ -39,7 +39,7 @@ library(rmarkdown)
 ```{r import data, convert to csv}
 path = "./../../data/PPD_hairCortisol_PlosOne_.sav"
 
-dataset= read_sav(path)
+dataset= read_sav(path) #meta data dropped? 
 
 write.csv(dataset, file = "./../../data/data_span.csv")
 ```
@@ -82,7 +82,12 @@ df = read.csv("./../../data/data_eng.csv", header = TRUE)
 #df %>% variable.names()
 
 # THIS IS WHERE WE CAN DROP UNUNSED VARIABLES, MUTATE NAMES AND ADD META DATA DESCRIBING VARIABLES (variable attribute data)
-### couldn't find: Marital_status 
+
+# There are 29 rows of all NA variables that were brought in from SPSS empty rows 
+before <- df %>% nrow() 
+df <- df %>% na.omit() 
+after <- df %>% nrow() 
+print(paste('rows dropped:', after-before))
 
 df <- df %>% mutate('age' = Age)
 attr(df$age, "Description") <- "The age of the mother"
@@ -169,9 +174,8 @@ save(df_tidy, file='./../../data/tidy_data.Rdata') # this way we can always load
 ## The tidy dataset can be found in the data directory, linked [here](./../../data/tidy_data.csv)
 
 ```{r}
-
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE) #this has to go before the codebook() call, make sure echo=FALSE is included. 
-my_codebook <- codebook(df) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
+my_codebook <- codebook(df_tidy) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = TRUE)
 
 fh<-file("tmp.Rmd")
@@ -179,7 +183,6 @@ writeLines(my_codebook, fh)
 close(fh)
 
 render(input='tmp.Rmd', output_file = 'group7_codebook.html', output_dir = getwd() )
-
 ```
 
 ### The codebook is a knitted html file in the P2 folder and is linked [here](./group7_codebook.html)

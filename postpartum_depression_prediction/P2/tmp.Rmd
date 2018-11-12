@@ -7,2561 +7,6 @@
 ## Items
 
 
-### X {#X .tabset}
-
-
-
-#### Distribution {#X_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/X_distribution-1.png" width="672" />
-
-0 missings.
-
-#### Summary statistics {#X_summary}
-
-name   data_type   missing   complete   n    mean   sd      p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  -----  ------  ---  ----  ----  ----  -----  ---------
-X      integer     0         73         73   36     21.22   0    18    36    54    72     <U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Unnamed..0 {#Unnamed__0 .tabset}
-
-
-
-#### Distribution {#Unnamed__0_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Unnamed__0_distribution-1.png" width="672" />
-
-0 missings.
-
-#### Summary statistics {#Unnamed__0_summary}
-
-name         data_type   missing   complete   n    mean   sd      p0   p25   p50   p75   p100   hist     
------------  ----------  --------  ---------  ---  -----  ------  ---  ----  ----  ----  -----  ---------
-Unnamed..0   integer     0         73         73   37     21.22   1    19    37    55    73     <U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Competitor {#Competitor .tabset}
-
-
-
-#### Distribution {#Competitor_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Competitor_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Competitor_summary}
-
-name         data_type   missing   complete   n    mean   sd      p0   p25     p50    p75     p100   hist     
------------  ----------  --------  ---------  ---  -----  ------  ---  ------  -----  ------  -----  ---------
-Competitor   numeric     29        44         73   22.5   12.85   1    11.75   22.5   33.25   44     <U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Age {#Age .tabset}
-
-
-
-#### Distribution {#Age_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Age_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Age_summary}
-
-name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  ----  -----  ---------
-Age    numeric     29        44         73   32.41   3.88   24   30    32    36    39     <U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### FirstPregnancy {#FirstPregnancy .tabset}
-
-
-
-#### Distribution {#FirstPregnancy_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/FirstPregnancy_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#FirstPregnancy_summary}
-
-name             data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-FirstPregnancy   numeric     29        44         73   0.64   0.49   0    0     1     1     1      <U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Pregnancy.type {#Pregnancy_type .tabset}
-
-
-
-#### Distribution {#Pregnancy_type_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Pregnancy_type_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Pregnancy_type_summary}
-
-name             data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-Pregnancy.type   numeric     29        44         73   1.32   0.67   1    1     1     1     3      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Level_Studies {#Level_Studies .tabset}
-
-
-
-#### Distribution {#Level_Studies_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Level_Studies_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Level_Studies_summary}
-
-name            data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
---------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-Level_Studies   numeric     29        44         73   2.75   0.49   1    3     3     3     3      <U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SLaboral {#SLaboral .tabset}
-
-
-
-#### Distribution {#SLaboral_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SLaboral_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SLaboral_summary}
-
-name       data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
----------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-SLaboral   numeric     29        44         73   2.18   0.95   1    2     2     2     5      <U+2582><U+2587><U+2581><U+2582><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Appearance {#Appearance .tabset}
-
-
-
-#### Distribution {#Appearance_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Appearance_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Appearance_summary}
-
-name         data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist     
------------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------
-Appearance   numeric     29        44         73   0.43   0.5   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Sport {#Sport .tabset}
-
-
-
-#### Distribution {#Sport_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Sport_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Sport_summary}
-
-name    data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist     
-------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------
-Sport   numeric     29        44         73   0.59   0.5   0    0     1     1     1      <U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Profession {#Profession .tabset}
-
-
-
-#### Distribution {#Profession_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Profession_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Profession_summary}
-
-name         data_type   missing   complete   n    mean   sd     p0   p25    p50   p75    p100   hist     
------------  ----------  --------  ---------  ---  -----  -----  ---  -----  ----  -----  -----  ---------
-Profession   numeric     29        44         73   4.66   3.24   1    1.75   4     6.25   12     <U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### What.study {#What_study .tabset}
-
-
-
-#### Distribution {#What_study_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/What_study_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#What_study_summary}
-
-name         data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-What.study   numeric     29        44         73   3.66   3.02   1    1     3     6     11     <U+2587><U+2585><U+2581><U+2582><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Origin {#Origin .tabset}
-
-
-
-#### Distribution {#Origin_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Origin_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Origin_summary}
-
-name     data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
--------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-Origin   numeric     29        44         73   1.57   1.52   1    1     1     1     8      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### EPDS {#EPDS .tabset}
-
-
-
-#### Distribution {#EPDS_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/EPDS_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#EPDS_summary}
-
-name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-EPDS   numeric     29        44         73   7.93   5.03   2    4     6     11    24     <U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### depreposparto {#depreposparto .tabset}
-
-
-
-#### Distribution {#depreposparto_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/depreposparto_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#depreposparto_summary}
-
-name            data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
---------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-depreposparto   numeric     29        44         73   1.36   0.49   1    1     1     2     2      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### StateCivilDIcotomica {#StateCivilDIcotomica .tabset}
-
-
-
-#### Distribution {#StateCivilDIcotomica_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/StateCivilDIcotomica_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#StateCivilDIcotomica_summary}
-
-name                   data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist     
----------------------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------
-StateCivilDIcotomica   numeric     29        44         73   0.59   0.5   0    0     1     1     1      <U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### EmploymentSituationDico {#EmploymentSituationDico .tabset}
-
-
-
-#### Distribution {#EmploymentSituationDico_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/EmploymentSituationDico_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#EmploymentSituationDico_summary}
-
-name                      data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
-------------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-EmploymentSituationDico   numeric     29        44         73   0.77   0.42   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PetDicotomica {#PetDicotomica .tabset}
-
-
-
-#### Distribution {#PetDicotomica_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PetDicotomica_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PetDicotomica_summary}
-
-name            data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
---------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-PetDicotomica   numeric     29        44         73   0.36   0.49   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### NationalityDicotomica {#NationalityDicotomica .tabset}
-
-
-
-#### Distribution {#NationalityDicotomica_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/NationalityDicotomica_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#NationalityDicotomica_summary}
-
-name                    data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                             
-----------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ------------------------------------------------------------------------
-NationalityDicotomica   numeric     29        44         73   0.82   0.39   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   The patient's nationality or country of origin at the time of pregnancy 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PregnancyMethodDico {#PregnancyMethodDico .tabset}
-
-
-
-#### Distribution {#PregnancyMethodDico_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PregnancyMethodDico_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PregnancyMethodDico_summary}
-
-name                  data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
---------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-PregnancyMethodDico   numeric     29        44         73   0.8    0.41   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PreviousMiscarriagesDico {#PreviousMiscarriagesDico .tabset}
-
-
-
-#### Distribution {#PreviousMiscarriagesDico_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PreviousMiscarriagesDico_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PreviousMiscarriagesDico_summary}
-
-name                       data_type   missing   complete   n    mean   sd     p0   p25   p50   p75    p100   hist     
--------------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  -----  -----  ---------
-PreviousMiscarriagesDico   numeric     29        44         73   0.25   0.44   0    0     0     0.25   1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### WantedPregnancyDico {#WantedPregnancyDico .tabset}
-
-
-
-#### Distribution {#WantedPregnancyDico_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/WantedPregnancyDico_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#WantedPregnancyDico_summary}
-
-name                  data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
---------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-WantedPregnancyDico   numeric     29        44         73   0.84   0.37   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Occupation123 {#Occupation123 .tabset}
-
-
-
-#### Distribution {#Occupation123_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Occupation123_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Occupation123_summary}
-
-name            data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
---------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-Occupation123   numeric     29        44         73   2.2    0.88   1    1     2.5   3     3      <U+2585><U+2581><U+2581><U+2583><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### LNCORTISOL1 {#LNCORTISOL1 .tabset}
-
-
-
-#### Distribution {#LNCORTISOL1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/LNCORTISOL1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#LNCORTISOL1_summary}
-
-name          data_type   missing   complete   n    mean   sd     p0     p25    p50    p75    p100   hist     
-------------  ----------  --------  ---------  ---  -----  -----  -----  -----  -----  -----  -----  ---------
-LNCORTISOL1   numeric     29        44         73   5.25   0.75   3.95   4.72   5.27   5.64   7.41   <U+2583><U+2586><U+2583><U+2587><U+2582><U+2582><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### LNCORTISOL2 {#LNCORTISOL2 .tabset}
-
-
-
-#### Distribution {#LNCORTISOL2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/LNCORTISOL2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#LNCORTISOL2_summary}
-
-name          data_type   missing   complete   n    mean   sd     p0     p25    p50    p75    p100   hist     
-------------  ----------  --------  ---------  ---  -----  -----  -----  -----  -----  -----  -----  ---------
-LNCORTISOL2   numeric     29        44         73   5.4    0.47   4.36   5.11   5.42   5.71   6.46   <U+2582><U+2582><U+2587><U+2586><U+2587><U+2586><U+2582><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### LNCORTISOL3 {#LNCORTISOL3 .tabset}
-
-
-
-#### Distribution {#LNCORTISOL3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/LNCORTISOL3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#LNCORTISOL3_summary}
-
-name          data_type   missing   complete   n    mean   sd     p0     p25    p50    p75    p100   hist     
-------------  ----------  --------  ---------  ---  -----  -----  -----  -----  -----  -----  -----  ---------
-LNCORTISOL3   numeric     29        44         73   5.74   0.53   4.57   5.43   5.76   6.06   7.1    <U+2583><U+2582><U+2586><U+2587><U+2587><U+2585><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SexFetal {#SexFetal .tabset}
-
-
-
-#### Distribution {#SexFetal_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SexFetal_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SexFetal_summary}
-
-name       data_type   missing   complete   n    mean   sd     p0   p25   p50    p75   p100   hist     
----------  ----------  --------  ---------  ---  -----  -----  ---  ----  -----  ----  -----  ---------
-SexFetal   numeric     29        44         73   0.46   0.45   0    0     0.26   1     1      <U+2587><U+2583><U+2582><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PDQ1 {#PDQ1 .tabset}
-
-
-
-#### Distribution {#PDQ1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PDQ1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PDQ1_summary}
-
-name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75     p100   hist     
------  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  ------  -----  ---------
-PDQ1   numeric     29        44         73   14.64   6.17   4    10    14    17.25   30     <U+2582><U+2586><U+2582><U+2587><U+2582><U+2581><U+2582><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PDQ2 {#PDQ2 .tabset}
-
-
-
-#### Distribution {#PDQ2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PDQ2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PDQ2_summary}
-
-name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75    p100   hist     
------  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  -----  -----  ---------
-PDQ2   numeric     29        44         73   13.18   5.17   4    11    13    15.5   31     <U+2582><U+2582><U+2587><U+2582><U+2582><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PDQ3 {#PDQ3 .tabset}
-
-
-
-#### Distribution {#PDQ3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PDQ3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PDQ3_summary}
-
-name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  ----  -----  ---------
-PDQ3   numeric     29        44         73   12.52   4.46   2    8     13    16    21     <U+2581><U+2581><U+2587><U+2583><U+2586><U+2586><U+2585><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### EEP1 {#EEP1 .tabset}
-
-
-
-#### Distribution {#EEP1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/EEP1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#EEP1_summary}
-
-name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-EEP1   numeric     29        44         73   26.3   2.13   22   25    26    27    31     <U+2583><U+2582><U+2587><U+2586><U+2587><U+2583><U+2581><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### EEP2 {#EEP2 .tabset}
-
-
-
-#### Distribution {#EEP2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/EEP2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#EEP2_summary}
-
-name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  ----  -----  ---------
-EEP2   numeric     29        44         73   26.77   1.43   24   26    27    28    29     <U+2581><U+2583><U+2581><U+2587><U+2586><U+2581><U+2585><U+2585> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### EEP3 {#EEP3 .tabset}
-
-
-
-#### Distribution {#EEP3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/EEP3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#EEP3_summary}
-
-name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-EEP3   numeric     29        44         73   27.2   1.53   24   26    27    28    30     <U+2581><U+2583><U+2586><U+2587><U+2581><U+2586><U+2583><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SOMATIZATIONS1 {#SOMATIZATIONS1 .tabset}
-
-
-
-#### Distribution {#SOMATIZATIONS1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SOMATIZATIONS1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SOMATIZATIONS1_summary}
-
-name             data_type   missing   complete   n    mean    sd      p0   p25   p50   p75   p100   hist     
----------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ----  ----  -----  ---------
-SOMATIZATIONS1   numeric     29        44         73   62.06   24.65   5    50    65    80    97     <U+2583><U+2581><U+2582><U+2583><U+2585><U+2587><U+2583><U+2586> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### OBSESSIONS.AND.COMPULSIONS1 {#OBSESSIONS_AND_COMPULSIONS1 .tabset}
-
-
-
-#### Distribution {#OBSESSIONS_AND_COMPULSIONS1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/OBSESSIONS_AND_COMPULSIONS1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#OBSESSIONS_AND_COMPULSIONS1_summary}
-
-name                          data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
-----------------------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-OBSESSIONS.AND.COMPULSIONS1   numeric     29        44         73   57.25   23.73   5    46.97   52.39   68.36   99     <U+2582><U+2581><U+2582><U+2587><U+2585><U+2583><U+2581><U+2585> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SENSITIVIDADINTERPERSONAL1 {#SENSITIVIDADINTERPERSONAL1 .tabset}
-
-
-
-#### Distribution {#SENSITIVIDADINTERPERSONAL1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SENSITIVIDADINTERPERSONAL1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SENSITIVIDADINTERPERSONAL1_summary}
-
-name                         data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
----------------------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-SENSITIVIDADINTERPERSONAL1   numeric     29        44         73   42.65   22.43   5    35.37   43.13   50.25   99     <U+2583><U+2582><U+2586><U+2587><U+2582><U+2582><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### DEPRESSION1 {#DEPRESSION1 .tabset}
-
-
-
-#### Distribution {#DEPRESSION1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/DEPRESSION1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#DEPRESSION1_summary}
-
-name          data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
-------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-DEPRESSION1   numeric     29        44         73   43.49   21.44   5    33.75   40.28   48.71   97     <U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ANXIETY1 {#ANXIETY1 .tabset}
-
-
-
-#### Distribution {#ANXIETY1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/ANXIETY1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#ANXIETY1_summary}
-
-name       data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
----------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-ANXIETY1   numeric     29        44         73   56.59   24.87   5    47.75   55.94   71.25   99     <U+2582><U+2581><U+2582><U+2583><U+2587><U+2582><U+2582><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### HOSTILIDAD1 {#HOSTILIDAD1 .tabset}
-
-
-
-#### Distribution {#HOSTILIDAD1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/HOSTILIDAD1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#HOSTILIDAD1_summary}
-
-name          data_type   missing   complete   n    mean    sd      p0   p25     p50     p75   p100   hist     
-------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ----  -----  ---------
-HOSTILIDAD1   numeric     29        44         73   52.46   20.77   5    47.25   51.01   60    95     <U+2582><U+2581><U+2582><U+2585><U+2587><U+2581><U+2581><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ANSIEDADFOBICA1 {#ANSIEDADFOBICA1 .tabset}
-
-
-
-#### Distribution {#ANSIEDADFOBICA1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/ANSIEDADFOBICA1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#ANSIEDADFOBICA1_summary}
-
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75   p100   hist     
-----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ----  -----  ---------
-ANSIEDADFOBICA1   numeric     29        44         73   72.45   17.99   5    65.08   74.83   85    99     <U+2581><U+2581><U+2581><U+2582><U+2583><U+2587><U+2587><U+2585> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IDEACIÃ.NPARANOIDE1 {#IDEACIÃ_NPARANOIDE1 .tabset}
-
-
-
-#### Distribution {#IDEACIÃ_NPARANOIDE1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/IDEACIÃ_NPARANOIDE1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#IDEACIÃ_NPARANOIDE1_summary}
-
-name                  data_type   missing   complete   n    mean    sd      p0   p25     p50     p75    p100   hist     
---------------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  -----  -----  ---------
-IDEACIÃ.NPARANOIDE1   numeric     29        44         73   62.68   24.52   5    57.89   64.58   72.5   99     <U+2582><U+2581><U+2581><U+2581><U+2587><U+2586><U+2582><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PSICOTICISMO1 {#PSICOTICISMO1 .tabset}
-
-
-
-#### Distribution {#PSICOTICISMO1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PSICOTICISMO1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PSICOTICISMO1_summary}
-
-name            data_type   missing   complete   n    mean   sd      p0   p25     p50     p75     p100   hist     
---------------  ----------  --------  ---------  ---  -----  ------  ---  ------  ------  ------  -----  ---------
-PSICOTICISMO1   numeric     29        44         73   70.3   19.08   5    64.76   73.29   81.25   99     <U+2581><U+2581><U+2581><U+2582><U+2582><U+2587><U+2587><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IGS1 {#IGS1 .tabset}
-
-
-
-#### Distribution {#IGS1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/IGS1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#IGS1_summary}
-
-name   data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-IGS1   numeric     29        44         73   55.09   23.26   5    45.28   54.08   66.25   99     <U+2582><U+2581><U+2582><U+2587><U+2587><U+2582><U+2581><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SP1 {#SP1 .tabset}
-
-
-
-#### Distribution {#SP1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SP1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SP1_summary}
-
-name   data_type   missing   complete   n    mean    sd      p0   p25   p50     p75     p100   hist     
------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ------  -----  ---------
-SP1    numeric     29        44         73   56.07   23.39   5    48    55.57   63.96   99     <U+2582><U+2581><U+2582><U+2586><U+2587><U+2581><U+2582><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PSDI1 {#PSDI1 .tabset}
-
-
-
-#### Distribution {#PSDI1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PSDI1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PSDI1_summary}
-
-name    data_type   missing   complete   n    mean   sd      p0   p25   p50     p75   p100   hist     
-------  ----------  --------  ---------  ---  -----  ------  ---  ----  ------  ----  -----  ---------
-PSDI1   numeric     29        44         73   49.8   23.57   5    35    49.93   60    97     <U+2583><U+2582><U+2582><U+2587><U+2585><U+2582><U+2582><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SOMATIZATIONS2 {#SOMATIZATIONS2 .tabset}
-
-
-
-#### Distribution {#SOMATIZATIONS2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SOMATIZATIONS2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SOMATIZATIONS2_summary}
-
-name             data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
----------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-SOMATIZATIONS2   numeric     29        44         73   47.01   20.12   10   40    45.99   50    95     <U+2582><U+2582><U+2581><U+2587><U+2581><U+2581><U+2582><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### OBSESSIONS.AND.COMPULSIONS2 {#OBSESSIONS_AND_COMPULSIONS2 .tabset}
-
-
-
-#### Distribution {#OBSESSIONS_AND_COMPULSIONS2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/OBSESSIONS_AND_COMPULSIONS2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#OBSESSIONS_AND_COMPULSIONS2_summary}
-
-name                          data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
-----------------------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-OBSESSIONS.AND.COMPULSIONS2   numeric     29        44         73   57.73   23.49   5    45    56.63   75    97     <U+2581><U+2582><U+2581><U+2585><U+2587><U+2581><U+2583><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### INSTRUMENT.SENSITIVITY2 {#INSTRUMENT_SENSITIVITY2 .tabset}
-
-
-
-#### Distribution {#INSTRUMENT_SENSITIVITY2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/INSTRUMENT_SENSITIVITY2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#INSTRUMENT_SENSITIVITY2_summary}
-
-name                      data_type   missing   complete   n    mean    sd      p0   p25   p50   p75   p100   hist     
-------------------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ----  ----  -----  ---------
-INSTRUMENT.SENSITIVITY2   numeric     29        44         73   45.67   20.33   5    35    45    55    97     <U+2581><U+2582><U+2582><U+2587><U+2582><U+2581><U+2582><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### DEPRESSION2 {#DEPRESSION2 .tabset}
-
-
-
-#### Distribution {#DEPRESSION2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/DEPRESSION2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#DEPRESSION2_summary}
-
-name          data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
-------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-DEPRESSION2   numeric     29        44         73   36.33   22.03   5    24.03   30.75   43.14   90     <U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ANXIETY2 {#ANXIETY2 .tabset}
-
-
-
-#### Distribution {#ANXIETY2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/ANXIETY2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#ANXIETY2_summary}
-
-name       data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
----------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-ANXIETY2   numeric     29        44         73   48.52   24.37   5    30    47.03   60    95     <U+2583><U+2582><U+2582><U+2587><U+2583><U+2581><U+2581><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### HOSTILITY2 {#HOSTILITY2 .tabset}
-
-
-
-#### Distribution {#HOSTILITY2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/HOSTILITY2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#HOSTILITY2_summary}
-
-name         data_type   missing   complete   n    mean    sd      p0   p25     p50     p75   p100   hist     
------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ----  -----  ---------
-HOSTILITY2   numeric     29        44         73   42.35   23.52   5    35.28   40.15   60    90     <U+2585><U+2581><U+2582><U+2587><U+2582><U+2583><U+2581><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ANSIEDADFOBICA2 {#ANSIEDADFOBICA2 .tabset}
-
-
-
-#### Distribution {#ANSIEDADFOBICA2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/ANSIEDADFOBICA2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#ANSIEDADFOBICA2_summary}
-
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50   p75     p100   hist     
-----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ----  ------  -----  ---------
-ANSIEDADFOBICA2   numeric     29        44         73   62.92   21.44   5    57.23   60    77.75   98     <U+2582><U+2581><U+2581><U+2582><U+2587><U+2583><U+2583><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IDEACIÃ.NPARANOIDE2 {#IDEACIÃ_NPARANOIDE2 .tabset}
-
-
-
-#### Distribution {#IDEACIÃ_NPARANOIDE2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/IDEACIÃ_NPARANOIDE2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#IDEACIÃ_NPARANOIDE2_summary}
-
-name                  data_type   missing   complete   n    mean   sd      p0   p25     p50     p75   p100   hist     
---------------------  ----------  --------  ---------  ---  -----  ------  ---  ------  ------  ----  -----  ---------
-IDEACIÃ.NPARANOIDE2   numeric     29        44         73   56.5   23.03   5    50.54   57.41   70    97     <U+2582><U+2581><U+2581><U+2582><U+2587><U+2582><U+2582><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PSICOTICISMO2 {#PSICOTICISMO2 .tabset}
-
-
-
-#### Distribution {#PSICOTICISMO2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PSICOTICISMO2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PSICOTICISMO2_summary}
-
-name            data_type   missing   complete   n    mean    sd      p0   p25     p50    p75   p100   hist     
---------------  ----------  --------  ---------  ---  ------  ------  ---  ------  -----  ----  -----  ---------
-PSICOTICISMO2   numeric     29        44         73   61.91   21.51   5    57.25   61.7   80    99     <U+2581><U+2582><U+2581><U+2583><U+2587><U+2585><U+2585><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IGS2 {#IGS2 .tabset}
-
-
-
-#### Distribution {#IGS2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/IGS2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#IGS2_summary}
-
-name   data_type   missing   complete   n    mean   sd      p0   p25     p50     p75     p100   hist     
------  ----------  --------  ---------  ---  -----  ------  ---  ------  ------  ------  -----  ---------
-IGS2   numeric     29        44         73   47.4   24.24   5    36.31   44.78   56.25   97     <U+2582><U+2582><U+2582><U+2587><U+2582><U+2581><U+2581><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SP2 {#SP2 .tabset}
-
-
-
-#### Distribution {#SP2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SP2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SP2_summary}
-
-name   data_type   missing   complete   n    mean    sd      p0   p25     p50   p75   p100   hist     
------  ----------  --------  ---------  ---  ------  ------  ---  ------  ----  ----  -----  ---------
-SP2    numeric     29        44         73   50.43   24.32   5    38.75   48    55    98     <U+2582><U+2582><U+2582><U+2587><U+2583><U+2581><U+2582><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PSDI2 {#PSDI2 .tabset}
-
-
-
-#### Distribution {#PSDI2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PSDI2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PSDI2_summary}
-
-name    data_type   missing   complete   n    mean    sd      p0   p25     p50     p75   p100   hist     
-------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ----  -----  ---------
-PSDI2   numeric     29        44         73   40.11   21.51   5    28.75   39.67   50    85     <U+2585><U+2583><U+2586><U+2587><U+2585><U+2582><U+2582><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SOMATIZATIONS3 {#SOMATIZATIONS3 .tabset}
-
-
-
-#### Distribution {#SOMATIZATIONS3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SOMATIZATIONS3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SOMATIZATIONS3_summary}
-
-name             data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
----------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-SOMATIZATIONS3   numeric     29        44         73   55.59   24.42   15   35    55.46   80    97     <U+2587><U+2582><U+2583><U+2586><U+2583><U+2583><U+2586><U+2583> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### OBSESSIONS.AND.COMPULSIONS3 {#OBSESSIONS_AND_COMPULSIONS3 .tabset}
-
-
-
-#### Distribution {#OBSESSIONS_AND_COMPULSIONS3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/OBSESSIONS_AND_COMPULSIONS3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#OBSESSIONS_AND_COMPULSIONS3_summary}
-
-name                          data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
-----------------------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-OBSESSIONS.AND.COMPULSIONS3   numeric     29        44         73   67.85   28.95   5    50    77.78   90    99     <U+2582><U+2581><U+2582><U+2581><U+2581><U+2583><U+2583><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### INSTRUMENT.SENSITIVITY3 {#INSTRUMENT_SENSITIVITY3 .tabset}
-
-
-
-#### Distribution {#INSTRUMENT_SENSITIVITY3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/INSTRUMENT_SENSITIVITY3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#INSTRUMENT_SENSITIVITY3_summary}
-
-name                      data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
-------------------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-INSTRUMENT.SENSITIVITY3   numeric     29        44         73   53.67   29.26   5    31.25   54.59   81.25   97     <U+2585><U+2585><U+2582><U+2585><U+2586><U+2582><U+2585><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### DEPRESSION3 {#DEPRESSION3 .tabset}
-
-
-
-#### Distribution {#DEPRESSION3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/DEPRESSION3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#DEPRESSION3_summary}
-
-name          data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist     
-------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------
-DEPRESSION3   numeric     29        44         73   49.82   26.46   5    28.75   51.95   66.25   97     <U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ANXIETY3 {#ANXIETY3 .tabset}
-
-
-
-#### Distribution {#ANXIETY3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/ANXIETY3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#ANXIETY3_summary}
-
-name       data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
----------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-ANXIETY3   numeric     29        44         73   59.47   26.57   5    45    61.32   80    95     <U+2583><U+2582><U+2581><U+2583><U+2586><U+2583><U+2586><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### HOSTILIDAD3 {#HOSTILIDAD3 .tabset}
-
-
-
-#### Distribution {#HOSTILIDAD3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/HOSTILIDAD3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#HOSTILIDAD3_summary}
-
-name          data_type   missing   complete   n    mean    sd      p0   p25   p50     p75    p100   hist     
-------------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  -----  -----  ---------
-HOSTILIDAD3   numeric     29        44         73   49.12   29.71   5    35    45.27   72.5   95     <U+2587><U+2581><U+2583><U+2587><U+2583><U+2583><U+2582><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### ANSIEDADFOBICA3 {#ANSIEDADFOBICA3 .tabset}
-
-
-
-#### Distribution {#ANSIEDADFOBICA3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/ANSIEDADFOBICA3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#ANSIEDADFOBICA3_summary}
-
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50   p75     p100   hist     
-----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ----  ------  -----  ---------
-ANSIEDADFOBICA3   numeric     29        44         73   72.67   27.34   5    63.09   80    91.25   99     <U+2582><U+2581><U+2581><U+2583><U+2581><U+2582><U+2585><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IDEACIÃ.NPARANOIDE3 {#IDEACIÃ_NPARANOIDE3 .tabset}
-
-
-
-#### Distribution {#IDEACIÃ_NPARANOIDE3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/IDEACIÃ_NPARANOIDE3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#IDEACIÃ_NPARANOIDE3_summary}
-
-name                  data_type   missing   complete   n    mean    sd     p0   p25     p50   p75     p100   hist     
---------------------  ----------  --------  ---------  ---  ------  -----  ---  ------  ----  ------  -----  ---------
-IDEACIÃ.NPARANOIDE3   numeric     29        44         73   65.94   26.9   5    56.75   70    86.25   97     <U+2583><U+2581><U+2582><U+2583><U+2585><U+2586><U+2586><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PSICOTICISMO3 {#PSICOTICISMO3 .tabset}
-
-
-
-#### Distribution {#PSICOTICISMO3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PSICOTICISMO3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PSICOTICISMO3_summary}
-
-name            data_type   missing   complete   n    mean    sd      p0   p25     p50   p75     p100   hist     
---------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ----  ------  -----  ---------
-PSICOTICISMO3   numeric     29        44         73   67.49   28.83   5    56.25   70    91.25   99     <U+2583><U+2581><U+2581><U+2582><U+2582><U+2585><U+2583><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### IGS3 {#IGS3 .tabset}
-
-
-
-#### Distribution {#IGS3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/IGS3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#IGS3_summary}
-
-name   data_type   missing   complete   n    mean    sd      p0   p25   p50     p75   p100   hist     
------  ----------  --------  ---------  ---  ------  ------  ---  ----  ------  ----  -----  ---------
-IGS3   numeric     29        44         73   60.29   29.26   5    35    63.46   90    97     <U+2583><U+2581><U+2583><U+2583><U+2583><U+2582><U+2583><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SP3 {#SP3 .tabset}
-
-
-
-#### Distribution {#SP3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SP3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#SP3_summary}
-
-name   data_type   missing   complete   n    mean    sd      p0   p25   p50    p75   p100   hist     
------  ----------  --------  ---------  ---  ------  ------  ---  ----  -----  ----  -----  ---------
-SP3    numeric     29        44         73   58.42   29.84   5    35    57.5   85    99     <U+2583><U+2583><U+2583><U+2583><U+2583><U+2582><U+2586><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### PSDI3 {#PSDI3 .tabset}
-
-
-
-#### Distribution {#PSDI3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/PSDI3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#PSDI3_summary}
-
-name    data_type   missing   complete   n    mean    sd      p0   p25   p50   p75    p100   hist     
-------  ----------  --------  ---------  ---  ------  ------  ---  ----  ----  -----  -----  ---------
-PSDI3   numeric     29        44         73   47.21   19.79   5    35    48    58.5   85     <U+2582><U+2582><U+2582><U+2585><U+2587><U+2582><U+2583><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### SexFetalDico {#SexFetalDico .tabset}
-
-
-
-#### Distribution {#SexFetalDico_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/SexFetalDico_distribution-1.png" width="672" />
-
-0 missings.
-
-#### Summary statistics {#SexFetalDico_summary}
-
-name           data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
--------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-SexFetalDico   integer     0         73         73   0.23   0.43   0    0     0     0     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Cortisol1 {#Cortisol1 .tabset}
-
-
-
-#### Distribution {#Cortisol1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Cortisol1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Cortisol1_summary}
-
-name        data_type   missing   complete   n    mean     sd       p0      p25     p50     p75      p100   hist     
-----------  ----------  --------  ---------  ---  -------  -------  ------  ------  ------  -------  -----  ---------
-Cortisol1   numeric     29        44         73   261.51   277.67   51.68   112.2   194.5   281.43   1649   <U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Cortisol2 {#Cortisol2 .tabset}
-
-
-
-#### Distribution {#Cortisol2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Cortisol2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Cortisol2_summary}
-
-name        data_type   missing   complete   n    mean    sd       p0      p25      p50   p75      p100    hist     
-----------  ----------  --------  ---------  ---  ------  -------  ------  -------  ----  -------  ------  ---------
-Cortisol2   numeric     29        44         73   246.8   119.54   78.64   165.53   225   302.57   636.1   <U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Cortisol3 {#Cortisol3 .tabset}
-
-
-
-#### Distribution {#Cortisol3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/Cortisol3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#Cortisol3_summary}
-
-name        data_type   missing   complete   n    mean     sd       p0     p25      p50     p75     p100   hist     
-----------  ----------  --------  ---------  ---  -------  -------  -----  -------  ------  ------  -----  ---------
-Cortisol3   numeric     29        44         73   356.65   199.54   96.5   228.01   316.3   429.1   1213   <U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### age {#age .tabset}
 
 
@@ -2570,118 +15,13 @@ Cortisol3   numeric     29        44         73   356.65   199.54   96.5   228.0
 
 <img src="group7_DataDelivery_files/figure-html/age_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#age_summary}
 
 name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75   p100   hist       Description           
 -----  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  ----  -----  ---------  ----------------------
-age    numeric     29        44         73   32.41   3.88   24   30    32    36    39     <U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>   The age of the mother 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### nationality {#nationality .tabset}
-
-
-
-#### Distribution {#nationality_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/nationality_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#nationality_summary}
-
-name          data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
-------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-nationality   numeric     29        44         73   0.82   0.39   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### employed {#employed .tabset}
-
-
-
-#### Distribution {#employed_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/employed_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#employed_summary}
-
-name       data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                      
----------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -----------------------------------------------------------------
-employed   numeric     29        44         73   0.77   0.42   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Employment situation; is or is not employed at time of pregnancy 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### occupation {#occupation .tabset}
-
-
-
-#### Distribution {#occupation_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/occupation_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#occupation_summary}
-
-name         data_type   missing   complete   n    mean   sd     p0   p25    p50   p75    p100   hist       Description                                                           
------------  ----------  --------  ---------  ---  -----  -----  ---  -----  ----  -----  -----  ---------  ----------------------------------------------------------------------
-occupation   numeric     29        44         73   4.66   3.24   1    1.75   4     6.25   12     <U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>   If employed, what was the mothers occupation at the time of pregnancy 
+age    numeric     0         44         44   32.41   3.88   24   30    32    36    39     <U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>   The age of the mother 
 
 
 
@@ -2710,13 +50,153 @@ occupation   numeric     29        44         73   4.66   3.24   1    1.75   4  
 
 <img src="group7_DataDelivery_files/figure-html/education_level_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#education_level_summary}
 
 name              data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                                                
 ----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------------------
-education_level   numeric     29        44         73   2.75   0.49   1    3     3     3     3      <U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>   The highest level of education that the mother had received at the time of pregnancy/study 
+education_level   numeric     0         44         44   2.75   0.49   1    3     3     3     3      <U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>   The highest level of education that the mother had received at the time of pregnancy/study 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### nationality {#nationality .tabset}
+
+
+
+#### Distribution {#nationality_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/nationality_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#nationality_summary}
+
+name          data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
+------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
+nationality   numeric     0         44         44   0.82   0.39   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### postpartum_depression {#postpartum_depression .tabset}
+
+
+
+#### Distribution {#postpartum_depression_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/postpartum_depression_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#postpartum_depression_summary}
+
+name                    data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                       
+----------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------
+postpartum_depression   numeric     0         44         44   1.36   0.49   1    1     1     2     2      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   Diagnosis of post-partum depression in the mother 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### employed {#employed .tabset}
+
+
+
+#### Distribution {#employed_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/employed_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#employed_summary}
+
+name       data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                      
+---------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -----------------------------------------------------------------
+employed   numeric     0         44         44   0.77   0.42   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Employment situation; is or is not employed at time of pregnancy 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### occupation {#occupation .tabset}
+
+
+
+#### Distribution {#occupation_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/occupation_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#occupation_summary}
+
+name         data_type   missing   complete   n    mean   sd     p0   p25    p50   p75    p100   hist       Description                                                           
+-----------  ----------  --------  ---------  ---  -----  -----  ---  -----  ----  -----  -----  ---------  ----------------------------------------------------------------------
+occupation   numeric     0         44         44   4.66   3.24   1    1.75   4     6.25   12     <U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>   If employed, what was the mothers occupation at the time of pregnancy 
 
 
 
@@ -2745,13 +225,13 @@ education_level   numeric     29        44         73   2.75   0.49   1    3    
 
 <img src="group7_DataDelivery_files/figure-html/sport_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#sport_summary}
 
 name    data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist       Description                                                                                              
 ------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------  ---------------------------------------------------------------------------------------------------------
-sport   numeric     29        44         73   0.59   0.5   0    0     1     1     1      <U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] 
+sport   numeric     0         44         44   0.59   0.5   0    0     1     1     1      <U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] 
 
 
 
@@ -2780,13 +260,13 @@ sport   numeric     29        44         73   0.59   0.5   0    0     1     1   
 
 <img src="group7_DataDelivery_files/figure-html/pet_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#pet_summary}
 
 name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                            
 -----  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------
-pet    numeric     29        44         73   0.36   0.49   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   designation for mothers with pets at time of pregnancy 
+pet    numeric     0         44         44   0.36   0.49   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   designation for mothers with pets at time of pregnancy 
 
 
 
@@ -2815,13 +295,13 @@ pet    numeric     29        44         73   0.36   0.49   0    0     0     1   
 
 <img src="group7_DataDelivery_files/figure-html/dyed_hair_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#dyed_hair_summary}
 
 name        data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist       Description                                             
 ----------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------------
-dyed_hair   numeric     29        44         73   0.43   0.5   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>   designation for mothers with dyed hair during pregnancy 
+dyed_hair   numeric     0         44         44   0.43   0.5   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>   designation for mothers with dyed hair during pregnancy 
 
 
 
@@ -2850,13 +330,13 @@ dyed_hair   numeric     29        44         73   0.43   0.5   0    0     0     
 
 <img src="group7_DataDelivery_files/figure-html/first_pregnancy_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#first_pregnancy_summary}
 
 name              data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                                    
 ----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------
-first_pregnancy   numeric     29        44         73   0.64   0.49   0    0     1     1     1      <U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   primiparous; designation for mothers who are having a child for the first time 
+first_pregnancy   numeric     0         44         44   0.64   0.49   0    0     1     1     1      <U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   primiparous; designation for mothers who are having a child for the first time 
 
 
 
@@ -2885,13 +365,13 @@ first_pregnancy   numeric     29        44         73   0.64   0.49   0    0    
 
 <img src="group7_DataDelivery_files/figure-html/wanted_pregnancy_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#wanted_pregnancy_summary}
 
 name               data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                  
 -----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------
-wanted_pregnancy   numeric     29        44         73   0.84   0.37   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Designation for mothers who desired the pregnancy (planned?) 
+wanted_pregnancy   numeric     0         44         44   0.84   0.37   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Designation for mothers who desired the pregnancy (planned?) 
 
 
 
@@ -2920,13 +400,13 @@ wanted_pregnancy   numeric     29        44         73   0.84   0.37   0    1   
 
 <img src="group7_DataDelivery_files/figure-html/pregnancy_method_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#pregnancy_method_summary}
 
 name               data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                                                                 
 -----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ------------------------------------------------------------------------------------------------------------
-pregnancy_method   numeric     29        44         73   0.8    0.41   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination 
+pregnancy_method   numeric     0         44         44   0.8    0.41   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination 
 
 
 
@@ -2955,13 +435,13 @@ pregnancy_method   numeric     29        44         73   0.8    0.41   0    1   
 
 <img src="group7_DataDelivery_files/figure-html/previous_miscarriage_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#previous_miscarriage_summary}
 
 name                   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75    p100   hist       Description                                                                       
 ---------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  -----  -----  ---------  ----------------------------------------------------------------------------------
-previous_miscarriage   numeric     29        44         73   0.25   0.44   0    0     0     0.25   1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>   Designation for mothers who have had a miscarriage prior to the current pregnancy 
+previous_miscarriage   numeric     0         44         44   0.25   0.44   0    0     0     0.25   1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>   Designation for mothers who have had a miscarriage prior to the current pregnancy 
 
 
 
@@ -2996,147 +476,7 @@ previous_miscarriage   numeric     29        44         73   0.25   0.44   0    
 
 name        data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description          
 ----------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ---------------------
-fetus_sex   integer     0         73         73   0.23   0.43   0    0     0     0     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>   the sex of the fetus 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### postpartum_depression {#postpartum_depression .tabset}
-
-
-
-#### Distribution {#postpartum_depression_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/postpartum_depression_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#postpartum_depression_summary}
-
-name                    data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                       
-----------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------
-postpartum_depression   numeric     29        44         73   1.36   0.49   1    1     1     2     2      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   Diagnosis of post-partum depression in the mother 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### depression_tri1 {#depression_tri1 .tabset}
-
-
-
-#### Distribution {#depression_tri1_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/depression_tri1_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#depression_tri1_summary}
-
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
-----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
-depression_tri1   numeric     29        44         73   43.49   21.44   5    33.75   40.28   48.71   97     <U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>   antenatal depression during the 1st trimester. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### depression_tri2 {#depression_tri2 .tabset}
-
-
-
-#### Distribution {#depression_tri2_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/depression_tri2_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#depression_tri2_summary}
-
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
-----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
-depression_tri2   numeric     29        44         73   36.33   22.03   5    24.03   30.75   43.14   90     <U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>   antenatal depression during the 2nd trimester. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### depression_tri3 {#depression_tri3 .tabset}
-
-
-
-#### Distribution {#depression_tri3_distribution}
-
-<img src="group7_DataDelivery_files/figure-html/depression_tri3_distribution-1.png" width="672" />
-
-29 missings.
-
-#### Summary statistics {#depression_tri3_summary}
-
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
-----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
-depression_tri3   numeric     29        44         73   49.82   26.46   5    28.75   51.95   66.25   97     <U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>   antenatal depression during the 3rd trimester. 
+fetus_sex   integer     0         44         44   0.39   0.49   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   the sex of the fetus 
 
 
 
@@ -3165,13 +505,118 @@ depression_tri3   numeric     29        44         73   49.82   26.46   5    28.
 
 <img src="group7_DataDelivery_files/figure-html/epds_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#epds_summary}
 
 name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                               
 -----  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ------------------------------------------
-epds   numeric     29        44         73   7.93   5.03   2    4     6     11    24     <U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>   continuous metric of postnatal depression 
+epds   numeric     0         44         44   7.93   5.03   2    4     6     11    24     <U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>   continuous metric of postnatal depression 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### depression_tri1 {#depression_tri1 .tabset}
+
+
+
+#### Distribution {#depression_tri1_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/depression_tri1_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#depression_tri1_summary}
+
+name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
+----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
+depression_tri1   numeric     0         44         44   43.49   21.44   5    33.75   40.28   48.71   97     <U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>   antenatal depression during the 1st trimester. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### depression_tri2 {#depression_tri2 .tabset}
+
+
+
+#### Distribution {#depression_tri2_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/depression_tri2_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#depression_tri2_summary}
+
+name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
+----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
+depression_tri2   numeric     0         44         44   36.33   22.03   5    24.03   30.75   43.14   90     <U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>   antenatal depression during the 2nd trimester. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### depression_tri3 {#depression_tri3 .tabset}
+
+
+
+#### Distribution {#depression_tri3_distribution}
+
+<img src="group7_DataDelivery_files/figure-html/depression_tri3_distribution-1.png" width="672" />
+
+0 missings.
+
+#### Summary statistics {#depression_tri3_summary}
+
+name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
+----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
+depression_tri3   numeric     0         44         44   49.82   26.46   5    28.75   51.95   66.25   97     <U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>   antenatal depression during the 3rd trimester. 
 
 
 
@@ -3200,13 +645,13 @@ epds   numeric     29        44         73   7.93   5.03   2    4     6     11  
 
 <img src="group7_DataDelivery_files/figure-html/cortisol_tri1_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#cortisol_tri1_summary}
 
 name            data_type   missing   complete   n    mean     sd       p0      p25     p50     p75      p100   hist       Description                                                          
 --------------  ----------  --------  ---------  ---  -------  -------  ------  ------  ------  -------  -----  ---------  ---------------------------------------------------------------------
-cortisol_tri1   numeric     29        44         73   261.51   277.67   51.68   112.2   194.5   281.43   1649   <U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 1st trimester 
+cortisol_tri1   numeric     0         44         44   261.51   277.67   51.68   112.2   194.5   281.43   1649   <U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 1st trimester 
 
 
 
@@ -3235,13 +680,13 @@ cortisol_tri1   numeric     29        44         73   261.51   277.67   51.68   
 
 <img src="group7_DataDelivery_files/figure-html/cortisol_tri2_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#cortisol_tri2_summary}
 
 name            data_type   missing   complete   n    mean    sd       p0      p25      p50   p75      p100    hist       Description                                                          
 --------------  ----------  --------  ---------  ---  ------  -------  ------  -------  ----  -------  ------  ---------  ---------------------------------------------------------------------
-cortisol_tri2   numeric     29        44         73   246.8   119.54   78.64   165.53   225   302.57   636.1   <U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 2nd trimester 
+cortisol_tri2   numeric     0         44         44   246.8   119.54   78.64   165.53   225   302.57   636.1   <U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 2nd trimester 
 
 
 
@@ -3270,13 +715,13 @@ cortisol_tri2   numeric     29        44         73   246.8   119.54   78.64   1
 
 <img src="group7_DataDelivery_files/figure-html/cortisol_tri3_distribution-1.png" width="672" />
 
-29 missings.
+0 missings.
 
 #### Summary statistics {#cortisol_tri3_summary}
 
 name            data_type   missing   complete   n    mean     sd       p0     p25      p50     p75     p100   hist       Description                                                          
 --------------  ----------  --------  ---------  ---  -------  -------  -----  -------  ------  ------  -----  ---------  ---------------------------------------------------------------------
-cortisol_tri3   numeric     29        44         73   356.65   199.54   96.5   228.01   316.3   429.1   1213   <U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 3rd trimester 
+cortisol_tri3   numeric     0         44         44   356.65   199.54   96.5   228.01   316.3   429.1   1213   <U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 3rd trimester 
 
 
 ## Missingness report
@@ -3289,342 +734,26 @@ Among those who finished the survey. Only variables that have missings are shown
 ```
 
 
--------------------------------------------------------------------------------
-       description          Competitor   Age   FirstPregnancy   Pregnancy.type 
--------------------------- ------------ ----- ---------------- ----------------
-  Missings per variable         29       29          29               29       
-
- Missings in 0 variables        1         1          1                1        
-
- Missings in 90 variables       0         0          0                0        
--------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
--------------------------------------------------------------------------
- Level_Studies   SLaboral   Appearance   Sport   Profession   What.study 
---------------- ---------- ------------ ------- ------------ ------------
-      29            29          29        29         29           29     
-
-       1            1           1          1         1            1      
-
-       0            0           0          0         0            0      
--------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
---------------------------------------------------------------------------------
- Origin   EPDS   depreposparto   StateCivilDIcotomica   EmploymentSituationDico 
--------- ------ --------------- ---------------------- -------------------------
-   29      29         29                  29                      29            
-
-   1       1           1                  1                        1            
-
-   0       0           0                  0                        0            
---------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
--------------------------------------------------------------
- PetDicotomica   NationalityDicotomica   PregnancyMethodDico 
---------------- ----------------------- ---------------------
-      29                  29                     29          
-
-       1                   1                      1          
-
-       0                   0                      0          
--------------------------------------------------------------
-
-Table: Table continues below
-
- 
-------------------------------------------------------------------------------
- PreviousMiscarriagesDico   WantedPregnancyDico   Occupation123   LNCORTISOL1 
--------------------------- --------------------- --------------- -------------
-            29                      29                 29             29      
-
-            1                        1                  1              1      
-
-            0                        0                  0              0      
-------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
---------------------------------------------------------------------------------
- LNCORTISOL2   LNCORTISOL3   SexFetal   PDQ1   PDQ2   PDQ3   EEP1   EEP2   EEP3 
-------------- ------------- ---------- ------ ------ ------ ------ ------ ------
-     29            29           29       29     29     29     29     29     29  
-
-      1             1           1        1      1      1      1      1      1   
-
-      0             0           0        0      0      0      0      0      0   
---------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
----------------------------------------------------------------------------
- SOMATIZATIONS1   OBSESSIONS.AND.COMPULSIONS1   SENSITIVIDADINTERPERSONAL1 
----------------- ----------------------------- ----------------------------
-       29                     29                            29             
-
-       1                       1                            1              
-
-       0                       0                            0              
----------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
-------------------------------------------------------------------------------
- DEPRESSION1   ANXIETY1   HOSTILIDAD1   ANSIEDADFOBICA1  IDEACIÃƒ.NPARANOIDE1 
-------------- ---------- ------------- ----------------- ---------------------
-     29           29          29              29                  29          
-
-      1           1            1               1                   1          
-
-      0           0            0               0                   0          
-------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
------------------------------------------------------
- PSICOTICISMO1   IGS1   SP1   PSDI1   SOMATIZATIONS2 
---------------- ------ ----- ------- ----------------
-      29          29    29     29           29       
-
-       1          1      1      1           1        
-
-       0          0      0      0           0        
------------------------------------------------------
-
-Table: Table continues below
-
- 
---------------------------------------------------------------------------------
- OBSESSIONS.AND.COMPULSIONS2   INSTRUMENT.SENSITIVITY2   DEPRESSION2   ANXIETY2 
------------------------------ ------------------------- ------------- ----------
-             29                          29                  29           29    
-
-              1                           1                   1           1     
-
-              0                           0                   0           0     
---------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
----------------------------------------------------------------------------
- HOSTILITY2   ANSIEDADFOBICA2  IDEACIÃƒ.NPARANOIDE2   PSICOTICISMO2   IGS2 
------------- ----------------- --------------------- --------------- ------
-     29             29                  29                 29          29  
-
-     1               1                   1                  1          1   
-
-     0               0                   0                  0          0   
----------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
-------------------------------------------------------------
- SP2   PSDI2   SOMATIZATIONS3   OBSESSIONS.AND.COMPULSIONS3 
------ ------- ---------------- -----------------------------
- 29     29           29                     29              
-
-  1      1           1                       1              
-
-  0      0           0                       0              
-------------------------------------------------------------
-
-Table: Table continues below
-
- 
-----------------------------------------------------------------
- INSTRUMENT.SENSITIVITY3   DEPRESSION3   ANXIETY3   HOSTILIDAD3 
-------------------------- ------------- ---------- -------------
-           29                  29           29          29      
-
-            1                   1           1            1      
-
-            0                   0           0            0      
-----------------------------------------------------------------
-
-Table: Table continues below
-
- 
-----------------------------------------------------------------------------
- ANSIEDADFOBICA3  IDEACIÃƒ.NPARANOIDE3   PSICOTICISMO3   IGS3   SP3   PSDI3 
------------------ --------------------- --------------- ------ ----- -------
-       29                  29                 29          29    29     29   
-
-        1                   1                  1          1      1      1   
-
-        0                   0                  0          0      0      0   
-----------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
--------------------------------------------------------------------------------
- Cortisol1   Cortisol2   Cortisol3   age   nationality   employed   occupation 
------------ ----------- ----------- ----- ------------- ---------- ------------
-    29          29          29       29        29           29          29     
-
-     1           1           1        1         1           1           1      
-
-     0           0           0        0         0           0           0      
--------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
---------------------------------------------------------------------------------
- education_level   sport   pet   dyed_hair   first_pregnancy   wanted_pregnancy 
------------------ ------- ----- ----------- ----------------- ------------------
-       29           29     29       29             29                 29        
-
-        1            1      1        1              1                 1         
-
-        0            0      0        0              0                 0         
---------------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
------------------------------------------------------------------
- pregnancy_method   previous_miscarriage   postpartum_depression 
------------------- ---------------------- -----------------------
-        29                   29                     29           
-
-        1                    1                       1           
-
-        0                    0                       0           
------------------------------------------------------------------
-
-Table: Table continues below
-
- 
-----------------------------------------------------------------------------
- depression_tri1   depression_tri2   depression_tri3   epds   cortisol_tri1 
------------------ ----------------- ----------------- ------ ---------------
-       29                29                29           29         29       
-
-        1                 1                 1           1           1       
-
-        0                 0                 0           0           0       
-----------------------------------------------------------------------------
-
-Table: Table continues below
-
- 
----------------------------------------------------
- cortisol_tri2   cortisol_tri3   var_miss   n_miss 
---------------- --------------- ---------- --------
-      29              29           2610      2610  
-
-       1               1            0         44   
-
-       0               0            90        29   
----------------------------------------------------
-
-
 
 ## Codebook table
 
-<!--html_preserve--><div id="htmlwidget-40ed4bc93d95af3f2ef4" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-40ed4bc93d95af3f2ef4">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#X\">X<\/a>","<a href=\"#Unnamed__0\">Unnamed..0<\/a>","<a href=\"#Competitor\">Competitor<\/a>","<a href=\"#Age\">Age<\/a>","<a href=\"#FirstPregnancy\">FirstPregnancy<\/a>","<a href=\"#Pregnancy_type\">Pregnancy.type<\/a>","<a href=\"#Level_Studies\">Level_Studies<\/a>","<a href=\"#SLaboral\">SLaboral<\/a>","<a href=\"#Appearance\">Appearance<\/a>","<a href=\"#Sport\">Sport<\/a>","<a href=\"#Profession\">Profession<\/a>","<a href=\"#What_study\">What.study<\/a>","<a href=\"#Origin\">Origin<\/a>","<a href=\"#EPDS\">EPDS<\/a>","<a href=\"#depreposparto\">depreposparto<\/a>","<a href=\"#StateCivilDIcotomica\">StateCivilDIcotomica<\/a>","<a href=\"#EmploymentSituationDico\">EmploymentSituationDico<\/a>","<a href=\"#PetDicotomica\">PetDicotomica<\/a>","<a href=\"#NationalityDicotomica\">NationalityDicotomica<\/a>","<a href=\"#PregnancyMethodDico\">PregnancyMethodDico<\/a>","<a href=\"#PreviousMiscarriagesDico\">PreviousMiscarriagesDico<\/a>","<a href=\"#WantedPregnancyDico\">WantedPregnancyDico<\/a>","<a href=\"#Occupation123\">Occupation123<\/a>","<a href=\"#LNCORTISOL1\">LNCORTISOL1<\/a>","<a href=\"#LNCORTISOL2\">LNCORTISOL2<\/a>","<a href=\"#LNCORTISOL3\">LNCORTISOL3<\/a>","<a href=\"#SexFetal\">SexFetal<\/a>","<a href=\"#PDQ1\">PDQ1<\/a>","<a href=\"#PDQ2\">PDQ2<\/a>","<a href=\"#PDQ3\">PDQ3<\/a>","<a href=\"#EEP1\">EEP1<\/a>","<a href=\"#EEP2\">EEP2<\/a>","<a href=\"#EEP3\">EEP3<\/a>","<a href=\"#SOMATIZATIONS1\">SOMATIZATIONS1<\/a>","<a href=\"#OBSESSIONS_AND_COMPULSIONS1\">OBSESSIONS.AND.COMPULSIONS1<\/a>","<a href=\"#SENSITIVIDADINTERPERSONAL1\">SENSITIVIDADINTERPERSONAL1<\/a>","<a href=\"#DEPRESSION1\">DEPRESSION1<\/a>","<a href=\"#ANXIETY1\">ANXIETY1<\/a>","<a href=\"#HOSTILIDAD1\">HOSTILIDAD1<\/a>","<a href=\"#ANSIEDADFOBICA1\">ANSIEDADFOBICA1<\/a>","<a href=\"#IDEACIÃ_NPARANOIDE1\">IDEACIÃ.NPARANOIDE1<\/a>","<a href=\"#PSICOTICISMO1\">PSICOTICISMO1<\/a>","<a href=\"#IGS1\">IGS1<\/a>","<a href=\"#SP1\">SP1<\/a>","<a href=\"#PSDI1\">PSDI1<\/a>","<a href=\"#SOMATIZATIONS2\">SOMATIZATIONS2<\/a>","<a href=\"#OBSESSIONS_AND_COMPULSIONS2\">OBSESSIONS.AND.COMPULSIONS2<\/a>","<a href=\"#INSTRUMENT_SENSITIVITY2\">INSTRUMENT.SENSITIVITY2<\/a>","<a href=\"#DEPRESSION2\">DEPRESSION2<\/a>","<a href=\"#ANXIETY2\">ANXIETY2<\/a>","<a href=\"#HOSTILITY2\">HOSTILITY2<\/a>","<a href=\"#ANSIEDADFOBICA2\">ANSIEDADFOBICA2<\/a>","<a href=\"#IDEACIÃ_NPARANOIDE2\">IDEACIÃ.NPARANOIDE2<\/a>","<a href=\"#PSICOTICISMO2\">PSICOTICISMO2<\/a>","<a href=\"#IGS2\">IGS2<\/a>","<a href=\"#SP2\">SP2<\/a>","<a href=\"#PSDI2\">PSDI2<\/a>","<a href=\"#SOMATIZATIONS3\">SOMATIZATIONS3<\/a>","<a href=\"#OBSESSIONS_AND_COMPULSIONS3\">OBSESSIONS.AND.COMPULSIONS3<\/a>","<a href=\"#INSTRUMENT_SENSITIVITY3\">INSTRUMENT.SENSITIVITY3<\/a>","<a href=\"#DEPRESSION3\">DEPRESSION3<\/a>","<a href=\"#ANXIETY3\">ANXIETY3<\/a>","<a href=\"#HOSTILIDAD3\">HOSTILIDAD3<\/a>","<a href=\"#ANSIEDADFOBICA3\">ANSIEDADFOBICA3<\/a>","<a href=\"#IDEACIÃ_NPARANOIDE3\">IDEACIÃ.NPARANOIDE3<\/a>","<a href=\"#PSICOTICISMO3\">PSICOTICISMO3<\/a>","<a href=\"#IGS3\">IGS3<\/a>","<a href=\"#SP3\">SP3<\/a>","<a href=\"#PSDI3\">PSDI3<\/a>","<a href=\"#SexFetalDico\">SexFetalDico<\/a>","<a href=\"#Cortisol1\">Cortisol1<\/a>","<a href=\"#Cortisol2\">Cortisol2<\/a>","<a href=\"#Cortisol3\">Cortisol3<\/a>","<a href=\"#age\">age<\/a>","<a href=\"#nationality\">nationality<\/a>","<a href=\"#employed\">employed<\/a>","<a href=\"#occupation\">occupation<\/a>","<a href=\"#education_level\">education_level<\/a>","<a href=\"#sport\">sport<\/a>","<a href=\"#pet\">pet<\/a>","<a href=\"#dyed_hair\">dyed_hair<\/a>","<a href=\"#first_pregnancy\">first_pregnancy<\/a>","<a href=\"#wanted_pregnancy\">wanted_pregnancy<\/a>","<a href=\"#pregnancy_method\">pregnancy_method<\/a>","<a href=\"#previous_miscarriage\">previous_miscarriage<\/a>","<a href=\"#fetus_sex\">fetus_sex<\/a>","<a href=\"#postpartum_depression\">postpartum_depression<\/a>","<a href=\"#depression_tri1\">depression_tri1<\/a>","<a href=\"#depression_tri2\">depression_tri2<\/a>","<a href=\"#depression_tri3\">depression_tri3<\/a>","<a href=\"#epds\">epds<\/a>","<a href=\"#cortisol_tri1\">cortisol_tri1<\/a>","<a href=\"#cortisol_tri2\">cortisol_tri2<\/a>","<a href=\"#cortisol_tri3\">cortisol_tri3<\/a>"],["integer","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric"],["0","0","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","0","29","29","29","29","29","29","29","29","29","29","29","29","29","29","29","0","29","29","29","29","29","29","29","29"],["73","73","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","73","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","73","44","44","44","44","44","44","44","44"],["73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73","73"],["36   ","37   "," 22.5 "," 32.41","  0.64","  1.32","  2.75","  2.18","  0.43","  0.59","  4.66","  3.66","  1.57","  7.93","  1.36","  0.59","  0.77","  0.36","  0.82","  0.8 ","  0.25","  0.84","  2.2 ","  5.25","  5.4 ","  5.74","  0.46"," 14.64"," 13.18"," 12.52"," 26.3 "," 26.77"," 27.2 "," 62.06"," 57.25"," 42.65"," 43.49"," 56.59"," 52.46"," 72.45"," 62.68"," 70.3 "," 55.09"," 56.07"," 49.8 "," 47.01"," 57.73"," 45.67"," 36.33"," 48.52"," 42.35"," 62.92"," 56.5 "," 61.91"," 47.4 "," 50.43"," 40.11"," 55.59"," 67.85"," 53.67"," 49.82"," 59.47"," 49.12"," 72.67"," 65.94"," 67.49"," 60.29"," 58.42"," 47.21"," 0.23","261.51","246.8 ","356.65"," 32.41","  0.82","  0.77","  4.66","  2.75","  0.59","  0.36","  0.43","  0.64","  0.84","  0.8 ","  0.25"," 0.23","  1.36"," 43.49"," 36.33"," 49.82","  7.93","261.51","246.8 ","356.65"],["21.22","21.22"," 12.85","  3.88","  0.49","  0.67","  0.49","  0.95","  0.5 ","  0.5 ","  3.24","  3.02","  1.52","  5.03","  0.49","  0.5 ","  0.42","  0.49","  0.39","  0.41","  0.44","  0.37","  0.88","  0.75","  0.47","  0.53","  0.45","  6.17","  5.17","  4.46","  2.13","  1.43","  1.53"," 24.65"," 23.73"," 22.43"," 21.44"," 24.87"," 20.77"," 17.99"," 24.52"," 19.08"," 23.26"," 23.39"," 23.57"," 20.12"," 23.49"," 20.33"," 22.03"," 24.37"," 23.52"," 21.44"," 23.03"," 21.51"," 24.24"," 24.32"," 21.51"," 24.42"," 28.95"," 29.26"," 26.46"," 26.57"," 29.71"," 27.34"," 26.9 "," 28.83"," 29.26"," 29.84"," 19.79"," 0.43","277.67","119.54","199.54","  3.88","  0.39","  0.42","  3.24","  0.49","  0.5 ","  0.49","  0.5 ","  0.49","  0.37","  0.41","  0.44"," 0.43","  0.49"," 21.44"," 22.03"," 26.46","  5.03","277.67","119.54","199.54"],["0","1"," 1   ","24   "," 0   "," 1   "," 1   "," 1   "," 0   "," 0   "," 1   "," 1   "," 1   "," 2   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 1   "," 3.95"," 4.36"," 4.57"," 0   "," 4   "," 4   "," 2   ","22   ","24   ","24   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   ","10   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   ","15   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   "," 5   ","0","51.68","78.64","96.5 ","24   "," 0   "," 0   "," 1   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   ","0"," 1   "," 5   "," 5   "," 5   "," 2   ","51.68","78.64","96.5 "],["18","19"," 11.75"," 30   ","  0   ","  1   ","  3   ","  2   ","  0   ","  0   ","  1.75","  1   ","  1   ","  4   ","  1   ","  0   ","  1   ","  0   ","  1   ","  1   ","  0   ","  1   ","  1   ","  4.72","  5.11","  5.43","  0   "," 10   "," 11   ","  8   "," 25   "," 26   "," 26   "," 50   "," 46.97"," 35.37"," 33.75"," 47.75"," 47.25"," 65.08"," 57.89"," 64.76"," 45.28"," 48   "," 35   "," 40   "," 45   "," 35   "," 24.03"," 30   "," 35.28"," 57.23"," 50.54"," 57.25"," 36.31"," 38.75"," 28.75"," 35   "," 50   "," 31.25"," 28.75"," 45   "," 35   "," 63.09"," 56.75"," 56.25"," 35   "," 35   "," 35   ","0","112.2 ","165.53","228.01"," 30   ","  1   ","  1   ","  1.75","  3   ","  0   ","  0   ","  0   ","  0   ","  1   ","  1   ","  0   ","0","  1   "," 33.75"," 24.03"," 28.75","  4   ","112.2 ","165.53","228.01"],["36","37"," 22.5 "," 32   ","  1   ","  1   ","  3   ","  2   ","  0   ","  1   ","  4   ","  3   ","  1   ","  6   ","  1   ","  1   ","  1   ","  0   ","  1   ","  1   ","  0   ","  1   ","  2.5 ","  5.27","  5.42","  5.76","  0.26"," 14   "," 13   "," 13   "," 26   "," 27   "," 27   "," 65   "," 52.39"," 43.13"," 40.28"," 55.94"," 51.01"," 74.83"," 64.58"," 73.29"," 54.08"," 55.57"," 49.93"," 45.99"," 56.63"," 45   "," 30.75"," 47.03"," 40.15"," 60   "," 57.41"," 61.7 "," 44.78"," 48   "," 39.67"," 55.46"," 77.78"," 54.59"," 51.95"," 61.32"," 45.27"," 80   "," 70   "," 70   "," 63.46"," 57.5 "," 48   ","0","194.5 ","225   ","316.3 "," 32   ","  1   ","  1   ","  4   ","  3   ","  1   ","  0   ","  0   ","  1   ","  1   ","  1   ","  0   ","0","  1   "," 40.28"," 30.75"," 51.95","  6   ","194.5 ","225   ","316.3 "],["54","55"," 33.25"," 36   ","  1   ","  1   ","  3   ","  2   ","  1   ","  1   ","  6.25","  6   ","  1   "," 11   ","  2   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","  1   ","  3   ","  5.64","  5.71","  6.06","  1   "," 17.25"," 15.5 "," 16   "," 27   "," 28   "," 28   "," 80   "," 68.36"," 50.25"," 48.71"," 71.25"," 60   "," 85   "," 72.5 "," 81.25"," 66.25"," 63.96"," 60   "," 50   "," 75   "," 55   "," 43.14"," 60   "," 60   "," 77.75"," 70   "," 80   "," 56.25"," 55   "," 50   "," 80   "," 90   "," 81.25"," 66.25"," 80   "," 72.5 "," 91.25"," 86.25"," 91.25"," 90   "," 85   "," 58.5 ","0","281.43","302.57","429.1 "," 36   ","  1   ","  1   ","  6.25","  3   ","  1   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","0","  2   "," 48.71"," 43.14"," 66.25"," 11   ","281.43","302.57","429.1 "],["72","73","  44   ","  39   ","   1   ","   3   ","   3   ","   5   ","   1   ","   1   ","  12   ","  11   ","   8   ","  24   ","   2   ","   1   ","   1   ","   1   ","   1   ","   1   ","   1   ","   1   ","   3   ","   7.41","   6.46","   7.1 ","   1   ","  30   ","  31   ","  21   ","  31   ","  29   ","  30   ","  97   ","  99   ","  99   ","  97   ","  99   ","  95   ","  99   ","  99   ","  99   ","  99   ","  99   ","  97   ","  95   ","  97   ","  97   ","  90   ","  95   ","  90   ","  98   ","  97   ","  99   ","  97   ","  98   ","  85   ","  97   ","  99   ","  97   ","  97   ","  95   ","  95   ","  99   ","  97   ","  99   ","  97   ","  99   ","  85   ","1","1649   "," 636.1 ","1213   ","  39   ","   1   ","   1   ","  12   ","   3   ","   1   ","   1   ","   1   ","   1   ","   1   ","   1   ","   1   ","1","   2   ","  97   ","  90   ","  97   ","  24   ","1649   "," 636.1 ","1213   "],["<U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587>","<U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587>","<U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587>","<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2587><U+2581><U+2582><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2587><U+2585><U+2581><U+2582><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2585><U+2581><U+2581><U+2583><U+2581><U+2581><U+2581><U+2587>","<U+2583><U+2586><U+2583><U+2587><U+2582><U+2582><U+2581><U+2581>","<U+2582><U+2582><U+2587><U+2586><U+2587><U+2586><U+2582><U+2582>","<U+2583><U+2582><U+2586><U+2587><U+2587><U+2585><U+2581><U+2581>","<U+2587><U+2583><U+2582><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2586><U+2582><U+2587><U+2582><U+2581><U+2582><U+2582>","<U+2582><U+2582><U+2587><U+2582><U+2582><U+2581><U+2581><U+2581>","<U+2581><U+2581><U+2587><U+2583><U+2586><U+2586><U+2585><U+2582>","<U+2583><U+2582><U+2587><U+2586><U+2587><U+2583><U+2581><U+2583>","<U+2581><U+2583><U+2581><U+2587><U+2586><U+2581><U+2585><U+2585>","<U+2581><U+2583><U+2586><U+2587><U+2581><U+2586><U+2583><U+2583>","<U+2583><U+2581><U+2582><U+2583><U+2585><U+2587><U+2583><U+2586>","<U+2582><U+2581><U+2582><U+2587><U+2585><U+2583><U+2581><U+2585>","<U+2583><U+2582><U+2586><U+2587><U+2582><U+2582><U+2581><U+2581>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2582><U+2581><U+2582><U+2583><U+2587><U+2582><U+2582><U+2583>","<U+2582><U+2581><U+2582><U+2585><U+2587><U+2581><U+2581><U+2582>","<U+2581><U+2581><U+2581><U+2582><U+2583><U+2587><U+2587><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2587><U+2586><U+2582><U+2583>","<U+2581><U+2581><U+2581><U+2582><U+2582><U+2587><U+2587><U+2582>","<U+2582><U+2581><U+2582><U+2587><U+2587><U+2582><U+2581><U+2583>","<U+2582><U+2581><U+2582><U+2586><U+2587><U+2581><U+2582><U+2583>","<U+2583><U+2582><U+2582><U+2587><U+2585><U+2582><U+2582><U+2582>","<U+2582><U+2582><U+2581><U+2587><U+2581><U+2581><U+2582><U+2581>","<U+2581><U+2582><U+2581><U+2585><U+2587><U+2581><U+2583><U+2583>","<U+2581><U+2582><U+2582><U+2587><U+2582><U+2581><U+2582><U+2581>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2583><U+2582><U+2582><U+2587><U+2583><U+2581><U+2581><U+2583>","<U+2585><U+2581><U+2582><U+2587><U+2582><U+2583><U+2581><U+2583>","<U+2582><U+2581><U+2581><U+2582><U+2587><U+2583><U+2583><U+2583>","<U+2582><U+2581><U+2581><U+2582><U+2587><U+2582><U+2582><U+2582>","<U+2581><U+2582><U+2581><U+2583><U+2587><U+2585><U+2585><U+2582>","<U+2582><U+2582><U+2582><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2582><U+2582><U+2582><U+2587><U+2583><U+2581><U+2582><U+2583>","<U+2585><U+2583><U+2586><U+2587><U+2585><U+2582><U+2582><U+2583>","<U+2587><U+2582><U+2583><U+2586><U+2583><U+2583><U+2586><U+2583>","<U+2582><U+2581><U+2582><U+2581><U+2581><U+2583><U+2583><U+2587>","<U+2585><U+2585><U+2582><U+2585><U+2586><U+2582><U+2585><U+2587>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2583><U+2582><U+2581><U+2583><U+2586><U+2583><U+2586><U+2587>","<U+2587><U+2581><U+2583><U+2587><U+2583><U+2583><U+2582><U+2587>","<U+2582><U+2581><U+2581><U+2583><U+2581><U+2582><U+2585><U+2587>","<U+2583><U+2581><U+2582><U+2583><U+2585><U+2586><U+2586><U+2587>","<U+2583><U+2581><U+2581><U+2582><U+2582><U+2585><U+2583><U+2587>","<U+2583><U+2581><U+2583><U+2583><U+2583><U+2582><U+2583><U+2587>","<U+2583><U+2583><U+2583><U+2583><U+2583><U+2582><U+2586><U+2587>","<U+2582><U+2582><U+2582><U+2585><U+2587><U+2582><U+2583><U+2581>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>","<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>"],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"The patient's nationality or country of origin at the time of pregnancy",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"The age of the mother",null,"Employment situation; is or is not employed at time of pregnancy","If employed, what was the mothers occupation at the time of pregnancy","The highest level of education that the mother had received at the time of pregnancy/study","tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]","designation for mothers with pets at time of pregnancy","designation for mothers with dyed hair during pregnancy","primiparous; designation for mothers who are having a child for the first time","Designation for mothers who desired the pregnancy (planned?)","designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination","Designation for mothers who have had a miscarriage prior to the current pregnancy","the sex of the fetus","Diagnosis of post-partum depression in the mother","antenatal depression during the 1st trimester.","antenatal depression during the 2nd trimester.","antenatal depression during the 3rd trimester.","continuous metric of postnatal depression","Cortisol levels in mothers during pregnancy during the 1st trimester","Cortisol levels in mothers during pregnancy during the 2nd trimester","Cortisol levels in mothers during pregnancy during the 3rd trimester"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>data_type<\/th>\n      <th>missing<\/th>\n      <th>complete<\/th>\n      <th>n<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>p0<\/th>\n      <th>p25<\/th>\n      <th>p50<\/th>\n      <th>p75<\/th>\n      <th>p100<\/th>\n      <th>hist<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-e34b161753808e562c84" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e34b161753808e562c84">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#age\">age<\/a>","<a href=\"#education_level\">education_level<\/a>","<a href=\"#nationality\">nationality<\/a>","<a href=\"#postpartum_depression\">postpartum_depression<\/a>","<a href=\"#employed\">employed<\/a>","<a href=\"#occupation\">occupation<\/a>","<a href=\"#sport\">sport<\/a>","<a href=\"#pet\">pet<\/a>","<a href=\"#dyed_hair\">dyed_hair<\/a>","<a href=\"#first_pregnancy\">first_pregnancy<\/a>","<a href=\"#wanted_pregnancy\">wanted_pregnancy<\/a>","<a href=\"#pregnancy_method\">pregnancy_method<\/a>","<a href=\"#previous_miscarriage\">previous_miscarriage<\/a>","<a href=\"#fetus_sex\">fetus_sex<\/a>","<a href=\"#epds\">epds<\/a>","<a href=\"#depression_tri1\">depression_tri1<\/a>","<a href=\"#depression_tri2\">depression_tri2<\/a>","<a href=\"#depression_tri3\">depression_tri3<\/a>","<a href=\"#cortisol_tri1\">cortisol_tri1<\/a>","<a href=\"#cortisol_tri2\">cortisol_tri2<\/a>","<a href=\"#cortisol_tri3\">cortisol_tri3<\/a>"],["numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric"],["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],[" 32.41","  2.75","  0.82","  1.36","  0.77","  4.66","  0.59","  0.36","  0.43","  0.64","  0.84","  0.8 ","  0.25","0.39","  7.93"," 43.49"," 36.33"," 49.82","261.51","246.8 ","356.65"],["  3.88","  0.49","  0.39","  0.49","  0.42","  3.24","  0.5 ","  0.49","  0.5 ","  0.49","  0.37","  0.41","  0.44","0.49","  5.03"," 21.44"," 22.03"," 26.46","277.67","119.54","199.54"],["24   "," 1   "," 0   "," 1   "," 0   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   ","0"," 2   "," 5   "," 5   "," 5   ","51.68","78.64","96.5 "],[" 30   ","  3   ","  1   ","  1   ","  1   ","  1.75","  0   ","  0   ","  0   ","  0   ","  1   ","  1   ","  0   ","0","  4   "," 33.75"," 24.03"," 28.75","112.2 ","165.53","228.01"],[" 32   ","  3   ","  1   ","  1   ","  1   ","  4   ","  1   ","  0   ","  0   ","  1   ","  1   ","  1   ","  0   ","0","  6   "," 40.28"," 30.75"," 51.95","194.5 ","225   ","316.3 "],[" 36   ","  3   ","  1   ","  2   ","  1   ","  6.25","  1   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","1"," 11   "," 48.71"," 43.14"," 66.25","281.43","302.57","429.1 "],["  39  ","   3  ","   1  ","   2  ","   1  ","  12  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","1","  24  ","  97  ","  90  ","  97  ","1649  "," 636.1","1213  "],["<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>"],["The age of the mother","The highest level of education that the mother had received at the time of pregnancy/study",null,"Diagnosis of post-partum depression in the mother","Employment situation; is or is not employed at time of pregnancy","If employed, what was the mothers occupation at the time of pregnancy","tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]","designation for mothers with pets at time of pregnancy","designation for mothers with dyed hair during pregnancy","primiparous; designation for mothers who are having a child for the first time","Designation for mothers who desired the pregnancy (planned?)","designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination","Designation for mothers who have had a miscarriage prior to the current pregnancy","the sex of the fetus","continuous metric of postnatal depression","antenatal depression during the 1st trimester.","antenatal depression during the 2nd trimester.","antenatal depression during the 3rd trimester.","Cortisol levels in mothers during pregnancy during the 1st trimester","Cortisol levels in mothers during pregnancy during the 2nd trimester","Cortisol levels in mothers during pregnancy during the 3rd trimester"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>data_type<\/th>\n      <th>missing<\/th>\n      <th>complete<\/th>\n      <th>n<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>p0<\/th>\n      <th>p25<\/th>\n      <th>p50<\/th>\n      <th>p75<\/th>\n      <th>p100<\/th>\n      <th>hist<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 
 <script type="application/ld+json">
 {
   "name": "results",
-  "keywords": ["X", "Unnamed..0", "Competitor", "Age", "FirstPregnancy", "Pregnancy.type", "Level_Studies", "SLaboral", "Appearance", "Sport", "Profession", "What.study", "Origin", "EPDS", "depreposparto", "StateCivilDIcotomica", "EmploymentSituationDico", "PetDicotomica", "NationalityDicotomica", "PregnancyMethodDico", "PreviousMiscarriagesDico", "WantedPregnancyDico", "Occupation123", "LNCORTISOL1", "LNCORTISOL2", "LNCORTISOL3", "SexFetal", "PDQ1", "PDQ2", "PDQ3", "EEP1", "EEP2", "EEP3", "SOMATIZATIONS1", "OBSESSIONS.AND.COMPULSIONS1", "SENSITIVIDADINTERPERSONAL1", "DEPRESSION1", "ANXIETY1", "HOSTILIDAD1", "ANSIEDADFOBICA1", "IDEACIÃ.NPARANOIDE1", "PSICOTICISMO1", "IGS1", "SP1", "PSDI1", "SOMATIZATIONS2", "OBSESSIONS.AND.COMPULSIONS2", "INSTRUMENT.SENSITIVITY2", "DEPRESSION2", "ANXIETY2", "HOSTILITY2", "ANSIEDADFOBICA2", "IDEACIÃ.NPARANOIDE2", "PSICOTICISMO2", "IGS2", "SP2", "PSDI2", "SOMATIZATIONS3", "OBSESSIONS.AND.COMPULSIONS3", "INSTRUMENT.SENSITIVITY3", "DEPRESSION3", "ANXIETY3", "HOSTILIDAD3", "ANSIEDADFOBICA3", "IDEACIÃ.NPARANOIDE3", "PSICOTICISMO3", "IGS3", "SP3", "PSDI3", "SexFetalDico", "Cortisol1", "Cortisol2", "Cortisol3", "age", "nationality", "employed", "occupation", "education_level", "sport", "pet", "dyed_hair", "first_pregnancy", "wanted_pregnancy", "pregnancy_method", "previous_miscarriage", "fetus_sex", "postpartum_depression", "depression_tri1", "depression_tri2", "depression_tri3", "epds", "cortisol_tri1", "cortisol_tri2", "cortisol_tri3"],
+  "keywords": ["age", "education_level", "nationality", "postpartum_depression", "employed", "occupation", "sport", "pet", "dyed_hair", "first_pregnancy", "wanted_pregnancy", "pregnancy_method", "previous_miscarriage", "fetus_sex", "epds", "depression_tri1", "depression_tri2", "depression_tri3", "cortisol_tri1", "cortisol_tri2", "cortisol_tri3"],
   "variableMeasured": [
     {
-      "name": "X",
+      "Description": "The age of the mother",
+      "name": "age",
       "data_summary": [
         {
           "missing": "0",
-          "complete": "73",
-          "n": "73",
-          "mean": "36",
-          "sd": "21.22",
-          "p0": "0",
-          "p25": "18",
-          "p50": "36",
-          "p75": "54",
-          "p100": "72",
-          "hist": "<U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Unnamed..0",
-      "data_summary": [
-        {
-          "missing": "0",
-          "complete": "73",
-          "n": "73",
-          "mean": "37",
-          "sd": "21.22",
-          "p0": "1",
-          "p25": "19",
-          "p50": "37",
-          "p75": "55",
-          "p100": "73",
-          "hist": "<U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Competitor",
-      "data_summary": [
-        {
-          "missing": "29",
           "complete": "44",
-          "n": "73",
-          "mean": "22.5",
-          "sd": "12.85",
-          "p0": "1",
-          "p25": "11.75",
-          "p50": "22.5",
-          "p75": "33.25",
-          "p100": "44",
-          "hist": "<U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Age",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "32.41",
           "sd": "3.88",
           "p0": "24",
@@ -3643,60 +772,13 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "name": "FirstPregnancy",
+      "Description": "The highest level of education that the mother had received at the time of pregnancy/study",
+      "name": "education_level",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
-          "mean": "0.64",
-          "sd": "0.49",
-          "p0": "0",
-          "p25": "0",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Pregnancy.type",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "1.32",
-          "sd": "0.67",
-          "p0": "1",
-          "p25": "1",
-          "p50": "1",
-          "p75": "1",
-          "p100": "3",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Level_Studies",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "2.75",
           "sd": "0.49",
           "p0": "1",
@@ -3715,140 +797,20 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "name": "SLaboral",
+      "name": "nationality",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
-          "mean": "2.18",
-          "sd": "0.95",
-          "p0": "1",
-          "p25": "2",
-          "p50": "2",
-          "p75": "2",
-          "p100": "5",
-          "hist": "<U+2582><U+2587><U+2581><U+2582><U+2581><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Appearance",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.43",
-          "sd": "0.5",
+          "n": "44",
+          "mean": "0.82",
+          "sd": "0.39",
           "p0": "0",
-          "p25": "0",
-          "p50": "0",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Sport",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.59",
-          "sd": "0.5",
-          "p0": "0",
-          "p25": "0",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Profession",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "4.66",
-          "sd": "3.24",
-          "p0": "1",
-          "p25": "1.75",
-          "p50": "4",
-          "p75": "6.25",
-          "p100": "12",
-          "hist": "<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "What.study",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "3.66",
-          "sd": "3.02",
-          "p0": "1",
-          "p25": "1",
-          "p50": "3",
-          "p75": "6",
-          "p100": "11",
-          "hist": "<U+2587><U+2585><U+2581><U+2582><U+2581><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Origin",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "1.57",
-          "sd": "1.52",
-          "p0": "1",
           "p25": "1",
           "p50": "1",
           "p75": "1",
-          "p100": "8",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>",
+          "p100": "1",
+          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
           "@type": "http://formr.org/codebook/SummaryStatistics"
         }
       ],
@@ -3859,36 +821,13 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "name": "EPDS",
+      "Description": "Diagnosis of post-partum depression in the mother",
+      "name": "postpartum_depression",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
-          "mean": "7.93",
-          "sd": "5.03",
-          "p0": "2",
-          "p25": "4",
-          "p50": "6",
-          "p75": "11",
-          "p100": "24",
-          "hist": "<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "depreposparto",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "1.36",
           "sd": "0.49",
           "p0": "1",
@@ -3907,1455 +846,13 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "name": "StateCivilDIcotomica",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.59",
-          "sd": "0.5",
-          "p0": "0",
-          "p25": "0",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "EmploymentSituationDico",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.77",
-          "sd": "0.42",
-          "p0": "0",
-          "p25": "1",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PetDicotomica",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.36",
-          "sd": "0.49",
-          "p0": "0",
-          "p25": "0",
-          "p50": "0",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "Description": "The patient's nationality or country of origin at the time of pregnancy",
-      "name": "NationalityDicotomica",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.82",
-          "sd": "0.39",
-          "p0": "0",
-          "p25": "1",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PregnancyMethodDico",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.8",
-          "sd": "0.41",
-          "p0": "0",
-          "p25": "1",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PreviousMiscarriagesDico",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.25",
-          "sd": "0.44",
-          "p0": "0",
-          "p25": "0",
-          "p50": "0",
-          "p75": "0.25",
-          "p100": "1",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "WantedPregnancyDico",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.84",
-          "sd": "0.37",
-          "p0": "0",
-          "p25": "1",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Occupation123",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "2.2",
-          "sd": "0.88",
-          "p0": "1",
-          "p25": "1",
-          "p50": "2.5",
-          "p75": "3",
-          "p100": "3",
-          "hist": "<U+2585><U+2581><U+2581><U+2583><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "LNCORTISOL1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "5.25",
-          "sd": "0.75",
-          "p0": "3.95",
-          "p25": "4.72",
-          "p50": "5.27",
-          "p75": "5.64",
-          "p100": "7.41",
-          "hist": "<U+2583><U+2586><U+2583><U+2587><U+2582><U+2582><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "LNCORTISOL2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "5.4",
-          "sd": "0.47",
-          "p0": "4.36",
-          "p25": "5.11",
-          "p50": "5.42",
-          "p75": "5.71",
-          "p100": "6.46",
-          "hist": "<U+2582><U+2582><U+2587><U+2586><U+2587><U+2586><U+2582><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "LNCORTISOL3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "5.74",
-          "sd": "0.53",
-          "p0": "4.57",
-          "p25": "5.43",
-          "p50": "5.76",
-          "p75": "6.06",
-          "p100": "7.1",
-          "hist": "<U+2583><U+2582><U+2586><U+2587><U+2587><U+2585><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SexFetal",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.46",
-          "sd": "0.45",
-          "p0": "0",
-          "p25": "0",
-          "p50": "0.26",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2587><U+2583><U+2582><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PDQ1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "14.64",
-          "sd": "6.17",
-          "p0": "4",
-          "p25": "10",
-          "p50": "14",
-          "p75": "17.25",
-          "p100": "30",
-          "hist": "<U+2582><U+2586><U+2582><U+2587><U+2582><U+2581><U+2582><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PDQ2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "13.18",
-          "sd": "5.17",
-          "p0": "4",
-          "p25": "11",
-          "p50": "13",
-          "p75": "15.5",
-          "p100": "31",
-          "hist": "<U+2582><U+2582><U+2587><U+2582><U+2582><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PDQ3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "12.52",
-          "sd": "4.46",
-          "p0": "2",
-          "p25": "8",
-          "p50": "13",
-          "p75": "16",
-          "p100": "21",
-          "hist": "<U+2581><U+2581><U+2587><U+2583><U+2586><U+2586><U+2585><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "EEP1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "26.3",
-          "sd": "2.13",
-          "p0": "22",
-          "p25": "25",
-          "p50": "26",
-          "p75": "27",
-          "p100": "31",
-          "hist": "<U+2583><U+2582><U+2587><U+2586><U+2587><U+2583><U+2581><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "EEP2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "26.77",
-          "sd": "1.43",
-          "p0": "24",
-          "p25": "26",
-          "p50": "27",
-          "p75": "28",
-          "p100": "29",
-          "hist": "<U+2581><U+2583><U+2581><U+2587><U+2586><U+2581><U+2585><U+2585>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "EEP3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "27.2",
-          "sd": "1.53",
-          "p0": "24",
-          "p25": "26",
-          "p50": "27",
-          "p75": "28",
-          "p100": "30",
-          "hist": "<U+2581><U+2583><U+2586><U+2587><U+2581><U+2586><U+2583><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SOMATIZATIONS1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "62.06",
-          "sd": "24.65",
-          "p0": "5",
-          "p25": "50",
-          "p50": "65",
-          "p75": "80",
-          "p100": "97",
-          "hist": "<U+2583><U+2581><U+2582><U+2583><U+2585><U+2587><U+2583><U+2586>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "OBSESSIONS.AND.COMPULSIONS1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "57.25",
-          "sd": "23.73",
-          "p0": "5",
-          "p25": "46.97",
-          "p50": "52.39",
-          "p75": "68.36",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2582><U+2587><U+2585><U+2583><U+2581><U+2585>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SENSITIVIDADINTERPERSONAL1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "42.65",
-          "sd": "22.43",
-          "p0": "5",
-          "p25": "35.37",
-          "p50": "43.13",
-          "p75": "50.25",
-          "p100": "99",
-          "hist": "<U+2583><U+2582><U+2586><U+2587><U+2582><U+2582><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "DEPRESSION1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "43.49",
-          "sd": "21.44",
-          "p0": "5",
-          "p25": "33.75",
-          "p50": "40.28",
-          "p75": "48.71",
-          "p100": "97",
-          "hist": "<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "ANXIETY1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "56.59",
-          "sd": "24.87",
-          "p0": "5",
-          "p25": "47.75",
-          "p50": "55.94",
-          "p75": "71.25",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2582><U+2583><U+2587><U+2582><U+2582><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "HOSTILIDAD1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "52.46",
-          "sd": "20.77",
-          "p0": "5",
-          "p25": "47.25",
-          "p50": "51.01",
-          "p75": "60",
-          "p100": "95",
-          "hist": "<U+2582><U+2581><U+2582><U+2585><U+2587><U+2581><U+2581><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "ANSIEDADFOBICA1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "72.45",
-          "sd": "17.99",
-          "p0": "5",
-          "p25": "65.08",
-          "p50": "74.83",
-          "p75": "85",
-          "p100": "99",
-          "hist": "<U+2581><U+2581><U+2581><U+2582><U+2583><U+2587><U+2587><U+2585>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "IDEACIÃ.NPARANOIDE1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "62.68",
-          "sd": "24.52",
-          "p0": "5",
-          "p25": "57.89",
-          "p50": "64.58",
-          "p75": "72.5",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2587><U+2586><U+2582><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PSICOTICISMO1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "70.3",
-          "sd": "19.08",
-          "p0": "5",
-          "p25": "64.76",
-          "p50": "73.29",
-          "p75": "81.25",
-          "p100": "99",
-          "hist": "<U+2581><U+2581><U+2581><U+2582><U+2582><U+2587><U+2587><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "IGS1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "55.09",
-          "sd": "23.26",
-          "p0": "5",
-          "p25": "45.28",
-          "p50": "54.08",
-          "p75": "66.25",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2582><U+2587><U+2587><U+2582><U+2581><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SP1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "56.07",
-          "sd": "23.39",
-          "p0": "5",
-          "p25": "48",
-          "p50": "55.57",
-          "p75": "63.96",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2582><U+2586><U+2587><U+2581><U+2582><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PSDI1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "49.8",
-          "sd": "23.57",
-          "p0": "5",
-          "p25": "35",
-          "p50": "49.93",
-          "p75": "60",
-          "p100": "97",
-          "hist": "<U+2583><U+2582><U+2582><U+2587><U+2585><U+2582><U+2582><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SOMATIZATIONS2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "47.01",
-          "sd": "20.12",
-          "p0": "10",
-          "p25": "40",
-          "p50": "45.99",
-          "p75": "50",
-          "p100": "95",
-          "hist": "<U+2582><U+2582><U+2581><U+2587><U+2581><U+2581><U+2582><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "OBSESSIONS.AND.COMPULSIONS2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "57.73",
-          "sd": "23.49",
-          "p0": "5",
-          "p25": "45",
-          "p50": "56.63",
-          "p75": "75",
-          "p100": "97",
-          "hist": "<U+2581><U+2582><U+2581><U+2585><U+2587><U+2581><U+2583><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "INSTRUMENT.SENSITIVITY2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "45.67",
-          "sd": "20.33",
-          "p0": "5",
-          "p25": "35",
-          "p50": "45",
-          "p75": "55",
-          "p100": "97",
-          "hist": "<U+2581><U+2582><U+2582><U+2587><U+2582><U+2581><U+2582><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "DEPRESSION2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "36.33",
-          "sd": "22.03",
-          "p0": "5",
-          "p25": "24.03",
-          "p50": "30.75",
-          "p75": "43.14",
-          "p100": "90",
-          "hist": "<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "ANXIETY2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "48.52",
-          "sd": "24.37",
-          "p0": "5",
-          "p25": "30",
-          "p50": "47.03",
-          "p75": "60",
-          "p100": "95",
-          "hist": "<U+2583><U+2582><U+2582><U+2587><U+2583><U+2581><U+2581><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "HOSTILITY2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "42.35",
-          "sd": "23.52",
-          "p0": "5",
-          "p25": "35.28",
-          "p50": "40.15",
-          "p75": "60",
-          "p100": "90",
-          "hist": "<U+2585><U+2581><U+2582><U+2587><U+2582><U+2583><U+2581><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "ANSIEDADFOBICA2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "62.92",
-          "sd": "21.44",
-          "p0": "5",
-          "p25": "57.23",
-          "p50": "60",
-          "p75": "77.75",
-          "p100": "98",
-          "hist": "<U+2582><U+2581><U+2581><U+2582><U+2587><U+2583><U+2583><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "IDEACIÃ.NPARANOIDE2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "56.5",
-          "sd": "23.03",
-          "p0": "5",
-          "p25": "50.54",
-          "p50": "57.41",
-          "p75": "70",
-          "p100": "97",
-          "hist": "<U+2582><U+2581><U+2581><U+2582><U+2587><U+2582><U+2582><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PSICOTICISMO2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "61.91",
-          "sd": "21.51",
-          "p0": "5",
-          "p25": "57.25",
-          "p50": "61.7",
-          "p75": "80",
-          "p100": "99",
-          "hist": "<U+2581><U+2582><U+2581><U+2583><U+2587><U+2585><U+2585><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "IGS2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "47.4",
-          "sd": "24.24",
-          "p0": "5",
-          "p25": "36.31",
-          "p50": "44.78",
-          "p75": "56.25",
-          "p100": "97",
-          "hist": "<U+2582><U+2582><U+2582><U+2587><U+2582><U+2581><U+2581><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SP2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "50.43",
-          "sd": "24.32",
-          "p0": "5",
-          "p25": "38.75",
-          "p50": "48",
-          "p75": "55",
-          "p100": "98",
-          "hist": "<U+2582><U+2582><U+2582><U+2587><U+2583><U+2581><U+2582><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PSDI2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "40.11",
-          "sd": "21.51",
-          "p0": "5",
-          "p25": "28.75",
-          "p50": "39.67",
-          "p75": "50",
-          "p100": "85",
-          "hist": "<U+2585><U+2583><U+2586><U+2587><U+2585><U+2582><U+2582><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SOMATIZATIONS3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "55.59",
-          "sd": "24.42",
-          "p0": "15",
-          "p25": "35",
-          "p50": "55.46",
-          "p75": "80",
-          "p100": "97",
-          "hist": "<U+2587><U+2582><U+2583><U+2586><U+2583><U+2583><U+2586><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "OBSESSIONS.AND.COMPULSIONS3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "67.85",
-          "sd": "28.95",
-          "p0": "5",
-          "p25": "50",
-          "p50": "77.78",
-          "p75": "90",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2582><U+2581><U+2581><U+2583><U+2583><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "INSTRUMENT.SENSITIVITY3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "53.67",
-          "sd": "29.26",
-          "p0": "5",
-          "p25": "31.25",
-          "p50": "54.59",
-          "p75": "81.25",
-          "p100": "97",
-          "hist": "<U+2585><U+2585><U+2582><U+2585><U+2586><U+2582><U+2585><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "DEPRESSION3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "49.82",
-          "sd": "26.46",
-          "p0": "5",
-          "p25": "28.75",
-          "p50": "51.95",
-          "p75": "66.25",
-          "p100": "97",
-          "hist": "<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "ANXIETY3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "59.47",
-          "sd": "26.57",
-          "p0": "5",
-          "p25": "45",
-          "p50": "61.32",
-          "p75": "80",
-          "p100": "95",
-          "hist": "<U+2583><U+2582><U+2581><U+2583><U+2586><U+2583><U+2586><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "HOSTILIDAD3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "49.12",
-          "sd": "29.71",
-          "p0": "5",
-          "p25": "35",
-          "p50": "45.27",
-          "p75": "72.5",
-          "p100": "95",
-          "hist": "<U+2587><U+2581><U+2583><U+2587><U+2583><U+2583><U+2582><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "ANSIEDADFOBICA3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "72.67",
-          "sd": "27.34",
-          "p0": "5",
-          "p25": "63.09",
-          "p50": "80",
-          "p75": "91.25",
-          "p100": "99",
-          "hist": "<U+2582><U+2581><U+2581><U+2583><U+2581><U+2582><U+2585><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "IDEACIÃ.NPARANOIDE3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "65.94",
-          "sd": "26.9",
-          "p0": "5",
-          "p25": "56.75",
-          "p50": "70",
-          "p75": "86.25",
-          "p100": "97",
-          "hist": "<U+2583><U+2581><U+2582><U+2583><U+2585><U+2586><U+2586><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PSICOTICISMO3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "67.49",
-          "sd": "28.83",
-          "p0": "5",
-          "p25": "56.25",
-          "p50": "70",
-          "p75": "91.25",
-          "p100": "99",
-          "hist": "<U+2583><U+2581><U+2581><U+2582><U+2582><U+2585><U+2583><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "IGS3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "60.29",
-          "sd": "29.26",
-          "p0": "5",
-          "p25": "35",
-          "p50": "63.46",
-          "p75": "90",
-          "p100": "97",
-          "hist": "<U+2583><U+2581><U+2583><U+2583><U+2583><U+2582><U+2583><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SP3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "58.42",
-          "sd": "29.84",
-          "p0": "5",
-          "p25": "35",
-          "p50": "57.5",
-          "p75": "85",
-          "p100": "99",
-          "hist": "<U+2583><U+2583><U+2583><U+2583><U+2583><U+2582><U+2586><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "PSDI3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "47.21",
-          "sd": "19.79",
-          "p0": "5",
-          "p25": "35",
-          "p50": "48",
-          "p75": "58.5",
-          "p100": "85",
-          "hist": "<U+2582><U+2582><U+2582><U+2585><U+2587><U+2582><U+2583><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "SexFetalDico",
-      "data_summary": [
-        {
-          "missing": "0",
-          "complete": "73",
-          "n": "73",
-          "mean": "0.23",
-          "sd": "0.43",
-          "p0": "0",
-          "p25": "0",
-          "p50": "0",
-          "p75": "0",
-          "p100": "1",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Cortisol1",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "261.51",
-          "sd": "277.67",
-          "p0": "51.68",
-          "p25": "112.2",
-          "p50": "194.5",
-          "p75": "281.43",
-          "p100": "1649",
-          "hist": "<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Cortisol2",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "246.8",
-          "sd": "119.54",
-          "p0": "78.64",
-          "p25": "165.53",
-          "p50": "225",
-          "p75": "302.57",
-          "p100": "636.1",
-          "hist": "<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "Cortisol3",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "356.65",
-          "sd": "199.54",
-          "p0": "96.5",
-          "p25": "228.01",
-          "p50": "316.3",
-          "p75": "429.1",
-          "p100": "1213",
-          "hist": "<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "Description": "The age of the mother",
-      "name": "age",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "32.41",
-          "sd": "3.88",
-          "p0": "24",
-          "p25": "30",
-          "p50": "32",
-          "p75": "36",
-          "p100": "39",
-          "hist": "<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
-      "name": "nationality",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "0.82",
-          "sd": "0.39",
-          "p0": "0",
-          "p25": "1",
-          "p50": "1",
-          "p75": "1",
-          "p100": "1",
-          "hist": "<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
       "Description": "Employment situation; is or is not employed at time of pregnancy",
       "name": "employed",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.77",
           "sd": "0.42",
           "p0": "0",
@@ -5378,9 +875,9 @@ Table: Table continues below
       "name": "occupation",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "4.66",
           "sd": "3.24",
           "p0": "1",
@@ -5399,38 +896,13 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "Description": "The highest level of education that the mother had received at the time of pregnancy/study",
-      "name": "education_level",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "2.75",
-          "sd": "0.49",
-          "p0": "1",
-          "p25": "3",
-          "p50": "3",
-          "p75": "3",
-          "p100": "3",
-          "hist": "<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
       "Description": "tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]",
       "name": "sport",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.59",
           "sd": "0.5",
           "p0": "0",
@@ -5453,9 +925,9 @@ Table: Table continues below
       "name": "pet",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.36",
           "sd": "0.49",
           "p0": "0",
@@ -5478,9 +950,9 @@ Table: Table continues below
       "name": "dyed_hair",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.43",
           "sd": "0.5",
           "p0": "0",
@@ -5503,9 +975,9 @@ Table: Table continues below
       "name": "first_pregnancy",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.64",
           "sd": "0.49",
           "p0": "0",
@@ -5528,9 +1000,9 @@ Table: Table continues below
       "name": "wanted_pregnancy",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.84",
           "sd": "0.37",
           "p0": "0",
@@ -5553,9 +1025,9 @@ Table: Table continues below
       "name": "pregnancy_method",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.8",
           "sd": "0.41",
           "p0": "0",
@@ -5578,9 +1050,9 @@ Table: Table continues below
       "name": "previous_miscarriage",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "0.25",
           "sd": "0.44",
           "p0": "0",
@@ -5604,16 +1076,16 @@ Table: Table continues below
       "data_summary": [
         {
           "missing": "0",
-          "complete": "73",
-          "n": "73",
-          "mean": "0.23",
-          "sd": "0.43",
+          "complete": "44",
+          "n": "44",
+          "mean": "0.39",
+          "sd": "0.49",
           "p0": "0",
           "p25": "0",
           "p50": "0",
-          "p75": "0",
+          "p75": "1",
           "p100": "1",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>",
+          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>",
           "@type": "http://formr.org/codebook/SummaryStatistics"
         }
       ],
@@ -5624,21 +1096,21 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "Description": "Diagnosis of post-partum depression in the mother",
-      "name": "postpartum_depression",
+      "Description": "continuous metric of postnatal depression",
+      "name": "epds",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
-          "mean": "1.36",
-          "sd": "0.49",
-          "p0": "1",
-          "p25": "1",
-          "p50": "1",
-          "p75": "2",
-          "p100": "2",
-          "hist": "<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>",
+          "n": "44",
+          "mean": "7.93",
+          "sd": "5.03",
+          "p0": "2",
+          "p25": "4",
+          "p50": "6",
+          "p75": "11",
+          "p100": "24",
+          "hist": "<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>",
           "@type": "http://formr.org/codebook/SummaryStatistics"
         }
       ],
@@ -5653,9 +1125,9 @@ Table: Table continues below
       "name": "depression_tri1",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "43.49",
           "sd": "21.44",
           "p0": "5",
@@ -5678,9 +1150,9 @@ Table: Table continues below
       "name": "depression_tri2",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "36.33",
           "sd": "22.03",
           "p0": "5",
@@ -5703,9 +1175,9 @@ Table: Table continues below
       "name": "depression_tri3",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "49.82",
           "sd": "26.46",
           "p0": "5",
@@ -5724,38 +1196,13 @@ Table: Table continues below
       "@type": "propertyValue"
     },
     {
-      "Description": "continuous metric of postnatal depression",
-      "name": "epds",
-      "data_summary": [
-        {
-          "missing": "29",
-          "complete": "44",
-          "n": "73",
-          "mean": "7.93",
-          "sd": "5.03",
-          "p0": "2",
-          "p25": "4",
-          "p50": "6",
-          "p75": "11",
-          "p100": "24",
-          "hist": "<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>",
-          "@type": "http://formr.org/codebook/SummaryStatistics"
-        }
-      ],
-      "value": "Number",
-      "@context": {
-        "@vocab": "http://pending.schema.org/"
-      },
-      "@type": "propertyValue"
-    },
-    {
       "Description": "Cortisol levels in mothers during pregnancy during the 1st trimester",
       "name": "cortisol_tri1",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "261.51",
           "sd": "277.67",
           "p0": "51.68",
@@ -5778,9 +1225,9 @@ Table: Table continues below
       "name": "cortisol_tri2",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "246.8",
           "sd": "119.54",
           "p0": "78.64",
@@ -5803,9 +1250,9 @@ Table: Table continues below
       "name": "cortisol_tri3",
       "data_summary": [
         {
-          "missing": "29",
+          "missing": "0",
           "complete": "44",
-          "n": "73",
+          "n": "44",
           "mean": "356.65",
           "sd": "199.54",
           "p0": "96.5",
