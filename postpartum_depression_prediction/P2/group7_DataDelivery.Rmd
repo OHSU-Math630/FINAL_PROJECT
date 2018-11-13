@@ -2,7 +2,16 @@
 title: "Data_Delivery"
 author: "Nathaniel Evans, Win-Chun Lin, Alfonso Poire"
 date: "November 11, 2018"
-output: html_document
+output: 
+  html_document: 
+    theme: flatly 
+    highlight: kate
+    toc: true
+    toc_depth: 2
+    toc_float : true
+    smooth_scroll: true
+    #number_sections : true
+  
 ---
 
 ```{r setup, include=FALSE}
@@ -17,9 +26,9 @@ library(knitr)
 library(rmarkdown)
 ```
 
-# MATH 630 GROUP PROJECT
+#Overview
 ## PART 2 : DATA DELIVERY 
-### GROUP 7 : Nate Evans, Win-Chun Lin, Alfonso Poire 
+
 ### PAPER: [Hair cortisol levels, psychological stress and psychopathological symptoms as predictors of postpartum depression](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182817) 
 ### DATA: [sav file](https://figshare.com/articles/PPD_hairCortisol_PlosOne_sav/5255848/1) 
 ### TIDY DATA: [csv file](./../../data/tidy_daya.csv)
@@ -34,7 +43,7 @@ library(rmarkdown)
 
 
 #Generating a tidy dataset 
-#### The first step we took to produce a tidy dataset was to translate the variable names from english to spanish, to do this, we first attempted a programatic method; Using the google translate API, each variable name was attempted to translate from Spanish to English. 
+## importing data, converting to csv 
 
 ```{r import data, convert to csv}
 path = "./../../data/PPD_hairCortisol_PlosOne_.sav"
@@ -43,6 +52,9 @@ dataset= read_sav(path) #meta data dropped?
 
 write.csv(dataset, file = "./../../data/data_span.csv")
 ```
+
+## Programatic Translation
+#### The first step we took to produce a tidy dataset was to translate the variable names from english to spanish, to do this, we first attempted a programatic method; Using the google translate API, each variable name was attempted to translate from Spanish to English. 
 
 ```{python}
 import googletrans as gt 
@@ -68,14 +80,18 @@ data.to_csv( "./../../data/data_eng.csv" )
 [english csv](./../../data/data_eng.csv)  
 [translation mapping](./../../data/data_programatic_translation.csv)
 
-### ALL VARIABLES WE NEED TO INCLUDE IN OUR DATASET
+
+## VARIABLES TO INCLUDE
 #### These listed variables are those required to reproduce the paper plots or extend the study. 
 
 ![Paper Variables](https://journals.plos.org/plosone/article/figure/image?size=large&id=info:doi/10.1371/journal.pone.0182817.t001) 
 
-###We will try to manually review, translate and generate a [codebook](https://cran.r-project.org/web/packages/codebook/codebook.pdf) (Good tutorial: [github](https://github.com/rubenarslan/codebook)) in the following steps. 
+##Data Cleaning
+###We will try to manually review, translate and generate a [codebook](https://cran.r-project.org/web/packages/codebook/codebook.pdf) (Good [tutorial](https://github.com/rubenarslan/codebook)) in the following steps. 
 
-## ALL of our raw data are numerics, where is the codebook mapping categorical -> numeric ??? like 'profession' 
+#### ALL of our raw data are numerics, there is codebook mapping categorical -> numeric in __some__ of the variables if the .sav file is interograted from SPSS. We have tried to include as much of this information as possible, but the meta data was dropped when the sav file is imported into R, so much was lost. 
+
+#### Summary: dropped na rows (29), renamed variables and added attribute 'Description' which can be found in the **summary statistics** tab of our codebook. 
 
 ```{r} 
 df = read.csv("./../../data/data_eng.csv", header = TRUE)
@@ -171,7 +187,10 @@ save(df_tidy, file='./../../data/tidy_data.Rdata') # this way we can always load
 
 ```
 
-## The tidy dataset can be found in the data directory, linked [here](./../../data/tidy_data.csv)
+## Tidy Data
+### The tidy dataset can be found in the data directory, linked [here](./../../data/tidy_data.csv)
+
+## Producing Codebook
 
 ```{r}
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE) #this has to go before the codebook() call, make sure echo=FALSE is included. 
