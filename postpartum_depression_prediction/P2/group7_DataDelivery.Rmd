@@ -41,7 +41,6 @@ library(rmarkdown)
 3. A code book describing each variable and its values in the tidy data set. [do this for all variables that will be part of your replication analyses] <span style="color: red"> This is in the form of a knitted html file, which can be found in the native file structure linked above or uploaded to sakai </span>
 4. An explicit and exact recipe you used to go from 1 -> 2,3.  <span style="color: red"> This rmd script serves as the recipe from 1 -> 2,3 </span>
 
-
 #Generating a tidy dataset 
 ## importing data, converting to csv 
 
@@ -154,7 +153,7 @@ attr(df$fetus_sex, "Description") <- 'the sex of the fetus' # numeric mapping ??
 # -------- DEPRESSION METRICS 
 
 df <- df %>% mutate('postpartum_depression' = depreposparto)
-attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother" ### ???? more?
+attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother" ### ???? more ?
 
 
 df <- df %>% mutate('depression_tri1' = DEPRESSION1)
@@ -190,11 +189,85 @@ save(df_tidy, file='./../../data/tidy_data.Rdata') # this way we can always load
 ## Tidy Data
 ### The tidy dataset can be found in the data directory, linked [here](./../../data/tidy_data.csv)
 
-## Producing Codebook
 
+
+
+
+
+## Producing Codebook
+### Adding information attribute to our tidy data to map numerics to categoricals
 ```{r}
+
+numeric_mapping <- 'Primer embarazo / First Pregnancy:
+0 = No
+1 = Yes
+
+Tipo Embarazo / Pregnancy Method:
+1 = spontaneously and normally
+2 = in vitro fertilization
+3 = artificial insemination
+
+Nivel Estudios / level of education
+1 = primary
+2 = secondary
+3 = university students
+4 = without studies
+
+Laboral / employee situation
+1 = unemployed
+2 = full-time job
+3 = half-day job
+4 = student
+5 = work and study
+
+Aspecto Pelo/ Hair Appearance
+0 = dyed
+1 = natural
+
+Deporte / Sport
+0 = No
+1 = Yes
+
+Profesión / Profession
+1 = unemployment
+2 = Head of nurse
+3 = Doctor
+4 = Nurse
+5 = housewife
+6 = teacher
+7 = management
+8 = dental clinic
+9 = banking
+10 = untrained
+11 = psychologist
+12 = engineer
+
+Origen / Nationality
+1 = Spain
+2 = Argentina
+3 = Chile
+4 = Morocco
+5 = Romania
+6 = Germany
+7 = Russia
+8 = Ecuador
+9 = Peru
+10 = Paraguay
+
+depreposparto / depress post partum
+1 = sindepre?
+2 = condepre?'
+
+attr(df_tidy, 'numeric mapping information') <- numeric_mapping
+
+```
+
+### Generate a knitted codebook
+```{r}
+df_tmp <- detect_scales(df_tidy) # loook for scalings between variables
+
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = FALSE) #this has to go before the codebook() call, make sure echo=FALSE is included. 
-my_codebook <- codebook(df_tidy) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
+my_codebook <- codebook(df_tmp) #my_codebook # (TAKES FOREVER TO KNIT) This will produce a codebook, but we need to have this knitted in it's own html file and not echo the code chunks... 
 knitr::opts_chunk$set(warning = TRUE, message = TRUE, echo = TRUE)
 
 fh<-file("tmp.Rmd")
