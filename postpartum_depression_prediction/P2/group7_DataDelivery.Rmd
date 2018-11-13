@@ -124,21 +124,45 @@ attr(df$nationality, 'numeric_mapping') <- "1 = Spain
 
 df <- df %>% mutate('employed' = EmploymentSituationDico)
 attr(df$employed, 'Description') <- "Employment situation; is or is not employed at time of pregnancy"
-
+attr(df$employed,"numeric_mapping")<-"1 = unemployed
+2 = full-time job
+3 = half-day job
+4 = student
+5 = work and study"
 df <- df %>% mutate('occupation' = Profession)
 attr(df$occupation, "Description") <- 'If employed, what was the mothers occupation at the time of pregnancy' 
+attr(df$occupation,'numeeric_mapping')<-'1 = unemployment
+2 = Head of nurse
+3 = Doctor
+4 = Nurse
+5 = housewife
+6 = teacher
+7 = management
+8 = dental clinic
+9 = banking
+10 = untrained
+11 = psychologist
+12 = engineer'
 
 df <- df %>% mutate("education_level" = Level_Studies) 
 attr(df$education_level, 'Description') <- "The highest level of education that the mother had received at the time of pregnancy/study"
-
+attr(df$education_level,'numeric_mapping')<-"1 = primary
+2 = secondary
+3 = university students
+4 = without studies
+"
 df <- df %>% mutate('sport' = Sport)
 attr(df$sport, 'Description') <- 'tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]' # ???
-
+attr(df$sport,'Numeric_mapping')<-'0 = No
+1 = Yes'
 df <- df %>% mutate('pet' = PetDicotomica)
 attr(df$pet, 'Description') <- 'designation for mothers with pets at time of pregnancy' 
 
 df <- df %>% mutate('dyed_hair' = Appearance)
-attr(df$dyed_hair, "Description") <- 'designation for mothers with dyed hair during pregnancy'  # I THINK this is right, need to check
+attr(df$dyed_hair, "Description") <- 'designation for mothers with dyed hair during pregnancy' 
+attr(df$dyed_hair,"numeric_mapping")<-"0 = dyed
+1 = natural"
+# I THINK this is right, need to check
 
 df <- df %>% mutate('first_pregnancy' = FirstPregnancy)
 attr(df$first_pregnancy, 'Description') <- 'primiparous; designation for mothers who are having a child for the first time'
@@ -148,7 +172,12 @@ attr(df$wanted_pregnancy, 'Description') <- 'Designation for mothers who desired
 
 
 df <- df %>% mutate('pregnancy_method' = PregnancyMethodDico)
-attr(df$pregnancy_method, 'Description') <- 'designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination' # PC term? also, lol on "spontaneous" 
+attr(df$pregnancy_method, 'Description') <- 'designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination'
+attr(df$pregnancy_method, 'numeric_maping')<-'1 = spontaneously and normally
+2 = in vitro fertilization
+3 = artificial insemination'
+
+# PC term? also, lol on "spontaneous" 
 
 df <- df %>% mutate('previous_miscarriage' = PreviousMiscarriagesDico)
 attr(df$previous_miscarriage, 'Description') <- 'Designation for mothers who have had a miscarriage prior to the current pregnancy' 
@@ -163,7 +192,9 @@ attr(df$fetus_sex, "Description") <- 'the sex of the fetus' # numeric mapping ??
 # -------- DEPRESSION METRICS 
 
 df <- df %>% mutate('postpartum_depression' = depreposparto)
-attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother" ### ???? more ?
+attr(df$postpartum_depression, 'Description') <- "Diagnosis of post-partum depression in the mother"
+attr(df$postpartum_depression,'numeric_mapping')<-'1 = sindepre?
+2 = condepre?'### ???? more ?
 
 
 df <- df %>% mutate('depression_tri1' = DEPRESSION1)
@@ -177,7 +208,7 @@ df <- df %>% mutate('epds' = EPDS)
 attr(df$epds, 'Description') <- 'continuous metric of postnatal depression'  #measurement name, type? 
 
 # --------- CORTISOL metrics 
-
+#the data set also contains a ln cortosol metic that is a log naturalised version of the normal cortosol metric
 df <- df %>% mutate('cortisol_tri1' = Cortisol1) #WHAT IS LNCORTISOL1 ????? - Two metrics for coritsol??
 df <- df %>% mutate('cortisol_tri2' = Cortisol2)
 df <- df %>% mutate('cortisol_tri3' = Cortisol3)
@@ -187,7 +218,7 @@ attr(df$cortisol_tri3, 'Description') <- 'Cortisol levels in mothers during preg
 
 # ---------- SELECT 
 
-df_tidy <- df %>% select(age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport, pet, dyed_hair, first_pregnancy, wanted_pregnancy, pregnancy_method, previous_miscarriage, fetus_sex, epds, depression_tri1, depression_tri2, depression_tri3, cortisol_tri1, cortisol_tri2, cortisol_tri3 )
+df_tidy <- df %>% select(age, education_level, nationality, postpartum_depression, employed, occupation, sport, sport, pet, dyed_hair, first_pregnancy, wanted_pregnancy, pregnancy_method, previous_miscarriage, fetus_sex, epds, depression_tri1, depression_tri2, depression_tri3, cortisol_tri1, cortisol_tri2, cortisol_tri3)
 
 #glimpse(df_tidy)
 
