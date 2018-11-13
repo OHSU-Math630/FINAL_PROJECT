@@ -108,7 +108,17 @@ df <- df %>% mutate('age' = Age)
 attr(df$age, "Description") <- "The age of the mother"
 
 df <- df %>% mutate("nationality" = NationalityDicotomica)
-attr(df$NationalityDicotomica, 'Description') <- "The patient's nationality or country of origin at the time of pregnancy"
+attr(df$nationality, 'Description') <- "The patient's nationality or country of origin at the time of pregnancy"
+attr(df$nationality, 'numeric_mapping') <- "1 = Spain
+2 = Argentina
+3 = Chile
+4 = Morocco
+5 = Romania
+6 = Germany
+7 = Russia
+8 = Ecuador
+9 = Peru
+10 = Paraguay"
 
 #df <- df %>% mutate('Marital_Status' = ) # CANT FIND THIS ONE
 
