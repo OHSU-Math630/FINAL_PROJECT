@@ -124,6 +124,17 @@ $(document).ready(function () {
 </div>
 
 
+<div id="numeric-mapping" class="section level1">
+<h1>Numeric Mapping</h1>
+<p>Primer embarazo / First Pregnancy: 0 = No 1 = Yes</p>
+<p>Tipo Embarazo / Pregnancy Method: 1 = spontaneously and normally 2 = in vitro fertilization 3 = artificial insemination</p>
+<p>Nivel Estudios / level of education 1 = primary 2 = secondary 3 = university students 4 = without studies</p>
+<p>Laboral / employee situation 1 = unemployed 2 = full-time job 3 = half-day job 4 = student 5 = work and study</p>
+<p>Aspecto Pelo/ Hair Appearance 0 = dyed 1 = natural</p>
+<p>Deporte / Sport 0 = No 1 = Yes</p>
+<p>Profesión / Profession 1 = unemployment 2 = Head of nurse 3 = Doctor 4 = Nurse 5 = housewife 6 = teacher 7 = management 8 = dental clinic 9 = banking 10 = untrained 11 = psychologist 12 = engineer</p>
+<p>Origen / Nationality 1 = Spain 2 = Argentina 3 = Chile 4 = Morocco 5 = Romania 6 = Germany 7 = Russia 8 = Ecuador 9 = Peru 10 = Paraguay</p>
+<p>depreposparto / depress post partum 1 = sindepre? 2 = condepre?</p>
 <div id="items" class="section level2">
 <h2>Items</h2>
 <div id="age" class="section level3 tabset">
@@ -151,7 +162,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -200,7 +211,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -218,7 +229,71 @@ $(document).ready(function () {
 <td align="left">3</td>
 <td align="left">3</td>
 <td align="left"><U+2581>&lt;U+</td>
-<td align="left">2581&gt;<U+2581><U+2582><U+2581><U+2581><U+2581><U+2587> The highest level of education that the mother had received at the time of pregnancy/study</td>
+<td align="left">2581&gt;<U+2581><U+2582><U+2581><U+2581><U+2581><U+2587> The highest level of education that the mother had received at the time of pregnancy/study :</td>
+</tr>
+<tr class="even">
+<td align="left">1 = primary</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">2 = secondary</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">3 = university stu</td>
+<td align="left">dents</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">4 = without studie</td>
+<td align="left">s</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -249,6 +324,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -265,7 +341,24 @@ $(document).ready(function () {
 <td align="left">1</td>
 <td align="left">1</td>
 <td align="left">1</td>
-<td align="left"><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587></td>
+<td align="left"><U+2582>&lt;U+</td>
+<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> The patient’s nationality or country of origin at the time of pregnancy</td>
+</tr>
+<tr class="even">
+<td align="left">[1 = Spain, 2</td>
+<td align="left">= Argentina,</td>
+<td align="left">3 = Chile</td>
+<td align="left">, 4 = Moroc</td>
+<td align="left">co, 5</td>
+<td align="left">= Roma</td>
+<td align="left">nia, 6</td>
+<td align="left">= Ger</td>
+<td align="left">many,</td>
+<td align="left">7 = Ru</td>
+<td align="left">ssia,</td>
+<td align="left">8 = Ecu</td>
+<td align="left">ador, 9 = P</td>
+<td align="left">eru, 10 = Paraguay]</td>
 </tr>
 </tbody>
 </table>
@@ -296,7 +389,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -314,7 +407,39 @@ $(document).ready(function () {
 <td align="left">2</td>
 <td align="left">2</td>
 <td align="left"><U+2587>&lt;U+</td>
-<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2585> Diagnosis of post-partum depression in the mother</td>
+<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2585> Diagnosis of post-partum depression in the mother:</td>
+</tr>
+<tr class="even">
+<td align="left">1 = sindepre?</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">2 = condepre?</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -345,7 +470,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -363,7 +488,7 @@ $(document).ready(function () {
 <td align="left">1</td>
 <td align="left">1</td>
 <td align="left"><U+2582>&lt;U+</td>
-<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> Employment situation; is or is not employed at time of pregnancy</td>
+<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> Employment situation; is or is not employed at time of pregnancy [1 = unemployed, 2 = full-time job, 3 = half-day job, 4 = student, 5 = work and study</td>
 </tr>
 </tbody>
 </table>
@@ -394,7 +519,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -412,7 +537,7 @@ $(document).ready(function () {
 <td align="left">6.25</td>
 <td align="left">12</td>
 <td align="left"><U+2587>&lt;U+</td>
-<td align="left">2582&gt;<U+2582><U+2585><U+2582><U+2581><U+2583><U+2581> If employed, what was the mothers occupation at the time of pregnancy</td>
+<td align="left">2582&gt;<U+2582><U+2585><U+2582><U+2581><U+2583><U+2581> If employed, what was the mothers occupation at the time of pregnancy [1 = unemployment, 2 = Head of nurse, 3 = Doctor, 4 = Nurse, 5 = housewife, 6 = teacher, 7 = management, 8 = dental clinic, 9 = banking, 10 = untrained, 11 = psychologist, 12 = engineer</td>
 </tr>
 </tbody>
 </table>
@@ -443,7 +568,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -461,7 +586,39 @@ $(document).ready(function () {
 <td align="left">1</td>
 <td align="left">1</td>
 <td align="left"><U+2586>&lt;U+</td>
-<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]</td>
+<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] :</td>
+</tr>
+<tr class="even">
+<td align="left">0 = No</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">1 = Yes</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -492,7 +649,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -541,7 +698,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -559,7 +716,39 @@ $(document).ready(function () {
 <td align="left">1</td>
 <td align="left">1</td>
 <td align="left"><U+2587>&lt;U+</td>
-<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2586> designation for mothers with dyed hair during pregnancy</td>
+<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2586> designation for mothers with dyed hair during pregnancy :</td>
+</tr>
+<tr class="even">
+<td align="left">0 = dyed</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">1 = natural</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -590,7 +779,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -639,7 +828,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -688,7 +877,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -706,7 +895,55 @@ $(document).ready(function () {
 <td align="left">1</td>
 <td align="left">1</td>
 <td align="left"><U+2582>&lt;U+</td>
-<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> designation for <em>spontaneous</em> method of fertilization and <em>Fertility Treatment</em> or artificial insemination</td>
+<td align="left">2581&gt;<U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> designation for <em>spontaneous</em> method of fertilization and <em>Fertility Treatment</em> or artificial insemination :</td>
+</tr>
+<tr class="even">
+<td align="left">1 = spontaneously a</td>
+<td align="left">nd normally</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">2 = in vitro fertil</td>
+<td align="left">ization</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">3 = artificial inse</td>
+<td align="left">mination</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -737,7 +974,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -786,7 +1023,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -835,7 +1072,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -884,7 +1121,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -933,7 +1170,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -982,7 +1219,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -1031,7 +1268,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -1080,7 +1317,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -1129,7 +1366,7 @@ $(document).ready(function () {
 <th align="left">p75</th>
 <th align="left">p100</th>
 <th align="left">hist</th>
-<th align="left">Description</th>
+<th align="left">shortDescription</th>
 </tr>
 </thead>
 <tbody>
@@ -1162,16 +1399,16 @@ $(document).ready(function () {
 </div>
 <div id="codebook-table" class="section level2">
 <h2>Codebook table</h2>
-<div id="htmlwidget-399211c9c825aa45de44" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-399211c9c825aa45de44">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#age\">age<\/a>","<a href=\"#education_level\">education_level<\/a>","<a href=\"#nationality\">nationality<\/a>","<a href=\"#postpartum_depression\">postpartum_depression<\/a>","<a href=\"#employed\">employed<\/a>","<a href=\"#occupation\">occupation<\/a>","<a href=\"#sport\">sport<\/a>","<a href=\"#pet\">pet<\/a>","<a href=\"#dyed_hair\">dyed_hair<\/a>","<a href=\"#first_pregnancy\">first_pregnancy<\/a>","<a href=\"#wanted_pregnancy\">wanted_pregnancy<\/a>","<a href=\"#pregnancy_method\">pregnancy_method<\/a>","<a href=\"#previous_miscarriage\">previous_miscarriage<\/a>","<a href=\"#fetus_sex\">fetus_sex<\/a>","<a href=\"#epds\">epds<\/a>","<a href=\"#depression_tri1\">depression_tri1<\/a>","<a href=\"#depression_tri2\">depression_tri2<\/a>","<a href=\"#depression_tri3\">depression_tri3<\/a>","<a href=\"#cortisol_tri1\">cortisol_tri1<\/a>","<a href=\"#cortisol_tri2\">cortisol_tri2<\/a>","<a href=\"#cortisol_tri3\">cortisol_tri3<\/a>"],["numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric"],["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],[" 32.41","  2.75","  0.82","  1.36","  0.77","  4.66","  0.59","  0.36","  0.43","  0.64","  0.84","  0.8 ","  0.25","0.39","  7.93"," 43.49"," 36.33"," 49.82","261.51","246.8 ","356.65"],["  3.88","  0.49","  0.39","  0.49","  0.42","  3.24","  0.5 ","  0.49","  0.5 ","  0.49","  0.37","  0.41","  0.44","0.49","  5.03"," 21.44"," 22.03"," 26.46","277.67","119.54","199.54"],["24   "," 1   "," 0   "," 1   "," 0   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   ","0"," 2   "," 5   "," 5   "," 5   ","51.68","78.64","96.5 "],[" 30   ","  3   ","  1   ","  1   ","  1   ","  1.75","  0   ","  0   ","  0   ","  0   ","  1   ","  1   ","  0   ","0","  4   "," 33.75"," 24.03"," 28.75","112.2 ","165.53","228.01"],[" 32   ","  3   ","  1   ","  1   ","  1   ","  4   ","  1   ","  0   ","  0   ","  1   ","  1   ","  1   ","  0   ","0","  6   "," 40.28"," 30.75"," 51.95","194.5 ","225   ","316.3 "],[" 36   ","  3   ","  1   ","  2   ","  1   ","  6.25","  1   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","1"," 11   "," 48.71"," 43.14"," 66.25","281.43","302.57","429.1 "],["  39  ","   3  ","   1  ","   2  ","   1  ","  12  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","1","  24  ","  97  ","  90  ","  97  ","1649  "," 636.1","1213  "],["<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>"],["The age of the mother","The highest level of education that the mother had received at the time of pregnancy/study",null,"Diagnosis of post-partum depression in the mother","Employment situation; is or is not employed at time of pregnancy","If employed, what was the mothers occupation at the time of pregnancy","tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]","designation for mothers with pets at time of pregnancy","designation for mothers with dyed hair during pregnancy","primiparous; designation for mothers who are having a child for the first time","Designation for mothers who desired the pregnancy (planned?)","designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination","Designation for mothers who have had a miscarriage prior to the current pregnancy","the sex of the fetus","continuous metric of postnatal depression","antenatal depression during the 1st trimester.","antenatal depression during the 2nd trimester.","antenatal depression during the 3rd trimester.","Cortisol levels in mothers during pregnancy during the 1st trimester","Cortisol levels in mothers during pregnancy during the 2nd trimester","Cortisol levels in mothers during pregnancy during the 3rd trimester"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>data_type<\/th>\n      <th>missing<\/th>\n      <th>complete<\/th>\n      <th>n<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>p0<\/th>\n      <th>p25<\/th>\n      <th>p50<\/th>\n      <th>p75<\/th>\n      <th>p100<\/th>\n      <th>hist<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-90078ff3c6d07bf9f940" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-90078ff3c6d07bf9f940">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#age\">age<\/a>","<a href=\"#education_level\">education_level<\/a>","<a href=\"#nationality\">nationality<\/a>","<a href=\"#postpartum_depression\">postpartum_depression<\/a>","<a href=\"#employed\">employed<\/a>","<a href=\"#occupation\">occupation<\/a>","<a href=\"#sport\">sport<\/a>","<a href=\"#pet\">pet<\/a>","<a href=\"#dyed_hair\">dyed_hair<\/a>","<a href=\"#first_pregnancy\">first_pregnancy<\/a>","<a href=\"#wanted_pregnancy\">wanted_pregnancy<\/a>","<a href=\"#pregnancy_method\">pregnancy_method<\/a>","<a href=\"#previous_miscarriage\">previous_miscarriage<\/a>","<a href=\"#fetus_sex\">fetus_sex<\/a>","<a href=\"#epds\">epds<\/a>","<a href=\"#depression_tri1\">depression_tri1<\/a>","<a href=\"#depression_tri2\">depression_tri2<\/a>","<a href=\"#depression_tri3\">depression_tri3<\/a>","<a href=\"#cortisol_tri1\">cortisol_tri1<\/a>","<a href=\"#cortisol_tri2\">cortisol_tri2<\/a>","<a href=\"#cortisol_tri3\">cortisol_tri3<\/a>"],["numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric"],["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],[" 32.41","  2.75","  0.82","  1.36","  0.77","  4.66","  0.59","  0.36","  0.43","  0.64","  0.84","  0.8 ","  0.25","0.39","  7.93"," 43.49"," 36.33"," 49.82","261.51","246.8 ","356.65"],["  3.88","  0.49","  0.39","  0.49","  0.42","  3.24","  0.5 ","  0.49","  0.5 ","  0.49","  0.37","  0.41","  0.44","0.49","  5.03"," 21.44"," 22.03"," 26.46","277.67","119.54","199.54"],["24   "," 1   "," 0   "," 1   "," 0   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   ","0"," 2   "," 5   "," 5   "," 5   ","51.68","78.64","96.5 "],[" 30   ","  3   ","  1   ","  1   ","  1   ","  1.75","  0   ","  0   ","  0   ","  0   ","  1   ","  1   ","  0   ","0","  4   "," 33.75"," 24.03"," 28.75","112.2 ","165.53","228.01"],[" 32   ","  3   ","  1   ","  1   ","  1   ","  4   ","  1   ","  0   ","  0   ","  1   ","  1   ","  1   ","  0   ","0","  6   "," 40.28"," 30.75"," 51.95","194.5 ","225   ","316.3 "],[" 36   ","  3   ","  1   ","  2   ","  1   ","  6.25","  1   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","1"," 11   "," 48.71"," 43.14"," 66.25","281.43","302.57","429.1 "],["  39  ","   3  ","   1  ","   2  ","   1  ","  12  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","1","  24  ","  97  ","  90  ","  97  ","1649  "," 636.1","1213  "],["<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>"],["The age of the mother","The highest level of education that the mother had received at the time of pregnancy/study :\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n","The patient's nationality or country of origin at the time of pregnancy\n[1 = Spain, 2 = Argentina, 3 = Chile, 4 = Morocco, 5 = Romania, 6 = Germany, 7 = Russia, 8 = Ecuador, 9 = Peru, 10 = Paraguay]","Diagnosis of post-partum depression in the mother: \n1 = sindepre?\n2 = condepre?","Employment situation; is or is not employed at time of pregnancy [1 = unemployed, 2 = full-time job, 3 = half-day job, 4 = student, 5 = work and study","If employed, what was the mothers occupation at the time of pregnancy [1 = unemployment, 2 = Head of nurse, 3 = Doctor, 4 = Nurse, 5 = housewife, 6 = teacher, 7 = management, 8 = dental clinic, 9 = banking, 10 = untrained, 11 = psychologist, 12 = engineer","tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] :\n0 = No\n1 = Yes","designation for mothers with pets at time of pregnancy","designation for mothers with dyed hair during pregnancy :\n0 = dyed\n1 = natural","primiparous; designation for mothers who are having a child for the first time","Designation for mothers who desired the pregnancy (planned?)","designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination : \n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination","Designation for mothers who have had a miscarriage prior to the current pregnancy","the sex of the fetus","continuous metric of postnatal depression","antenatal depression during the 1st trimester.","antenatal depression during the 2nd trimester.","antenatal depression during the 3rd trimester.","Cortisol levels in mothers during pregnancy during the 1st trimester","Cortisol levels in mothers during pregnancy during the 2nd trimester","Cortisol levels in mothers during pregnancy during the 3rd trimester"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>data_type<\/th>\n      <th>missing<\/th>\n      <th>complete<\/th>\n      <th>n<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>p0<\/th>\n      <th>p25<\/th>\n      <th>p50<\/th>\n      <th>p75<\/th>\n      <th>p100<\/th>\n      <th>hist<\/th>\n      <th>shortDescription<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script>
 <script type="application/ld+json">
 {
-  "numeric mapping information": "Primer embarazo / First Pregnancy:\n0 = No\n1 = Yes\n\nTipo Embarazo / Pregnancy Method:\n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination\n\nNivel Estudios / level of education\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n\nLaboral / employee situation\n1 = unemployed\n2 = full-time job\n3 = half-day job\n4 = student\n5 = work and study\n\nAspecto Pelo/ Hair Appearance\n0 = dyed\n1 = natural\n\nDeporte / Sport\n0 = No\n1 = Yes\n\nProfesión / Profession\n1 = unemployment\n2 = Head of nurse\n3 = Doctor\n4 = Nurse\n5 = housewife\n6 = teacher\n7 = management\n8 = dental clinic\n9 = banking\n10 = untrained\n11 = psychologist\n12 = engineer\n\nOrigen / Nationality\n1 = Spain\n2 = Argentina\n3 = Chile\n4 = Morocco\n5 = Romania\n6 = Germany\n7 = Russia\n8 = Ecuador\n9 = Peru\n10 = Paraguay\n\ndepreposparto / depress post partum\n1 = sindepre?\n2 = condepre?",
+  "numeric mapping information": "# Numeric Mapping\nPrimer embarazo / First Pregnancy:\n0 = No\n1 = Yes\n\nTipo Embarazo / Pregnancy Method:\n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination\n\nNivel Estudios / level of education\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n\nLaboral / employee situation\n1 = unemployed\n2 = full-time job\n3 = half-day job\n4 = student\n5 = work and study\n\nAspecto Pelo/ Hair Appearance\n0 = dyed\n1 = natural\n\nDeporte / Sport\n0 = No\n1 = Yes\n\nProfesión / Profession\n1 = unemployment\n2 = Head of nurse\n3 = Doctor\n4 = Nurse\n5 = housewife\n6 = teacher\n7 = management\n8 = dental clinic\n9 = banking\n10 = untrained\n11 = psychologist\n12 = engineer\n\nOrigen / Nationality\n1 = Spain\n2 = Argentina\n3 = Chile\n4 = Morocco\n5 = Romania\n6 = Germany\n7 = Russia\n8 = Ecuador\n9 = Peru\n10 = Paraguay\n\ndepreposparto / depress post partum\n1 = sindepre?\n2 = condepre?",
   "name": "results",
   "keywords": ["age", "education_level", "nationality", "postpartum_depression", "employed", "occupation", "sport", "pet", "dyed_hair", "first_pregnancy", "wanted_pregnancy", "pregnancy_method", "previous_miscarriage", "fetus_sex", "epds", "depression_tri1", "depression_tri2", "depression_tri3", "cortisol_tri1", "cortisol_tri2", "cortisol_tri3"],
   "variableMeasured": [
     {
-      "Description": "The age of the mother",
+      "shortDescription": "The age of the mother",
       "name": "age",
       "data_summary": [
         {
@@ -1196,7 +1433,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "The highest level of education that the mother had received at the time of pregnancy/study",
+      "shortDescription": "The highest level of education that the mother had received at the time of pregnancy/study :\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n",
       "name": "education_level",
       "data_summary": [
         {
@@ -1221,6 +1458,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
+      "shortDescription": "The patient's nationality or country of origin at the time of pregnancy\n[1 = Spain, 2 = Argentina, 3 = Chile, 4 = Morocco, 5 = Romania, 6 = Germany, 7 = Russia, 8 = Ecuador, 9 = Peru, 10 = Paraguay]",
       "name": "nationality",
       "data_summary": [
         {
@@ -1245,7 +1483,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Diagnosis of post-partum depression in the mother",
+      "shortDescription": "Diagnosis of post-partum depression in the mother: \n1 = sindepre?\n2 = condepre?",
       "name": "postpartum_depression",
       "data_summary": [
         {
@@ -1270,7 +1508,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Employment situation; is or is not employed at time of pregnancy",
+      "shortDescription": "Employment situation; is or is not employed at time of pregnancy [1 = unemployed, 2 = full-time job, 3 = half-day job, 4 = student, 5 = work and study",
       "name": "employed",
       "data_summary": [
         {
@@ -1295,7 +1533,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "If employed, what was the mothers occupation at the time of pregnancy",
+      "shortDescription": "If employed, what was the mothers occupation at the time of pregnancy [1 = unemployment, 2 = Head of nurse, 3 = Doctor, 4 = Nurse, 5 = housewife, 6 = teacher, 7 = management, 8 = dental clinic, 9 = banking, 10 = untrained, 11 = psychologist, 12 = engineer",
       "name": "occupation",
       "data_summary": [
         {
@@ -1320,7 +1558,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]",
+      "shortDescription": "tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] :\n0 = No\n1 = Yes",
       "name": "sport",
       "data_summary": [
         {
@@ -1345,7 +1583,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "designation for mothers with pets at time of pregnancy",
+      "shortDescription": "designation for mothers with pets at time of pregnancy",
       "name": "pet",
       "data_summary": [
         {
@@ -1370,7 +1608,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "designation for mothers with dyed hair during pregnancy",
+      "shortDescription": "designation for mothers with dyed hair during pregnancy :\n0 = dyed\n1 = natural",
       "name": "dyed_hair",
       "data_summary": [
         {
@@ -1395,7 +1633,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "primiparous; designation for mothers who are having a child for the first time",
+      "shortDescription": "primiparous; designation for mothers who are having a child for the first time",
       "name": "first_pregnancy",
       "data_summary": [
         {
@@ -1420,7 +1658,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Designation for mothers who desired the pregnancy (planned?)",
+      "shortDescription": "Designation for mothers who desired the pregnancy (planned?)",
       "name": "wanted_pregnancy",
       "data_summary": [
         {
@@ -1445,7 +1683,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination",
+      "shortDescription": "designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination : \n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination",
       "name": "pregnancy_method",
       "data_summary": [
         {
@@ -1470,7 +1708,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Designation for mothers who have had a miscarriage prior to the current pregnancy",
+      "shortDescription": "Designation for mothers who have had a miscarriage prior to the current pregnancy",
       "name": "previous_miscarriage",
       "data_summary": [
         {
@@ -1495,7 +1733,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "the sex of the fetus",
+      "shortDescription": "the sex of the fetus",
       "name": "fetus_sex",
       "data_summary": [
         {
@@ -1520,7 +1758,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "continuous metric of postnatal depression",
+      "shortDescription": "continuous metric of postnatal depression",
       "name": "epds",
       "data_summary": [
         {
@@ -1545,7 +1783,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "antenatal depression during the 1st trimester.",
+      "shortDescription": "antenatal depression during the 1st trimester.",
       "name": "depression_tri1",
       "data_summary": [
         {
@@ -1570,7 +1808,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "antenatal depression during the 2nd trimester.",
+      "shortDescription": "antenatal depression during the 2nd trimester.",
       "name": "depression_tri2",
       "data_summary": [
         {
@@ -1595,7 +1833,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "antenatal depression during the 3rd trimester.",
+      "shortDescription": "antenatal depression during the 3rd trimester.",
       "name": "depression_tri3",
       "data_summary": [
         {
@@ -1620,7 +1858,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Cortisol levels in mothers during pregnancy during the 1st trimester",
+      "shortDescription": "Cortisol levels in mothers during pregnancy during the 1st trimester",
       "name": "cortisol_tri1",
       "data_summary": [
         {
@@ -1645,7 +1883,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Cortisol levels in mothers during pregnancy during the 2nd trimester",
+      "shortDescription": "Cortisol levels in mothers during pregnancy during the 2nd trimester",
       "name": "cortisol_tri2",
       "data_summary": [
         {
@@ -1670,7 +1908,7 @@ $(document).ready(function () {
       "@type": "propertyValue"
     },
     {
-      "Description": "Cortisol levels in mothers during pregnancy during the 3rd trimester",
+      "shortDescription": "Cortisol levels in mothers during pregnancy during the 3rd trimester",
       "name": "cortisol_tri3",
       "data_summary": [
         {
@@ -1699,6 +1937,7 @@ $(document).ready(function () {
   "@type": "Dataset"
 }
 </script>
+</div>
 </div>
 
 

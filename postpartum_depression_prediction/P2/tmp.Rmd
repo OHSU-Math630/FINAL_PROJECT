@@ -1,4 +1,63 @@
+# Numeric Mapping
+Primer embarazo / First Pregnancy:
+0 = No
+1 = Yes
 
+Tipo Embarazo / Pregnancy Method:
+1 = spontaneously and normally
+2 = in vitro fertilization
+3 = artificial insemination
+
+Nivel Estudios / level of education
+1 = primary
+2 = secondary
+3 = university students
+4 = without studies
+
+Laboral / employee situation
+1 = unemployed
+2 = full-time job
+3 = half-day job
+4 = student
+5 = work and study
+
+Aspecto Pelo/ Hair Appearance
+0 = dyed
+1 = natural
+
+Deporte / Sport
+0 = No
+1 = Yes
+
+Profesión / Profession
+1 = unemployment
+2 = Head of nurse
+3 = Doctor
+4 = Nurse
+5 = housewife
+6 = teacher
+7 = management
+8 = dental clinic
+9 = banking
+10 = untrained
+11 = psychologist
+12 = engineer
+
+Origen / Nationality
+1 = Spain
+2 = Argentina
+3 = Chile
+4 = Morocco
+5 = Romania
+6 = Germany
+7 = Russia
+8 = Ecuador
+9 = Peru
+10 = Paraguay
+
+depreposparto / depress post partum
+1 = sindepre?
+2 = condepre? 
 
 
 
@@ -19,7 +78,7 @@
 
 #### Summary statistics {#age_summary}
 
-name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75   p100   hist       Description           
+name   data_type   missing   complete   n    mean    sd     p0   p25   p50   p75   p100   hist       shortDescription      
 -----  ----------  --------  ---------  ---  ------  -----  ---  ----  ----  ----  -----  ---------  ----------------------
 age    numeric     0         44         44   32.41   3.88   24   30    32    36    39     <U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>   The age of the mother 
 
@@ -54,9 +113,13 @@ age    numeric     0         44         44   32.41   3.88   24   30    32    36 
 
 #### Summary statistics {#education_level_summary}
 
-name              data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                                                
-----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------------------
-education_level   numeric     0         44         44   2.75   0.49   1    3     3     3     3      <U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>   The highest level of education that the mother had received at the time of pregnancy/study 
+name              data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                                                                                                                                   
+----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+education_level   numeric     0         44         44   2.75   0.49   1    3     3     3     3      <U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>   The highest level of education that the mother had received at the time of pregnancy/study :
+1 = primary
+2 = secondary
+3 = university students
+4 = without studies 
 
 
 
@@ -89,9 +152,10 @@ education_level   numeric     0         44         44   2.75   0.49   1    3    
 
 #### Summary statistics {#nationality_summary}
 
-name          data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist     
-------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------
-nationality   numeric     0         44         44   0.82   0.39   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587> 
+name          data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                                                                                                                                                                       
+------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+nationality   numeric     0         44         44   0.82   0.39   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   The patient's nationality or country of origin at the time of pregnancy
+[1 = Spain, 2 = Argentina, 3 = Chile, 4 = Morocco, 5 = Romania, 6 = Germany, 7 = Russia, 8 = Ecuador, 9 = Peru, 10 = Paraguay] 
 
 
 
@@ -124,9 +188,11 @@ nationality   numeric     0         44         44   0.82   0.39   0    1     1  
 
 #### Summary statistics {#postpartum_depression_summary}
 
-name                    data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                       
-----------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------
-postpartum_depression   numeric     0         44         44   1.36   0.49   1    1     1     2     2      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   Diagnosis of post-partum depression in the mother 
+name                    data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                                                
+----------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------------------------------------
+postpartum_depression   numeric     0         44         44   1.36   0.49   1    1     1     2     2      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   Diagnosis of post-partum depression in the mother: 
+1 = sindepre?
+2 = condepre? 
 
 
 
@@ -159,9 +225,9 @@ postpartum_depression   numeric     0         44         44   1.36   0.49   1   
 
 #### Summary statistics {#employed_summary}
 
-name       data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                      
----------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -----------------------------------------------------------------
-employed   numeric     0         44         44   0.77   0.42   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Employment situation; is or is not employed at time of pregnancy 
+name       data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                                                                                                                       
+---------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------------------------------------------------------------------------------
+employed   numeric     0         44         44   0.77   0.42   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Employment situation; is or is not employed at time of pregnancy [1 = unemployed, 2 = full-time job, 3 = half-day job, 4 = student, 5 = work and study 
 
 
 
@@ -194,9 +260,9 @@ employed   numeric     0         44         44   0.77   0.42   0    1     1     
 
 #### Summary statistics {#occupation_summary}
 
-name         data_type   missing   complete   n    mean   sd     p0   p25    p50   p75    p100   hist       Description                                                           
------------  ----------  --------  ---------  ---  -----  -----  ---  -----  ----  -----  -----  ---------  ----------------------------------------------------------------------
-occupation   numeric     0         44         44   4.66   3.24   1    1.75   4     6.25   12     <U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>   If employed, what was the mothers occupation at the time of pregnancy 
+name         data_type   missing   complete   n    mean   sd     p0   p25    p50   p75    p100   hist       shortDescription                                                                                                                                                                                                                                                
+-----------  ----------  --------  ---------  ---  -----  -----  ---  -----  ----  -----  -----  ---------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+occupation   numeric     0         44         44   4.66   3.24   1    1.75   4     6.25   12     <U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>   If employed, what was the mothers occupation at the time of pregnancy [1 = unemployment, 2 = Head of nurse, 3 = Doctor, 4 = Nurse, 5 = housewife, 6 = teacher, 7 = management, 8 = dental clinic, 9 = banking, 10 = untrained, 11 = psychologist, 12 = engineer 
 
 
 
@@ -229,9 +295,11 @@ occupation   numeric     0         44         44   4.66   3.24   1    1.75   4  
 
 #### Summary statistics {#sport_summary}
 
-name    data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist       Description                                                                                              
-------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------  ---------------------------------------------------------------------------------------------------------
-sport   numeric     0         44         44   0.59   0.5   0    0     1     1     1      <U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] 
+name    data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist       shortDescription                                                                                                          
+------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------------------------------------------------------------------------------
+sport   numeric     0         44         44   0.59   0.5   0    0     1     1     1      <U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] :
+0 = No
+1 = Yes 
 
 
 
@@ -264,7 +332,7 @@ sport   numeric     0         44         44   0.59   0.5   0    0     1     1   
 
 #### Summary statistics {#pet_summary}
 
-name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                            
+name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                       
 -----  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------
 pet    numeric     0         44         44   0.36   0.49   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   designation for mothers with pets at time of pregnancy 
 
@@ -299,9 +367,11 @@ pet    numeric     0         44         44   0.36   0.49   0    0     0     1   
 
 #### Summary statistics {#dyed_hair_summary}
 
-name        data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist       Description                                             
-----------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------  --------------------------------------------------------
-dyed_hair   numeric     0         44         44   0.43   0.5   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>   designation for mothers with dyed hair during pregnancy 
+name        data_type   missing   complete   n    mean   sd    p0   p25   p50   p75   p100   hist       shortDescription                                                               
+----------  ----------  --------  ---------  ---  -----  ----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------
+dyed_hair   numeric     0         44         44   0.43   0.5   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>   designation for mothers with dyed hair during pregnancy :
+0 = dyed
+1 = natural 
 
 
 
@@ -334,7 +404,7 @@ dyed_hair   numeric     0         44         44   0.43   0.5   0    0     0     
 
 #### Summary statistics {#first_pregnancy_summary}
 
-name              data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                                    
+name              data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                                               
 ----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------------------------
 first_pregnancy   numeric     0         44         44   0.64   0.49   0    0     1     1     1      <U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   primiparous; designation for mothers who are having a child for the first time 
 
@@ -369,7 +439,7 @@ first_pregnancy   numeric     0         44         44   0.64   0.49   0    0    
 
 #### Summary statistics {#wanted_pregnancy_summary}
 
-name               data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                  
+name               data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                             
 -----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -------------------------------------------------------------
 wanted_pregnancy   numeric     0         44         44   0.84   0.37   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   Designation for mothers who desired the pregnancy (planned?) 
 
@@ -404,9 +474,12 @@ wanted_pregnancy   numeric     0         44         44   0.84   0.37   0    1   
 
 #### Summary statistics {#pregnancy_method_summary}
 
-name               data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                                                                                                 
------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ------------------------------------------------------------------------------------------------------------
-pregnancy_method   numeric     0         44         44   0.8    0.41   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination 
+name               data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                                                                                                                                                                                     
+-----------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+pregnancy_method   numeric     0         44         44   0.8    0.41   0    1     1     1     1      <U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>   designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination : 
+1 = spontaneously and normally
+2 = in vitro fertilization
+3 = artificial insemination 
 
 
 
@@ -439,7 +512,7 @@ pregnancy_method   numeric     0         44         44   0.8    0.41   0    1   
 
 #### Summary statistics {#previous_miscarriage_summary}
 
-name                   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75    p100   hist       Description                                                                       
+name                   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75    p100   hist       shortDescription                                                                  
 ---------------------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  -----  -----  ---------  ----------------------------------------------------------------------------------
 previous_miscarriage   numeric     0         44         44   0.25   0.44   0    0     0     0.25   1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>   Designation for mothers who have had a miscarriage prior to the current pregnancy 
 
@@ -474,7 +547,7 @@ previous_miscarriage   numeric     0         44         44   0.25   0.44   0    
 
 #### Summary statistics {#fetus_sex_summary}
 
-name        data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description          
+name        data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription     
 ----------  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ---------------------
 fetus_sex   integer     0         44         44   0.39   0.49   0    0     0     1     1      <U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>   the sex of the fetus 
 
@@ -509,7 +582,7 @@ fetus_sex   integer     0         44         44   0.39   0.49   0    0     0    
 
 #### Summary statistics {#epds_summary}
 
-name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       Description                               
+name   data_type   missing   complete   n    mean   sd     p0   p25   p50   p75   p100   hist       shortDescription                          
 -----  ----------  --------  ---------  ---  -----  -----  ---  ----  ----  ----  -----  ---------  ------------------------------------------
 epds   numeric     0         44         44   7.93   5.03   2    4     6     11    24     <U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>   continuous metric of postnatal depression 
 
@@ -544,7 +617,7 @@ epds   numeric     0         44         44   7.93   5.03   2    4     6     11  
 
 #### Summary statistics {#depression_tri1_summary}
 
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
+name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       shortDescription                               
 ----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
 depression_tri1   numeric     0         44         44   43.49   21.44   5    33.75   40.28   48.71   97     <U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>   antenatal depression during the 1st trimester. 
 
@@ -579,7 +652,7 @@ depression_tri1   numeric     0         44         44   43.49   21.44   5    33.
 
 #### Summary statistics {#depression_tri2_summary}
 
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
+name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       shortDescription                               
 ----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
 depression_tri2   numeric     0         44         44   36.33   22.03   5    24.03   30.75   43.14   90     <U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>   antenatal depression during the 2nd trimester. 
 
@@ -614,7 +687,7 @@ depression_tri2   numeric     0         44         44   36.33   22.03   5    24.
 
 #### Summary statistics {#depression_tri3_summary}
 
-name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       Description                                    
+name              data_type   missing   complete   n    mean    sd      p0   p25     p50     p75     p100   hist       shortDescription                               
 ----------------  ----------  --------  ---------  ---  ------  ------  ---  ------  ------  ------  -----  ---------  -----------------------------------------------
 depression_tri3   numeric     0         44         44   49.82   26.46   5    28.75   51.95   66.25   97     <U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>   antenatal depression during the 3rd trimester. 
 
@@ -649,7 +722,7 @@ depression_tri3   numeric     0         44         44   49.82   26.46   5    28.
 
 #### Summary statistics {#cortisol_tri1_summary}
 
-name            data_type   missing   complete   n    mean     sd       p0      p25     p50     p75      p100   hist       Description                                                          
+name            data_type   missing   complete   n    mean     sd       p0      p25     p50     p75      p100   hist       shortDescription                                                     
 --------------  ----------  --------  ---------  ---  -------  -------  ------  ------  ------  -------  -----  ---------  ---------------------------------------------------------------------
 cortisol_tri1   numeric     0         44         44   261.51   277.67   51.68   112.2   194.5   281.43   1649   <U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 1st trimester 
 
@@ -684,7 +757,7 @@ cortisol_tri1   numeric     0         44         44   261.51   277.67   51.68   
 
 #### Summary statistics {#cortisol_tri2_summary}
 
-name            data_type   missing   complete   n    mean    sd       p0      p25      p50   p75      p100    hist       Description                                                          
+name            data_type   missing   complete   n    mean    sd       p0      p25      p50   p75      p100    hist       shortDescription                                                     
 --------------  ----------  --------  ---------  ---  ------  -------  ------  -------  ----  -------  ------  ---------  ---------------------------------------------------------------------
 cortisol_tri2   numeric     0         44         44   246.8   119.54   78.64   165.53   225   302.57   636.1   <U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 2nd trimester 
 
@@ -719,7 +792,7 @@ cortisol_tri2   numeric     0         44         44   246.8   119.54   78.64   1
 
 #### Summary statistics {#cortisol_tri3_summary}
 
-name            data_type   missing   complete   n    mean     sd       p0     p25      p50     p75     p100   hist       Description                                                          
+name            data_type   missing   complete   n    mean     sd       p0     p25      p50     p75     p100   hist       shortDescription                                                     
 --------------  ----------  --------  ---------  ---  -------  -------  -----  -------  ------  ------  -----  ---------  ---------------------------------------------------------------------
 cortisol_tri3   numeric     0         44         44   356.65   199.54   96.5   228.01   316.3   429.1   1213   <U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>   Cortisol levels in mothers during pregnancy during the 3rd trimester 
 
@@ -737,18 +810,18 @@ Among those who finished the survey. Only variables that have missings are shown
 
 ## Codebook table
 
-<!--html_preserve--><div id="htmlwidget-399211c9c825aa45de44" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-399211c9c825aa45de44">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#age\">age<\/a>","<a href=\"#education_level\">education_level<\/a>","<a href=\"#nationality\">nationality<\/a>","<a href=\"#postpartum_depression\">postpartum_depression<\/a>","<a href=\"#employed\">employed<\/a>","<a href=\"#occupation\">occupation<\/a>","<a href=\"#sport\">sport<\/a>","<a href=\"#pet\">pet<\/a>","<a href=\"#dyed_hair\">dyed_hair<\/a>","<a href=\"#first_pregnancy\">first_pregnancy<\/a>","<a href=\"#wanted_pregnancy\">wanted_pregnancy<\/a>","<a href=\"#pregnancy_method\">pregnancy_method<\/a>","<a href=\"#previous_miscarriage\">previous_miscarriage<\/a>","<a href=\"#fetus_sex\">fetus_sex<\/a>","<a href=\"#epds\">epds<\/a>","<a href=\"#depression_tri1\">depression_tri1<\/a>","<a href=\"#depression_tri2\">depression_tri2<\/a>","<a href=\"#depression_tri3\">depression_tri3<\/a>","<a href=\"#cortisol_tri1\">cortisol_tri1<\/a>","<a href=\"#cortisol_tri2\">cortisol_tri2<\/a>","<a href=\"#cortisol_tri3\">cortisol_tri3<\/a>"],["numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric"],["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],[" 32.41","  2.75","  0.82","  1.36","  0.77","  4.66","  0.59","  0.36","  0.43","  0.64","  0.84","  0.8 ","  0.25","0.39","  7.93"," 43.49"," 36.33"," 49.82","261.51","246.8 ","356.65"],["  3.88","  0.49","  0.39","  0.49","  0.42","  3.24","  0.5 ","  0.49","  0.5 ","  0.49","  0.37","  0.41","  0.44","0.49","  5.03"," 21.44"," 22.03"," 26.46","277.67","119.54","199.54"],["24   "," 1   "," 0   "," 1   "," 0   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   ","0"," 2   "," 5   "," 5   "," 5   ","51.68","78.64","96.5 "],[" 30   ","  3   ","  1   ","  1   ","  1   ","  1.75","  0   ","  0   ","  0   ","  0   ","  1   ","  1   ","  0   ","0","  4   "," 33.75"," 24.03"," 28.75","112.2 ","165.53","228.01"],[" 32   ","  3   ","  1   ","  1   ","  1   ","  4   ","  1   ","  0   ","  0   ","  1   ","  1   ","  1   ","  0   ","0","  6   "," 40.28"," 30.75"," 51.95","194.5 ","225   ","316.3 "],[" 36   ","  3   ","  1   ","  2   ","  1   ","  6.25","  1   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","1"," 11   "," 48.71"," 43.14"," 66.25","281.43","302.57","429.1 "],["  39  ","   3  ","   1  ","   2  ","   1  ","  12  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","1","  24  ","  97  ","  90  ","  97  ","1649  "," 636.1","1213  "],["<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>"],["The age of the mother","The highest level of education that the mother had received at the time of pregnancy/study",null,"Diagnosis of post-partum depression in the mother","Employment situation; is or is not employed at time of pregnancy","If employed, what was the mothers occupation at the time of pregnancy","tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]","designation for mothers with pets at time of pregnancy","designation for mothers with dyed hair during pregnancy","primiparous; designation for mothers who are having a child for the first time","Designation for mothers who desired the pregnancy (planned?)","designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination","Designation for mothers who have had a miscarriage prior to the current pregnancy","the sex of the fetus","continuous metric of postnatal depression","antenatal depression during the 1st trimester.","antenatal depression during the 2nd trimester.","antenatal depression during the 3rd trimester.","Cortisol levels in mothers during pregnancy during the 1st trimester","Cortisol levels in mothers during pregnancy during the 2nd trimester","Cortisol levels in mothers during pregnancy during the 3rd trimester"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>data_type<\/th>\n      <th>missing<\/th>\n      <th>complete<\/th>\n      <th>n<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>p0<\/th>\n      <th>p25<\/th>\n      <th>p50<\/th>\n      <th>p75<\/th>\n      <th>p100<\/th>\n      <th>hist<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
+<!--html_preserve--><div id="htmlwidget-90078ff3c6d07bf9f940" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-90078ff3c6d07bf9f940">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"disabled\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","extensions":["Buttons"],"data":[["<a href=\"#age\">age<\/a>","<a href=\"#education_level\">education_level<\/a>","<a href=\"#nationality\">nationality<\/a>","<a href=\"#postpartum_depression\">postpartum_depression<\/a>","<a href=\"#employed\">employed<\/a>","<a href=\"#occupation\">occupation<\/a>","<a href=\"#sport\">sport<\/a>","<a href=\"#pet\">pet<\/a>","<a href=\"#dyed_hair\">dyed_hair<\/a>","<a href=\"#first_pregnancy\">first_pregnancy<\/a>","<a href=\"#wanted_pregnancy\">wanted_pregnancy<\/a>","<a href=\"#pregnancy_method\">pregnancy_method<\/a>","<a href=\"#previous_miscarriage\">previous_miscarriage<\/a>","<a href=\"#fetus_sex\">fetus_sex<\/a>","<a href=\"#epds\">epds<\/a>","<a href=\"#depression_tri1\">depression_tri1<\/a>","<a href=\"#depression_tri2\">depression_tri2<\/a>","<a href=\"#depression_tri3\">depression_tri3<\/a>","<a href=\"#cortisol_tri1\">cortisol_tri1<\/a>","<a href=\"#cortisol_tri2\">cortisol_tri2<\/a>","<a href=\"#cortisol_tri3\">cortisol_tri3<\/a>"],["numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","numeric","integer","numeric","numeric","numeric","numeric","numeric","numeric","numeric"],["0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0","0"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],["44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44","44"],[" 32.41","  2.75","  0.82","  1.36","  0.77","  4.66","  0.59","  0.36","  0.43","  0.64","  0.84","  0.8 ","  0.25","0.39","  7.93"," 43.49"," 36.33"," 49.82","261.51","246.8 ","356.65"],["  3.88","  0.49","  0.39","  0.49","  0.42","  3.24","  0.5 ","  0.49","  0.5 ","  0.49","  0.37","  0.41","  0.44","0.49","  5.03"," 21.44"," 22.03"," 26.46","277.67","119.54","199.54"],["24   "," 1   "," 0   "," 1   "," 0   "," 1   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   "," 0   ","0"," 2   "," 5   "," 5   "," 5   ","51.68","78.64","96.5 "],[" 30   ","  3   ","  1   ","  1   ","  1   ","  1.75","  0   ","  0   ","  0   ","  0   ","  1   ","  1   ","  0   ","0","  4   "," 33.75"," 24.03"," 28.75","112.2 ","165.53","228.01"],[" 32   ","  3   ","  1   ","  1   ","  1   ","  4   ","  1   ","  0   ","  0   ","  1   ","  1   ","  1   ","  0   ","0","  6   "," 40.28"," 30.75"," 51.95","194.5 ","225   ","316.3 "],[" 36   ","  3   ","  1   ","  2   ","  1   ","  6.25","  1   ","  1   ","  1   ","  1   ","  1   ","  1   ","  0.25","1"," 11   "," 48.71"," 43.14"," 66.25","281.43","302.57","429.1 "],["  39  ","   3  ","   1  ","   2  ","   1  ","  12  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","   1  ","1","  24  ","  97  ","  90  ","  97  ","1649  "," 636.1","1213  "],["<U+2582><U+2581><U+2585><U+2586><U+2587><U+2583><U+2586><U+2583>","<U+2581><U+2581><U+2581><U+2582><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2582><U+2582><U+2585><U+2582><U+2581><U+2583><U+2581>","<U+2586><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2586>","<U+2585><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2587>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2582>","<U+2587><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581><U+2585>","<U+2587><U+2587><U+2583><U+2585><U+2582><U+2581><U+2581><U+2581>","<U+2582><U+2581><U+2586><U+2587><U+2582><U+2581><U+2581><U+2582>","<U+2585><U+2585><U+2587><U+2585><U+2581><U+2581><U+2581><U+2583>","<U+2586><U+2583><U+2583><U+2585><U+2587><U+2583><U+2586><U+2582>","<U+2587><U+2582><U+2581><U+2581><U+2581><U+2581><U+2581><U+2581>","<U+2585><U+2587><U+2587><U+2585><U+2581><U+2581><U+2581><U+2581>","<U+2587><U+2587><U+2587><U+2582><U+2581><U+2581><U+2581><U+2581>"],["The age of the mother","The highest level of education that the mother had received at the time of pregnancy/study :\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n","The patient's nationality or country of origin at the time of pregnancy\n[1 = Spain, 2 = Argentina, 3 = Chile, 4 = Morocco, 5 = Romania, 6 = Germany, 7 = Russia, 8 = Ecuador, 9 = Peru, 10 = Paraguay]","Diagnosis of post-partum depression in the mother: \n1 = sindepre?\n2 = condepre?","Employment situation; is or is not employed at time of pregnancy [1 = unemployed, 2 = full-time job, 3 = half-day job, 4 = student, 5 = work and study","If employed, what was the mothers occupation at the time of pregnancy [1 = unemployment, 2 = Head of nurse, 3 = Doctor, 4 = Nurse, 5 = housewife, 6 = teacher, 7 = management, 8 = dental clinic, 9 = banking, 10 = untrained, 11 = psychologist, 12 = engineer","tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] :\n0 = No\n1 = Yes","designation for mothers with pets at time of pregnancy","designation for mothers with dyed hair during pregnancy :\n0 = dyed\n1 = natural","primiparous; designation for mothers who are having a child for the first time","Designation for mothers who desired the pregnancy (planned?)","designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination : \n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination","Designation for mothers who have had a miscarriage prior to the current pregnancy","the sex of the fetus","continuous metric of postnatal depression","antenatal depression during the 1st trimester.","antenatal depression during the 2nd trimester.","antenatal depression during the 3rd trimester.","Cortisol levels in mothers during pregnancy during the 1st trimester","Cortisol levels in mothers during pregnancy during the 2nd trimester","Cortisol levels in mothers during pregnancy during the 3rd trimester"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>name<\/th>\n      <th>data_type<\/th>\n      <th>missing<\/th>\n      <th>complete<\/th>\n      <th>n<\/th>\n      <th>mean<\/th>\n      <th>sd<\/th>\n      <th>p0<\/th>\n      <th>p25<\/th>\n      <th>p50<\/th>\n      <th>p75<\/th>\n      <th>p100<\/th>\n      <th>hist<\/th>\n      <th>shortDescription<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"Bfrtip","buttons":["copy","csv","excel","pdf","print"],"pageLength":200,"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,25,50,100,200]}},"evals":[],"jsHooks":[]}</script><!--/html_preserve-->
 
 
 <script type="application/ld+json">
 {
-  "numeric mapping information": "Primer embarazo / First Pregnancy:\n0 = No\n1 = Yes\n\nTipo Embarazo / Pregnancy Method:\n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination\n\nNivel Estudios / level of education\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n\nLaboral / employee situation\n1 = unemployed\n2 = full-time job\n3 = half-day job\n4 = student\n5 = work and study\n\nAspecto Pelo/ Hair Appearance\n0 = dyed\n1 = natural\n\nDeporte / Sport\n0 = No\n1 = Yes\n\nProfesión / Profession\n1 = unemployment\n2 = Head of nurse\n3 = Doctor\n4 = Nurse\n5 = housewife\n6 = teacher\n7 = management\n8 = dental clinic\n9 = banking\n10 = untrained\n11 = psychologist\n12 = engineer\n\nOrigen / Nationality\n1 = Spain\n2 = Argentina\n3 = Chile\n4 = Morocco\n5 = Romania\n6 = Germany\n7 = Russia\n8 = Ecuador\n9 = Peru\n10 = Paraguay\n\ndepreposparto / depress post partum\n1 = sindepre?\n2 = condepre?",
+  "numeric mapping information": "# Numeric Mapping\nPrimer embarazo / First Pregnancy:\n0 = No\n1 = Yes\n\nTipo Embarazo / Pregnancy Method:\n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination\n\nNivel Estudios / level of education\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n\nLaboral / employee situation\n1 = unemployed\n2 = full-time job\n3 = half-day job\n4 = student\n5 = work and study\n\nAspecto Pelo/ Hair Appearance\n0 = dyed\n1 = natural\n\nDeporte / Sport\n0 = No\n1 = Yes\n\nProfesión / Profession\n1 = unemployment\n2 = Head of nurse\n3 = Doctor\n4 = Nurse\n5 = housewife\n6 = teacher\n7 = management\n8 = dental clinic\n9 = banking\n10 = untrained\n11 = psychologist\n12 = engineer\n\nOrigen / Nationality\n1 = Spain\n2 = Argentina\n3 = Chile\n4 = Morocco\n5 = Romania\n6 = Germany\n7 = Russia\n8 = Ecuador\n9 = Peru\n10 = Paraguay\n\ndepreposparto / depress post partum\n1 = sindepre?\n2 = condepre?",
   "name": "results",
   "keywords": ["age", "education_level", "nationality", "postpartum_depression", "employed", "occupation", "sport", "pet", "dyed_hair", "first_pregnancy", "wanted_pregnancy", "pregnancy_method", "previous_miscarriage", "fetus_sex", "epds", "depression_tri1", "depression_tri2", "depression_tri3", "cortisol_tri1", "cortisol_tri2", "cortisol_tri3"],
   "variableMeasured": [
     {
-      "Description": "The age of the mother",
+      "shortDescription": "The age of the mother",
       "name": "age",
       "data_summary": [
         {
@@ -773,7 +846,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "The highest level of education that the mother had received at the time of pregnancy/study",
+      "shortDescription": "The highest level of education that the mother had received at the time of pregnancy/study :\n1 = primary\n2 = secondary\n3 = university students\n4 = without studies\n",
       "name": "education_level",
       "data_summary": [
         {
@@ -798,6 +871,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
+      "shortDescription": "The patient's nationality or country of origin at the time of pregnancy\n[1 = Spain, 2 = Argentina, 3 = Chile, 4 = Morocco, 5 = Romania, 6 = Germany, 7 = Russia, 8 = Ecuador, 9 = Peru, 10 = Paraguay]",
       "name": "nationality",
       "data_summary": [
         {
@@ -822,7 +896,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Diagnosis of post-partum depression in the mother",
+      "shortDescription": "Diagnosis of post-partum depression in the mother: \n1 = sindepre?\n2 = condepre?",
       "name": "postpartum_depression",
       "data_summary": [
         {
@@ -847,7 +921,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Employment situation; is or is not employed at time of pregnancy",
+      "shortDescription": "Employment situation; is or is not employed at time of pregnancy [1 = unemployed, 2 = full-time job, 3 = half-day job, 4 = student, 5 = work and study",
       "name": "employed",
       "data_summary": [
         {
@@ -872,7 +946,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "If employed, what was the mothers occupation at the time of pregnancy",
+      "shortDescription": "If employed, what was the mothers occupation at the time of pregnancy [1 = unemployment, 2 = Head of nurse, 3 = Doctor, 4 = Nurse, 5 = housewife, 6 = teacher, 7 = management, 8 = dental clinic, 9 = banking, 10 = untrained, 11 = psychologist, 12 = engineer",
       "name": "occupation",
       "data_summary": [
         {
@@ -897,7 +971,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n]",
+      "shortDescription": "tracking the physical activity of the mother; whether the mother played a sport (during pregnancy) [y/n] :\n0 = No\n1 = Yes",
       "name": "sport",
       "data_summary": [
         {
@@ -922,7 +996,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "designation for mothers with pets at time of pregnancy",
+      "shortDescription": "designation for mothers with pets at time of pregnancy",
       "name": "pet",
       "data_summary": [
         {
@@ -947,7 +1021,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "designation for mothers with dyed hair during pregnancy",
+      "shortDescription": "designation for mothers with dyed hair during pregnancy :\n0 = dyed\n1 = natural",
       "name": "dyed_hair",
       "data_summary": [
         {
@@ -972,7 +1046,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "primiparous; designation for mothers who are having a child for the first time",
+      "shortDescription": "primiparous; designation for mothers who are having a child for the first time",
       "name": "first_pregnancy",
       "data_summary": [
         {
@@ -997,7 +1071,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Designation for mothers who desired the pregnancy (planned?)",
+      "shortDescription": "Designation for mothers who desired the pregnancy (planned?)",
       "name": "wanted_pregnancy",
       "data_summary": [
         {
@@ -1022,7 +1096,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination",
+      "shortDescription": "designation for  *spontaneous* method of fertilization and *Fertility Treatment* or artificial insemination : \n1 = spontaneously and normally\n2 = in vitro fertilization\n3 = artificial insemination",
       "name": "pregnancy_method",
       "data_summary": [
         {
@@ -1047,7 +1121,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Designation for mothers who have had a miscarriage prior to the current pregnancy",
+      "shortDescription": "Designation for mothers who have had a miscarriage prior to the current pregnancy",
       "name": "previous_miscarriage",
       "data_summary": [
         {
@@ -1072,7 +1146,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "the sex of the fetus",
+      "shortDescription": "the sex of the fetus",
       "name": "fetus_sex",
       "data_summary": [
         {
@@ -1097,7 +1171,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "continuous metric of postnatal depression",
+      "shortDescription": "continuous metric of postnatal depression",
       "name": "epds",
       "data_summary": [
         {
@@ -1122,7 +1196,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "antenatal depression during the 1st trimester.",
+      "shortDescription": "antenatal depression during the 1st trimester.",
       "name": "depression_tri1",
       "data_summary": [
         {
@@ -1147,7 +1221,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "antenatal depression during the 2nd trimester.",
+      "shortDescription": "antenatal depression during the 2nd trimester.",
       "name": "depression_tri2",
       "data_summary": [
         {
@@ -1172,7 +1246,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "antenatal depression during the 3rd trimester.",
+      "shortDescription": "antenatal depression during the 3rd trimester.",
       "name": "depression_tri3",
       "data_summary": [
         {
@@ -1197,7 +1271,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Cortisol levels in mothers during pregnancy during the 1st trimester",
+      "shortDescription": "Cortisol levels in mothers during pregnancy during the 1st trimester",
       "name": "cortisol_tri1",
       "data_summary": [
         {
@@ -1222,7 +1296,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Cortisol levels in mothers during pregnancy during the 2nd trimester",
+      "shortDescription": "Cortisol levels in mothers during pregnancy during the 2nd trimester",
       "name": "cortisol_tri2",
       "data_summary": [
         {
@@ -1247,7 +1321,7 @@ Among those who finished the survey. Only variables that have missings are shown
       "@type": "propertyValue"
     },
     {
-      "Description": "Cortisol levels in mothers during pregnancy during the 3rd trimester",
+      "shortDescription": "Cortisol levels in mothers during pregnancy during the 3rd trimester",
       "name": "cortisol_tri3",
       "data_summary": [
         {
