@@ -203,6 +203,9 @@ any obviously mislabeled or confusing trends etc etc
 #having a bit of a hard time buying the over all result at this point. seems like there are enought other factors that also show some correlation with depression that saying cortosol is a good predictor is hard 
 
 
+
+
+
 ## Future Extension ... (I got bored)
 This isn't really EDA, more of extension, but... I wonder if AUC of the cortisol points would be a better predictor of pp depression than just the point values. Would require fitting a curve, calculating the integral.... ORRRR could we use a curve to predict cortisol levels during pp? then use THAT metric to predict depression. 
 
