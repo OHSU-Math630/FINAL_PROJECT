@@ -180,7 +180,14 @@ ggplot(pp_sad,aes(x=first_pregnancy,y=postpartum_depression))+
   geom_col()+
   theme_gray()
 ```
-#cortosol and depression relation across trimesters fir to lm intresting how it changes from trimester to trimester becoming negative in the end
+#sex of fetus vs depression 
+```{r}
+ggplot(pp_sad,aes(x=fetus_sex,y=postpartum_depression))+
+  geom_col()+
+  theme_gray()
+```
+
+#cortosol and depression relation across trimesters for to lm intresting how it changes from trimester to trimester becoming negative in the end
 ```{r}
 ggplot(pp_sad,aes(x=depression_tri1,y=cortisol_tri1,color=postpartum_depression))+geom_point()+geom_smooth(method = "lm", se = FALSE)
 ggplot(pp_sad,aes(x=depression_tri2,y=cortisol_tri2,color=postpartum_depression))+geom_point()+geom_smooth(method = "lm", se = FALSE)
@@ -188,6 +195,9 @@ ggplot(pp_sad,aes(x=depression_tri3,y=cortisol_tri3,color=postpartum_depression)
 ```
 
 Colinearlity between variables? what do we want to avoid including in our model?
+```{r}
+pp_sad%>%cor()
+```
 
 any obviously mislabeled or confusing trends etc etc
 #having a bit of a hard time buying the over all result at this point. seems like there are enought other factors that also show some correlation with depression that saying cortosol is a good predictor is hard 
