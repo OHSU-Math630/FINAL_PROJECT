@@ -89,13 +89,13 @@ pp_sad %>% ggplot() + geom_density(aes(x=depression_tri3, group=as.factor(postpa
 pp_sad %>% ggplot() + geom_violin(aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression, fill='tri1', alpha=0.3)) + geom_violin(aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression, fill='tri2', alpha=0.3)) + geom_violin(aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression, fill='tri3', alpha=0.3))
 
 #same info shown in boxplots
-ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression,color=as.factor(postpartum_depression)))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression,color=as.factor(postpartum_depression)))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression,color=as.factor(postpartum_depression)))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
 ```
@@ -114,13 +114,13 @@ pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri3, group=as.factor(postpart
 ```
 
 ```{r}
-ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri1,group=postpartum_depression,color=as.factor(postpartum_depression)))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri1,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri2,group=postpartum_depression,color=as.factor(postpartum_depression)))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri2,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depression,color=as.factor(postpartum_depression)))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
 
@@ -135,24 +135,24 @@ ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depre
 This section seemed important as the stress from being emoployed or not seeme like it would have an effect on the cortosol levles of the individual as well as the depression scores related. as such thoughs two paramaters were compaired to employment status
 
 ```{r}
-ggplot(pp_sad,aes(x=employed,y=cortisol_tri1,group=employed,color=as.factor(employed)))+
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri1,group=employed,fill=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=cortisol_tri2,group=employed,color=as.factor(employed)))+
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri2,group=employed,fill=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=cortisol_tri3,group=employed,color=as.factor(employed)))+
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri3,group=employed,fill=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
 ```
 ```{r}
-ggplot(pp_sad,aes(x=employed,y=depression_tri1,group=employed,color=as.factor(employed)))+
+ggplot(pp_sad,aes(x=employed,y=depression_tri1,group=employed,fill=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=depression_tri2,group=employed,color=as.factor(employed)))+
+ggplot(pp_sad,aes(x=employed,y=depression_tri2,group=employed,fill=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=depression_tri3,group=employed,color=as.factor(employed)))+
+ggplot(pp_sad,aes(x=employed,y=depression_tri3,group=employed,fill=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
 ```
@@ -164,24 +164,24 @@ we also investigated the relationship between job type and cortosol and depressi
 there does seem to be some correlation here between having a job and depression score but not so much cortosol levels.
 
 ```{r}
-ggplot(pp_sad,aes(x=occupation,y=depression_tri1,group=occupation,color=as.factor(occupation)))+
+ggplot(pp_sad,aes(x=occupation,y=depression_tri1,group=occupation,fill=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=depression_tri2,group=occupation,color=as.factor(occupation)))+
+ggplot(pp_sad,aes(x=occupation,y=depression_tri2,group=occupation,fill=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=depression_tri3,group=occupation,color=as.factor(occupation)))+
+ggplot(pp_sad,aes(x=occupation,y=depression_tri3,group=occupation,fill=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
 ```
 ```{r}
-ggplot(pp_sad,aes(x=occupation,y=cortisol_tri1,group=occupation,color=as.factor(occupation)))+
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri1,group=occupation,fill=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=cortisol_tri2,group=occupation,color=as.factor(occupation)))+
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri2,group=occupation,fill=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=cortisol_tri3,group=occupation,color=as.factor(occupation)))+
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri3,group=occupation,fill=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
 ```
