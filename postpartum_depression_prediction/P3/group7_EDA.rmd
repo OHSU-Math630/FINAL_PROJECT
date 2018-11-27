@@ -51,11 +51,13 @@ summary(pp_sad)
 ```
 
 
-# Let your questions guiiiddddeeeee you
+
+#How does depression scores map to postpartum_depression labels? Might there be a better threshold cuttoff?
+
+this section explores the relationships between the various trimesters and the levls of cortosol or the depression index score.
 
 
-How does depression scores map to postpartum_depression labels? Might there be a better threshold cuttoff?
-#the accuracy of the tables seem to be dependent on the trimester when the test is taken they are more accurate in the third trimester then the first this is to be expected. however the emans do not seem to vary much even in the third trimester so perhaps this is not a very accurate method regardless. trimester 2 seems to be the most infulential predictor. 
+the accuracy of the tables seem to be dependent on the trimester when the test is taken they are more accurate in the third trimester then the first this is to be expected. however the emans do not seem to vary much even in the third trimester so perhaps this is not a very accurate method regardless. trimester 2 seems to be the most infulential predictor. 
 ```{r}
 #variation of depression scores in trimesters seperated by outcome of post partum depression or not 
 
@@ -69,39 +71,23 @@ pp_sad %>% ggplot() + geom_density(aes(x=depression_tri2, group=as.factor(postpa
 
 pp_sad %>% ggplot() + geom_density(aes(x=depression_tri3, group=postpartum_depression, fill=as.factor(postpartum_depression), alpha = 0.25))
 
-# I like this! But I condensed everything into one graph to make it easier to compare
-#ggplot(pp_sad,aes(x=depression_tri1))+
-#  geom_histogram(binwidth = 10,col="white")+
-#  facet_wrap(~postpartum_depression)+
-#  theme_gray()
-#ggplot(pp_sad,aes(x=depression_tri2))+
-#  geom_histogram(binwidth = 10,col="white")+
-#  facet_wrap(~postpartum_depression)+
-#  theme_gray()
-#ggplot(pp_sad,aes(x=depression_tri3))+
-#  geom_histogram(binwidth = 10,col="white")+
-#  facet_wrap(~postpartum_depression)+
-#  theme_gray()
-
-
 ```
 
 ```{r}
 pp_sad %>% ggplot() + geom_violin(aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression, fill='tri1', alpha=0.3)) + geom_violin(aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression, fill='tri2', alpha=0.3)) + geom_violin(aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression, fill='tri3', alpha=0.3))
 
 #same info shown in boxplots
-ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression,color=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression,color=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression,color=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
 ```
-#did the same data crunches on the cortosol levels in the different trimesters
-#cortosol seems to be a better indecator than the tests but again not super different however the first trimester seems to show the biggest difference in the depressed verses not depressed groups 
+
 ```{r}
 pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri1, fill='tri1', alpha = 0.3)) + geom_density(aes(x=cortisol_tri2, fill='tri2', alpha = 0.3)) + geom_density(aes(x=cortisol_tri3, fill='tri3', alpha = 0.3)) + facet_wrap(~postpartum_depression) + ggtitle('trimester cortisol populations by postpartum outcome') + xlab('cortisol level')
 
@@ -113,29 +99,16 @@ pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri2, group=as.factor(postpart
 
 pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri3, group=postpartum_depression, fill=as.factor(postpartum_depression), alpha = 0.25))
 
-# same as above 
-#ggplot(pp_sad,aes(x=cortisol_tri1))+
-#  geom_histogram(binwidth = 50,col="white")+
-#  facet_wrap(~postpartum_depression)+
-#  theme_gray()
-#ggplot(pp_sad,aes(x=cortisol_tri2))+
-#  geom_histogram(binwidth = 50,col="white")+
-#  facet_wrap(~postpartum_depression)+
-#  theme_gray()
-#ggplot(pp_sad,aes(x=cortisol_tri3))+
-#  geom_histogram(binwidth = 50,col="white")+
-#  facet_wrap(~postpartum_depression)+
-#  theme_gray()
 ```
 
 ```{r}
-ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri1,group=postpartum_depression))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri1,group=postpartum_depression,color=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri2,group=postpartum_depression))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri2,group=postpartum_depression,color=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depression))+
+ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depression,color=as.factor(postpartum_depression)))+
   geom_boxplot()+
   theme_gray()
 
@@ -143,89 +116,108 @@ ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depre
 
 
 ```
-#Aslso checked to see if there was relation between enployment status and cortosol levels or  depression scale score
+
+#Relationship between postpartum depression and employment status
+
+This section seemed important as the stress from being emoployed or not seeme like it would have an effect on the cortosol levles of the individual as well as the depression scores related. as such thoughs two paramaters were compaired to employment status
+
 ```{r}
-ggplot(pp_sad,aes(x=employed,y=cortisol_tri1,group=employed))+
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri1,group=employed,color=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=cortisol_tri2,group=employed))+
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri2,group=employed,color=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=cortisol_tri3,group=employed))+
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri3,group=employed,color=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
 ```
 ```{r}
-ggplot(pp_sad,aes(x=employed,y=depression_tri1,group=employed))+
+ggplot(pp_sad,aes(x=employed,y=depression_tri1,group=employed,color=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=depression_tri2,group=employed))+
+ggplot(pp_sad,aes(x=employed,y=depression_tri2,group=employed,color=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=depression_tri3,group=employed))+
-  geom_boxplot()+
-  theme_gray()
-```
-#Aslso checked to see if there was relation between enployment type and cortosol levels or  depression scale score
-```{r}
-ggplot(pp_sad,aes(x=occupation,y=depression_tri1,group=occupation))+
-  geom_boxplot()+
-  theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=depression_tri2,group=occupation))+
-  geom_boxplot()+
-  theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=depression_tri3,group=occupation))+
+ggplot(pp_sad,aes(x=employed,y=depression_tri3,group=employed,color=as.factor(employed)))+
   geom_boxplot()+
   theme_gray()
 ```
+
+#Relationship between job type and depression score and cortosol levels
+
+we also investigated the relationship between job type and cortosol and depression scores as we thought that this two would affect the results.
+there does seem to be some correlation here between having a job and depression score but not so much cortosol levels.
+
 ```{r}
-ggplot(pp_sad,aes(x=occupation,y=cortisol_tri1,group=occupation))+
+ggplot(pp_sad,aes(x=occupation,y=depression_tri1,group=occupation,color=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=cortisol_tri2,group=occupation))+
+ggplot(pp_sad,aes(x=occupation,y=depression_tri2,group=occupation,color=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
-ggplot(pp_sad,aes(x=occupation,y=cortisol_tri3,group=occupation))+
+ggplot(pp_sad,aes(x=occupation,y=depression_tri3,group=occupation,color=as.factor(occupation)))+
   geom_boxplot()+
   theme_gray()
 ```
-#Certain professions do seem to correlate to higher depression and cortisol levels but the sample size is very small
-#Lastly, checked occupation vs post partum depression and employment vs post partum depression
-#this would seem to suggest some correlation between employment status and depression 
 ```{r}
-ggplot(pp_sad,aes(x=occupation,y=postpartum_depression))+
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri1,group=occupation,color=as.factor(occupation)))+
+  geom_boxplot()+
+  theme_gray()
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri2,group=occupation,color=as.factor(occupation)))+
+  geom_boxplot()+
+  theme_gray()
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri3,group=occupation,color=as.factor(occupation)))+
+  geom_boxplot()+
+  theme_gray()
+```
+
+#Occupation vs Postpartum depression and Employment vs Postpartum depression
+
+while employment type dosent seem to have to much of an effect on postpartum depression it would seem that being unemployed does 
+
+```{r}
+ggplot(pp_sad,aes(x=occupation,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_col()+
   theme_gray()
-ggplot(pp_sad,aes(x=employed,y=postpartum_depression))+
-  geom_col()+
-  theme_gray()
-```
-#did the same comparison with wanted vs unwanted  and first pregnancy
-```{r}
-ggplot(pp_sad,aes(x=wanted_pregnancy,y=postpartum_depression))+
-  geom_col()+
-  theme_gray()
-ggplot(pp_sad,aes(x=first_pregnancy,y=postpartum_depression))+
+ggplot(pp_sad,aes(x=employed,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_col()+
   theme_gray()
 ```
-#sex of fetus vs depression 
+
+
+#Wanted vs Unwanted  and first pregnancy
+
+this seemed to have remarkably little affect
 ```{r}
-ggplot(pp_sad,aes(x=fetus_sex,y=postpartum_depression))+
+ggplot(pp_sad,aes(x=wanted_pregnancy,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  theme_gray()
+ggplot(pp_sad,aes(x=first_pregnancy,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  theme_gray()
+```
+#Sex of fetus vs depression
+
+```{r}
+ggplot(pp_sad,aes(x=fetus_sex,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
   geom_col()+
   theme_gray()
 
 
 ```
 
-#cortosol and depression relation across trimesters for to lm intresting how it changes from trimester to trimester becoming negative in the end
+#Cortosol and depression relation across trimesters
+
+this was intresting because it switches to a negitive correlation in the last semester
 ```{r}
 ggplot(pp_sad,aes(x=depression_tri1,y=cortisol_tri1,color=postpartum_depression))+geom_point()+geom_smooth(method = "lm", se = FALSE)
 ggplot(pp_sad,aes(x=depression_tri2,y=cortisol_tri2,color=postpartum_depression))+geom_point()+geom_smooth(method = "lm", se = FALSE)
 ggplot(pp_sad,aes(x=depression_tri3,y=cortisol_tri3,color=postpartum_depression))+geom_point()+geom_smooth(method = "lm", se = FALSE)
 ```
 
-Colinearlity between variables? what do we want to avoid including in our model?
+#Colinearlity between variables? what do we want to avoid including in our model?
+
 ```{r}
 # we should really only check continuous variables 
 
@@ -238,8 +230,4 @@ ggplot(data = melted_sad, aes(x=Var1, y=Var2, fill=value)) + geom_tile() +  scal
    name="Pearson\nCorrelation") +  theme(axis.text.x = element_text(angle = 60, vjust = 1, 
     size = 12, hjust = 1))
 ```
-
-any obviously mislabeled or confusing trends etc etc
-#having a bit of a hard time buying the over all result at this point. seems like there are enough other factors that also show some correlation with depression that saying cortisol is a good predictor is hard. From what I recall, PP depression does have psycological or social predictors but there haven't been any biological predictors, which was what this study was trying to extend. 
-
 
