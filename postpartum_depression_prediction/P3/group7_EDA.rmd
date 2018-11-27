@@ -54,7 +54,7 @@ glimpse(pp_sad)
 ```
 
 
-# Biological predictors of postparatum depression 
+# Biological predictors of Postparatum Depression 
 
 ##Depression to PP threshold
 ### How does depression scores map to postpartum_depression labels? Might there be a better threshold cuttoff?
@@ -227,7 +227,7 @@ ggplot(pp_sad,aes(x=first_pregnancy,y=postpartum_depression,fill=as.factor(postp
   theme_gray()
 ```
 
-##Sex of fetus vs depression
+##Sex of Fetus vs Depression
 
 ```{r}
 ggplot(pp_sad,aes(x=fetus_sex,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
@@ -237,7 +237,7 @@ ggplot(pp_sad,aes(x=fetus_sex,y=postpartum_depression,fill=as.factor(postpartum_
 
 ```
 
-##Cortisol, Depression relation across trimesters
+##Cortisol, Depression Relation across Trimesters
 
 this was intresting because it switches to a negitive correlation in the last semester
 ```{r}
