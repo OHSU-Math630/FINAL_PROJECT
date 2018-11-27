@@ -61,6 +61,14 @@ How does depression scores map to postpartum_depression labels? Might there be a
 
 pp_sad %>% ggplot() + geom_density(aes(x=depression_tri1, fill='tri1', alpha = 0.3)) + geom_density(aes(x=depression_tri2, fill='tri2', alpha = 0.3)) + geom_density(aes(x=depression_tri3, fill='tri3', alpha = 0.3)) + facet_wrap(~postpartum_depression) + ggtitle('trimester depression populations by postpartum outcome') + xlab('depression score')
 
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri1, group=as.factor(postpartum_depression), fill=postpartum_depression, alpha=0.25))
+
+
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri2, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha = 0.25))
+
+
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri3, group=postpartum_depression, fill=as.factor(postpartum_depression), alpha = 0.25))
+
 # I like this! But I condensed everything into one graph to make it easier to compare
 #ggplot(pp_sad,aes(x=depression_tri1))+
 #  geom_histogram(binwidth = 10,col="white")+
@@ -97,7 +105,7 @@ ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri3,group=postpartum_dep
 ```{r}
 pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri1, fill='tri1', alpha = 0.3)) + geom_density(aes(x=cortisol_tri2, fill='tri2', alpha = 0.3)) + geom_density(aes(x=cortisol_tri3, fill='tri3', alpha = 0.3)) + facet_wrap(~postpartum_depression) + ggtitle('trimester cortisol populations by postpartum outcome') + xlab('cortisol level')
 
-pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri1, group=postpartum_depression, fill=postpartum_depression, alpha=0.25))
+pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri1, group=as.factor(postpartum_depression), fill=postpartum_depression, alpha=0.25))
 
 
 pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri2, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha = 0.25))
@@ -130,6 +138,8 @@ ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri2,group=postpartum_depre
 ggplot(pp_sad,aes(x=postpartum_depression,y=cortisol_tri3,group=postpartum_depression))+
   geom_boxplot()+
   theme_gray()
+
+
 
 
 ```
