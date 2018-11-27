@@ -15,6 +15,17 @@ library(GGally)
 ```
 
 
+## Load Tidy Dataset 
+
+```{r}
+getwd()
+
+load('../../data/tidy_data.Rdata')
+
+pp_sad <- df_tidy # rename meaningful 
+
+pp_sad <- pp_sad %>% mutate(postpartum_depression=postpartum_depression-1)
+``` 
 
 
 
@@ -22,6 +33,9 @@ library(GGally)
 This isn't really EDA, more of extension, but... I wonder if AUC of the cortisol points would be a better predictor of pp depression than just the point values. Would require fitting a curve, calculating the integral.... ORRRR could we use a curve to predict cortisol levels during pp? then use THAT metric to predict depression. 
 
 $$ auc = \int_{0}^{6} (\beta x + C) \space dx \\ ==> 18B + 6C $$
+## This is actually really interesting, fitting the curves linear gives a signficant population divergence, but fitting with a polynomial has almost no pop. divergence
+
+
 ```{r}
 AUC <- vector(mode = 'numeric', length=44)
 for (i in seq(1,44,1)){ 
@@ -32,27 +46,33 @@ for (i in seq(1,44,1)){
   
   df <- data.frame( 'x' = x, 'y' = y )
   
-  lm <- glm(data=df, formula= 'y ~ x') # what do we expect our data to look like? what kind of fitted model should we expect? How do we prevent under/over fitting ? 
+  #form <- 'y ~ poly(x,2)'
+  form <- 'y ~ x' 
+  lm <- glm(data=df, formula= form) # what do we expect our data to look like? what kind of fitted model should we expect? How do we prevent under/over fitting ? 
   
-  #plt <- ggplot(data=df, aes(x=x, y=y)) + geom_point() + geom_smooth(method='glm')
-  #print(plt)
+  plt <- ggplot(data=df, aes(x=x, y=y)) + geom_point() + geom_smooth(method='glm', formula = form)
+  print(plt)
   
+  # if using a linear model 
   B <- lm$coefficients['x']
+  
+  # for a second order polynomial model 
+  #A = lm$coefficients['poly(x, 2)1']
+  #B = lm$coefficients['poly(x, 2)2']
+  
+  
   C <- lm$coefficients['(Intercept)']
   
-  this_AUC <- 18*B + 6*C 
+  this_AUC <-  18*B + 6*C # 72*A for linear, remove A term
   
   AUC[i] <- this_AUC
   
-  #print(AUC)
 }
 
-
-
-pp_sad <- pp_sad %>% mutate(Cortisol_AUC = AUC, postpartum_depression=postpartum_depression)
+pp_sad <- pp_sad %>% mutate(Cortisol_AUC = AUC)
 
 pp_sad %>% ggplot(aes(x=Cortisol_AUC, y=postpartum_depression)) + geom_point() + geom_smooth(method='glm', method.args=list(family=binomial(link="probit")))
 
-pp_sad %>% ggplot(aes(x=Cortisol_AUC, group=postpartum_depression, color=postpartum_depression)) + geom_density()
+pp_sad %>% ggplot(aes(x=Cortisol_AUC, group=postpartum_depression, fill=as.factor(postpartum_depression), alpha=0.25)) + geom_density()
 
 ```
