@@ -1,0 +1,300 @@
+---
+title: 'Final Project, P3: EDA'
+author: "Nathaniel Evans, ALfonso Poire, Wei-Chun Lin"
+date: "November 23, 2018"
+output:
+  html_document: 
+    theme: flatly 
+    highlight: kate
+    toc: true
+    toc_depth: 2
+    toc_float : true
+    smooth_scroll: true
+    number_sections : true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(GGally)
+
+```
+
+# Overview
+
+### PAPER: [Hair cortisol levels, psychological stress and psychopathological symptoms as predictors of postpartum depression](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182817) 
+### DATA: [sav file](https://figshare.com/articles/PPD_hairCortisol_PlosOne_sav/5255848/1) 
+### TIDY DATA: [csv file](./../../data/tidy_daya.csv)
+### CODE BOOK: [knitted html](./group7_codebook.html)
+
+#### The purpose of this R markdown script is to explore the data provided by this paper. If desired, you can clone the the [github repository](https://github.com/OHSU-Math630/FINAL_PROJECT) and access this script within the cloned file strucutre (located: FINAL_PROJECT/postpartum_depression_predicition/P2/group7_DataDelivery.Rmd). 
+
+## Load Tidy Dataset 
+
+```{r}
+getwd()
+
+load('../../data/tidy_data.Rdata')
+
+pp_sad <- df_tidy # rename meaningful 
+
+``` 
+
+# Examine Raw Data 
+### All the variables are of a numeric type, although, many are discrete options that are mapped to categorical variables in the codebook. 
+
+### For more in-depth summary of each variable, please refer to our codebook, submitted with this Project. 
+
+```{r}
+glimpse(pp_sad)
+
+# summary(pp_sad)
+```
+
+
+# Biological predictors of Postparatum Depression 
+
+##Depression to PP threshold
+### How does depression scores map to postpartum_depression labels? Might there be a better threshold cuttoff?
+
+```{r}
+#2 = women with postpartum depression symptoms; 1 = women with no postpartum depression symptoms
+pp_sad %>% ggplot() + geom_density(aes(x=epds, group=postpartum_depression, fill = postpartum_depression, alpha=0.3, bins=50)) +
+  labs(x = "Edinburgh Postnatal Depression Scale")+
+  ggtitle('Depression populations by postpartum outcome')
+
+pp_sad %>% ggplot() + geom_density(aes(x=epds, fill = 'total', alpha=0.3)) +
+  labs(x = "Edinburgh Postnatal Depression Scale")+
+  ggtitle('Depression score distribution')
+```
+
+## Cortisol vs Depression
+### This section explores the relationships between the various trimesters and the levls of cortisol or the depression index score.
+
+
+The accuracy of the tables seem to be dependent on the trimester when the test is taken they are more accurate in the third trimester then the first this is to be expected. however the emans do not seem to vary much even in the third trimester so perhaps this is not a very accurate method regardless. trimester 2 seems to be the most infulential predictor. 
+```{r}
+#variation of depression scores in trimesters seperated by outcome of post partum depression or not 
+#2 = women with postpartum depression symptoms; 1 = women with no postpartum depression symptoms
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri1, fill='tri1', alpha = 0.3)) + geom_density(aes(x=depression_tri2, fill='tri2', alpha = 0.3)) + geom_density(aes(x=depression_tri3, fill='tri3', alpha = 0.3)) + facet_wrap(~postpartum_depression) + ggtitle('trimester depression populations by postpartum outcome') + xlab('depression score')
+
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri1, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha=0.25))+ ggtitle('first trimester depression populations by postpartum outcome')
+
+
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri2, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha = 0.25))+ggtitle('second trimester depression populations by postpartum outcome')
+
+
+pp_sad %>% ggplot() + geom_density(aes(x=depression_tri3, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha = 0.25))+ggtitle('third trimester depression populations by postpartum outcome')
+
+```
+
+```{r}
+pp_sad %>% ggplot() + geom_violin(aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression, fill='tri1', alpha=0.3)) + geom_violin(aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression, fill='tri2', alpha=0.3)) + geom_violin(aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression, fill='tri3', alpha=0.3))+ ggtitle('trimester depression populations by postpartum outcome')
+
+#same info shown in boxplots
+#ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri1,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
+ # geom_boxplot()+
+  #theme_gray()
+#ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri2,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
+ # geom_boxplot()+
+  #theme_gray()
+#ggplot(pp_sad,aes(x=postpartum_depression,y=depression_tri3,group=postpartum_depression,fill=as.factor(postpartum_depression)))+
+ # geom_boxplot()+
+  #theme_gray()
+```
+
+```{r}
+pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri1, fill='tri1', alpha = 0.3)) + geom_density(aes(x=cortisol_tri2, fill='tri2', alpha = 0.3)) + geom_density(aes(x=cortisol_tri3, fill='tri3', alpha = 0.3)) + facet_wrap(~postpartum_depression) + ggtitle('trimester cortisol populations by postpartum outcome') + xlab('cortisol level')
+
+pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri1, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha=0.25))+ ggtitle('First trimester cortisol populations by postpartum outcome')
+
+
+pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri2, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha = 0.25))+ ggtitle('Second trimester cortisol populations by postpartum outcome')
+
+
+pp_sad %>% ggplot() + geom_density(aes(x=cortisol_tri3, group=as.factor(postpartum_depression), fill=as.factor(postpartum_depression), alpha = 0.25))+ ggtitle('Third trimester cortisol populations by postpartum outcome')
+
+```
+
+##PP_depression vs Employment Status
+###Relationship between postpartum depression and employment status
+
+it seemed important to investigate other sources of cortisol increase as the stress from being emoployed or not seeme like it would have an effect on the cortisol levles of the individual as well as the depression scores related. as such thoughs two paramaters were compaired to employment status. How ever neither difference was was very drastic.
+
+```{r}
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri1,group=employed,fill=as.factor(employed)))+
+  geom_boxplot()+ 
+  ggtitle('first trimester cortisol populations by employment status')+
+  theme_gray()
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri2,group=employed,fill=as.factor(employed)))+
+  geom_boxplot()+ 
+  ggtitle('second trimester cortisol populations by employment status')+
+  theme_gray()
+ggplot(pp_sad,aes(x=employed,y=cortisol_tri3,group=employed,fill=as.factor(employed)))+
+  geom_boxplot()+
+  ggtitle('third trimester cortisol populations by employment status')+
+  theme_gray()
+```
+```{r}
+ggplot(pp_sad,aes(x=employed,y=depression_tri1,group=employed,fill=as.factor(employed)))+
+  geom_boxplot()+
+  ggtitle('First trimester depression populations by employment status')+
+  theme_gray()
+ggplot(pp_sad,aes(x=employed,y=depression_tri2,group=employed,fill=as.factor(employed)))+
+  geom_boxplot()+
+  ggtitle('Second trimester depression populations by employment status')+
+  theme_gray()
+ggplot(pp_sad,aes(x=employed,y=depression_tri3,group=employed,fill=as.factor(employed)))+
+  geom_boxplot()+
+  ggtitle('Third trimester depression populations by employment status')+
+  theme_gray()
+```
+
+## Depression Score vs Cortisol
+###Relationship between job type and depression score and cortosol levels
+
+we also investigated the relationship between job type and cortosol and depression scores as we thought that this two would affect the results.
+there does seem to be some correlation here between having a job and depression score but not so much cortosol levels. (1 = unemployment)
+
+```{r}
+ggplot(pp_sad,aes(x=occupation,y=depression_tri1,group=occupation,fill=as.factor(occupation)))+
+  geom_boxplot()+
+  ggtitle('First trimester depression populations by employment type')+
+  theme_gray()
+ggplot(pp_sad,aes(x=occupation,y=depression_tri2,group=occupation,fill=as.factor(occupation)))+
+  geom_boxplot()+
+  ggtitle('Second trimester depression populations by employment type')+
+  theme_gray()
+ggplot(pp_sad,aes(x=occupation,y=depression_tri3,group=occupation,fill=as.factor(occupation)))+
+  geom_boxplot()+
+  ggtitle('Third trimester depression populations by employment type')+
+  theme_gray()
+```
+```{r}
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri1,group=occupation,fill=as.factor(occupation)))+
+  geom_boxplot()+
+  ggtitle('First trimester cortisol populations by employment type')+
+  theme_gray()
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri2,group=occupation,fill=as.factor(occupation)))+
+  geom_boxplot()+
+  ggtitle('Second trimester cortisol populations by employment type')+
+  theme_gray()
+ggplot(pp_sad,aes(x=occupation,y=cortisol_tri3,group=occupation,fill=as.factor(occupation)))+
+  geom_boxplot()+
+  ggtitle('Third trimester cortisol populations by employment type')+
+  theme_gray()
+```
+
+
+##Occupation vs Postpartum depression
+
+while employment type dosent seem to have to much of an effect on postpartum depression it would seem that being unemployed does 
+
+```{r}
+ggplot(pp_sad,aes(x=occupation,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  ggtitle('Employment type by postpartum depression')+
+  theme_gray()
+
+```
+
+
+##Employment vs Postpartum depression
+
+It seems that there could be some correlation between being employed and being less likely to be affected by postpartum depression however the sample size for employed wemon is vey small so this observatiion could normalise with a larger data set. 
+```{r}
+ggplot(pp_sad,aes(x=employed,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  ggtitle('Employment status by postpartum depression')+
+  labs(x = "unemployed / employed")+
+  theme_gray()
+```
+
+
+##Wanted/Unwanted vs PP_depression
+
+This seemed to have remarkably little affect
+```{r}
+ggplot(pp_sad,aes(x=wanted_pregnancy,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  ggtitle('Disire for pregnancy by postpartum depression')+
+  theme_gray()
+
+```
+
+## First Pregnancy vs PP_depression
+
+this would seem to show that perhaps wemon on their first pregnancy are more likely to be affected by postpartum depression however again this may be due to the smaple size. 
+```{r}
+ggplot(pp_sad,aes(x=first_pregnancy,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  ggtitle('First Pregnancy by postpartum depression')+
+  theme_gray()
+```
+
+
+##Sex of Fetus vs Depression
+
+We investigated the affect of fetal sex on post partum depression and found the possiple correlation between fetal sex and depression mentioned in the paper, I does seem though that the cortisol levels equalise at the third trimester. 
+```{r}
+ggplot(pp_sad,aes(x=fetus_sex,y=postpartum_depression,fill=as.factor(postpartum_depression)))+
+  geom_col()+
+  ggtitle('Sex of fetus by postpartum depression')+
+  theme_gray()
+
+
+```
+```{r}
+
+pp_sad %>% ggplot() + 
+  geom_density(aes(x=cortisol_tri1, group=as.factor(fetus_sex), fill=as.factor(fetus_sex), alpha = 0.25))+
+  ggtitle('First trimester cortisol populations by fetus sex')
+
+pp_sad %>% ggplot() + 
+  geom_density(aes(x=cortisol_tri2, group=as.factor(fetus_sex), fill=as.factor(fetus_sex), alpha = 0.25))+
+  ggtitle('Second trimester cortisol populations by fetus sex')
+
+pp_sad %>% ggplot() + 
+  geom_density(aes(x=cortisol_tri3, group=as.factor(fetus_sex), fill=as.factor(fetus_sex), alpha = 0.25))+
+  ggtitle('Third trimester cortisol populations by fetus sex')
+```
+
+##Cortisol, Depression Relation across Trimesters
+
+this was interesting because it switches to a positive correlation in the last semester. also there is not much difference it seems in the points and that the regression line is being pulled by sevral outliers.
+```{r}
+ggplot(pp_sad,aes(x=depression_tri1,y=cortisol_tri1,color=postpartum_depression))+
+  geom_point()+
+  geom_smooth(method = "lm", se = FALSE)+
+  ggtitle('Linear relationship between depression and cortisol in the first trimester')
+ggplot(pp_sad,aes(x=depression_tri2,y=cortisol_tri2,color=postpartum_depression))+
+  geom_point()+
+  geom_smooth(method = "lm", se = FALSE)+
+  ggtitle('Linear relationship between depression and cortisol in the second trimester')
+ggplot(pp_sad,aes(x=depression_tri3,y=cortisol_tri3,color=postpartum_depression))+
+  geom_point()+
+  geom_smooth(method = "lm", se = FALSE)+
+  ggtitle('Linear relationship between depression and cortisol in the third trimester')
+```
+
+#Colinearlity Analysis
+
+### Do we have colinearity between variables? What do we want to avoid including in our model?
+
+There is significant colinearity between the biological and psychological metrics, which makes our validity for biological factors as a causal effect of postparatum depression. 
+
+```{r}
+# we should really only check continuous variables 
+
+.cor <- pp_sad %>% select(starts_with('cortisol'), starts_with('depression'), age, epds, education_level, fetus_sex, previous_miscarriage) %>% cor()
+library(reshape2)
+melted_sad <- melt(.cor)
+
+ggplot(data = melted_sad, aes(x=Var1, y=Var2, fill=value)) + geom_tile() +  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+   midpoint = 0, limit = c(-1,1), space = "Lab", 
+   name="Pearson\nCorrelation") +  theme(axis.text.x = element_text(angle = 60, vjust = 1, 
+    size = 12, hjust = 1))
+```
+
