@@ -60,8 +60,6 @@ pp_sad %>% ggplot(aes(x=Cortisol_AUC, group=postpartum_depression, fill=as.facto
 pp_probit <- glm('postpartum_depression ~ Cortisol_AUC', family = binomial(link = 'probit'), data = pp_sad)
 
 #pp_sad <- pp_sad %>% mutate(postpartum_depression = ifelse(postpartum_depression == "1", 'True', 'False'))
-print(pp_sad$Cortisol_AUC)
-print(pp_sad$postpartum_depression)
 
 #t.test('Cortisol_AUC ~ postpartum_depression', data=pp_sad, alternative = 'two.sided', na.rm=TRUE) # this is not working... 
 
