@@ -12,6 +12,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(GGally)
+library(DescTools)
 ```
 
 
@@ -33,7 +34,7 @@ pp_sad <- pp_sad %>% mutate(postpartum_depression=postpartum_depression-1)
 This isn't really EDA, more of extension, but... I wonder if AUC of the cortisol points would be a better predictor of pp depression than just the point values. Would require fitting a curve, calculating the integral.... ORRRR could we use a curve to predict cortisol levels during pp? then use THAT metric to predict depression. 
 
 $$ auc = \int_{0}^{6} (\beta x + C) \space dx \\ ==> 18B + 6C $$
-## This is actually really interesting, fitting the curves linear gives a signficant population divergence, but fitting with a polynomial has almost no pop. divergence
+## Calculating the AUC by linear interpolation and then using a probit fit to predict dichotomous postpartum depression. 
 
 
 ```{r}
@@ -42,31 +43,9 @@ for (i in seq(1,44,1)){
   patient <- pp_sad %>% filter(row_number() == i)
   
   y <- c(patient$cortisol_tri1, patient$cortisol_tri2, patient$cortisol_tri3)
-  x <- c(0, 3, 6) #months, what are the actual time frames we should use?
+  x <- c(2, 5, 8) #months, what are the actual time frames we should use?
   
-  df <- data.frame( 'x' = x, 'y' = y )
-  
-  #form <- 'y ~ poly(x,2)'
-  form <- 'y ~ x' 
-  lm <- glm(data=df, formula= form) # what do we expect our data to look like? what kind of fitted model should we expect? How do we prevent under/over fitting ? 
-  
-  plt <- ggplot(data=df, aes(x=x, y=y)) + geom_point() + geom_smooth(method='glm', formula = form)
-  print(plt)
-  
-  # if using a linear model 
-  B <- lm$coefficients['x']
-  
-  # for a second order polynomial model 
-  #A = lm$coefficients['poly(x, 2)1']
-  #B = lm$coefficients['poly(x, 2)2']
-  
-  
-  C <- lm$coefficients['(Intercept)']
-  
-  this_AUC <-  18*B + 6*C # 72*A for linear, remove A term
-  
-  AUC[i] <- this_AUC
-  
+  AUC[i] <- AUC(x, y, method = "trapezoid", na.rm = FALSE) # this uses interpolation between our data points instead of lm fit
 }
 
 pp_sad <- pp_sad %>% mutate(Cortisol_AUC = AUC)
@@ -74,5 +53,23 @@ pp_sad <- pp_sad %>% mutate(Cortisol_AUC = AUC)
 pp_sad %>% ggplot(aes(x=Cortisol_AUC, y=postpartum_depression)) + geom_point() + geom_smooth(method='glm', method.args=list(family=binomial(link="probit")))
 
 pp_sad %>% ggplot(aes(x=Cortisol_AUC, group=postpartum_depression, fill=as.factor(postpartum_depression), alpha=0.25)) + geom_density()
+
+```
+
+```{r} 
+pp_probit <- glm('postpartum_depression ~ Cortisol_AUC', family = binomial(link = 'probit'), data = pp_sad)
+
+#pp_sad <- pp_sad %>% mutate(postpartum_depression = ifelse(postpartum_depression == "1", 'True', 'False'))
+print(pp_sad$Cortisol_AUC)
+print(pp_sad$postpartum_depression)
+
+#t.test('Cortisol_AUC ~ postpartum_depression', data=pp_sad, alternative = 'two.sided', na.rm=TRUE) # this is not working... 
+
+summary(pp_probit)
+
+'------------------------------------------------'
+
+aov <- anova(pp_probit)
+aov
 
 ```
