@@ -33,7 +33,7 @@ pp_sad <- pp_sad %>% mutate(postpartum_depression=postpartum_depression-1)
 ## Future Extension ... (I got bored)
 This isn't really EDA, more of extension, but... I wonder if AUC of the cortisol points would be a better predictor of pp depression than just the point values. Would require fitting a curve, calculating the integral.... ORRRR could we use a curve to predict cortisol levels during pp? then use THAT metric to predict depression. 
 
-$$ auc = \int_{0}^{6} (\beta x + C) \space dx \\ ==> 18B + 6C $$
+$$ AUC = \int_{0}^{6} (\beta x + C) \space dx \\ ==> 18B + 6C $$
 ## Calculating the AUC by linear interpolation and then using a probit fit to predict dichotomous postpartum depression. 
 
 
