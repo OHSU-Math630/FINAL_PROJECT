@@ -1,0 +1,491 @@
+---
+title: 'Final Project, P5: Replications'
+author: "Nathaniel Evans, ALfonso Poire, Wei-Chun Lin"
+date: "Dec 5, 2018"
+output:
+  html_document: 
+    theme: flatly 
+    highlight: kate
+    toc: true
+    toc_depth: 2
+    toc_float : true
+    smooth_scroll: true
+    number_sections : true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(infer)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(GGally)
+library(tidyverse)
+```
+
+# Overview
+
+### PAPER: [Hair cortisol levels, psychological stress and psychopathological symptoms as predictors of postpartum depression](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0182817) 
+### DATA: [sav file](https://figshare.com/articles/PPD_hairCortisol_PlosOne_sav/5255848/1) 
+### TIDY DATA: [csv file](./../../data/tidy_daya.csv)
+### CODE BOOK: [knitted html](./group7_codebook.html)
+
+#### The purpose of this R markdown script is to explore the data provided by this paper. If desired, you can clone the the [github repository](https://github.com/OHSU-Math630/FINAL_PROJECT) and access this script within the cloned file strucutre (located: FINAL_PROJECT/postpartum_depression_predicition/P2/group7_DataDelivery.Rmd). 
+
+
+## Load Tidy Dataset 
+
+```{r}
+getwd()
+
+load('../../data/tidy_data.Rdata')
+
+data_eng <- read.csv('../../data/data_eng.csv')
+
+pp_sad <- df_tidy # rename meaningful 
+
+data_eng <- na.omit(data_eng)
+
+data_eng$depreposparto <-as.factor(data_eng$depreposparto)
+
+
+
+``` 
+##Table & figures
+
+###Table1
+```{r}
+pp_sad %>%
+  group_by(postpartum_depression) %>%
+  summarise(sd_age = sd(age), mean_age = mean(age))
+
+t.test(pp_sad$age ~ pp_sad$postpartum_depression, var.equal = T) 
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(nationality) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(nationality) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(employed) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(employed) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(	education_level) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(	education_level) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(sport) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(sport) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(pet) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(pet) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(dyed_hair) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(dyed_hair) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(first_pregnancy) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(first_pregnancy) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(wanted_pregnancy) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(wanted_pregnancy) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(pregnancy_method) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(pregnancy_method) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(previous_miscarriage) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(previous_miscarriage) %>%
+   mutate(freq = n / sum(n)*100)
+
+pp_sad %>%
+  filter(postpartum_depression == 1) %>%
+  count(fetus_sex) %>%
+   mutate(freq = n / sum(n)*100)
+pp_sad %>%
+  filter(postpartum_depression == 2) %>%
+  count(fetus_sex) %>%
+   mutate(freq = n / sum(n)*100)
+
+
+
+
+chisq.test(pp_sad$postpartum_depression, pp_sad$nationality, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$employed, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$education_level, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$sport, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$pet, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$dyed_hair, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$first_pregnancy, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$wanted_pregnancy, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$pregnancy_method, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$previous_miscarriage, correct=FALSE)
+chisq.test(pp_sad$postpartum_depression, pp_sad$fetus_sex, correct=FALSE)
+
+
+
+pp_sad %>%
+  filter(epds >=10) %>%
+  count
+```
+
+###Table2
+```{r}
+data_eng %>%
+  group_by(depreposparto) %>%
+  summarise(mean_PDQ1 = mean(PDQ1), sd_PDQ1=sd(PDQ1),  mean_SOMS1 = mean(SOMATIZATIONS1), sd_SOMS1 = sd(SOMATIZATIONS1), mean_DEP1 = mean(DEPRESSION1), sd_DEP1 = sd(DEPRESSION1), mean_anx1 = mean(ANXIETY1), sd_anx1 = sd(ANXIETY1), mean_GSI1 = mean(IGS1), sd_GSI1 = sd(IGS1))
+
+data_eng %>%
+  group_by(depreposparto) %>%
+  summarise(mean_PDQ2 = mean(PDQ2), sd_PDQ2=sd(PDQ2),  mean_SOMS2 = mean(SOMATIZATIONS2), sd_SOMS2 = sd(SOMATIZATIONS2), mean_DEP2 = mean(DEPRESSION2), sd_DEP2 = sd(DEPRESSION2), mean_anx2 = mean(ANXIETY2), sd_anx2 = sd(ANXIETY2), mean_GSI2 = mean(IGS2), sd_GSI2 = sd(IGS2))
+
+data_eng %>%
+  group_by(depreposparto) %>%
+  summarise(mean_PDQ3 = mean(PDQ3), sd_PDQ3=sd(PDQ3),  mean_SOMS3 = mean(SOMATIZATIONS3), sd_SOMS3 = sd(SOMATIZATIONS3), mean_DEP3 = mean(DEPRESSION3), sd_DEP3 = sd(DEPRESSION3), mean_anx3 = mean(ANXIETY3), sd_anx3 = sd(ANXIETY3), mean_GSI3 = mean(IGS3), sd_GSI3 = sd(IGS3))
+
+
+t.test(data_eng$PDQ1 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$SOMATIZATIONS1 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$DEPRESSION1 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$ANXIETY1 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$IGS1 ~ data_eng$depreposparto, var.equal = T) 
+
+t.test(data_eng$PDQ2 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$SOMATIZATIONS2 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$DEPRESSION2 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$ANXIETY2 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$IGS2 ~ data_eng$depreposparto, var.equal = T) 
+
+t.test(data_eng$PDQ3 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$SOMATIZATIONS3 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$DEPRESSION3 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$ANXIETY3 ~ data_eng$depreposparto, var.equal = T) 
+t.test(data_eng$IGS3 ~ data_eng$depreposparto, var.equal = T) 
+##lm_PDQ1 <- lm(PDQ1 ~ depreposparto, data = data_eng)
+##anova(lm_PDQ1)
+```
+
+###Figure 2
+```{r}
+tidy_SOM <- data_eng %>%
+  select("X", "SOMATIZATIONS1", "SOMATIZATIONS2", "SOMATIZATIONS3", "depreposparto") %>%
+  gather(trimester, somatization, SOMATIZATIONS1:SOMATIZATIONS3, -depreposparto)
+
+
+ggplot(tidy_SOM, aes(x = trimester, y = somatization, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Somatization score", colour = "Postpartum Depression")+
+  ggtitle('Somatization') +
+  theme_bw() 
+```
+
+```{r}
+tidy_obs <- data_eng %>%
+  select("X", "OBSESSIONS.AND.COMPULSIONS1", "OBSESSIONS.AND.COMPULSIONS2", "OBSESSIONS.AND.COMPULSIONS3", "depreposparto") %>%
+  gather(trimester, obsession, OBSESSIONS.AND.COMPULSIONS1:OBSESSIONS.AND.COMPULSIONS3, -depreposparto)
+
+
+ggplot(tidy_obs, aes(x = trimester, y = obsession, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Obsession compulsion score", colour = "Postpartum Depression")+
+  ggtitle('Obsession compulsion') +
+  theme_bw() 
+```
+
+```{r}
+tidy_is <- data_eng %>%
+  select("X", "SENSITIVIDADINTERPERSONAL1", "INSTRUMENT.SENSITIVITY2", "INSTRUMENT.SENSITIVITY3", "depreposparto") %>%
+  gather(trimester, INSTRUMENT, SENSITIVIDADINTERPERSONAL1:INSTRUMENT.SENSITIVITY3, -depreposparto)
+
+
+ggplot(tidy_is, aes(x = trimester, y = INSTRUMENT, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Interpersonal senesitvity", colour = "Postpartum Depression")+
+  ggtitle('Interpersonal senesitvity') +
+  theme_bw() 
+```
+
+```{r}
+tidy_ad <- data_eng %>%
+  select("X", "DEPRESSION1", "DEPRESSION2", "DEPRESSION3", "depreposparto") %>%
+  gather(trimester, depression, DEPRESSION1:DEPRESSION3, -depreposparto)
+
+
+ggplot(tidy_ad, aes(x = trimester, y = depression, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Antenatal depression", colour = "Postpartum Depression")+
+  ggtitle('Antenatal depression') +
+  theme_bw() 
+```
+
+```{r}
+tidy_anx <- data_eng %>%
+  select("X", "ANXIETY1", "ANXIETY2", "ANXIETY3", "depreposparto") %>%
+  gather(trimester, anxitety, ANXIETY1:ANXIETY3, -depreposparto)
+
+
+ggplot(tidy_anx, aes(x = trimester, y = anxitety, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Anxitety", colour = "Postpartum Depression")+
+  ggtitle('Anxitety') +
+  theme_bw() 
+```
+
+```{r}
+tidy_hos <- data_eng %>%
+  select("X", "HOSTILIDAD1", "HOSTILITY2", "HOSTILIDAD3", "depreposparto") %>%
+  gather(trimester, hostility, HOSTILIDAD1:HOSTILIDAD3, -depreposparto)
+
+
+ggplot(tidy_hos, aes(x = trimester, y = hostility, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Hostility", colour = "Postpartum Depression")+
+  ggtitle('Hostility') +
+  theme_bw() 
+```
+
+```{r}
+tidy_pa <- data_eng %>%
+  select("X", "ANSIEDADFOBICA1", "ANSIEDADFOBICA2", "ANSIEDADFOBICA3", "depreposparto") %>%
+  gather(trimester, p_anxiety, ANSIEDADFOBICA1:ANSIEDADFOBICA3, -depreposparto)
+
+
+ggplot(tidy_pa, aes(x = trimester, y = p_anxiety, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Phobic anxiety", colour = "Postpartum Depression")+
+  ggtitle('Phobic anxiety') +
+  theme_bw() 
+```
+
+```{r}
+tidy_pi <- data_eng %>%
+  select("X", "IDEACIÓNPARANOIDE1", "IDEACIÓNPARANOIDE2", "IDEACIÓNPARANOIDE3", "depreposparto") %>%
+  gather(trimester, paranoid, IDEACIÓNPARANOIDE1:IDEACIÓNPARANOIDE3, -depreposparto)
+
+
+ggplot(tidy_pi, aes(x = trimester, y = paranoid, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Paranoid ideation", colour = "Postpartum Depression")+
+  ggtitle('Paranoid ideation') +
+  theme_bw() 
+```
+
+```{r}
+tidy_psicoticism <- data_eng %>%
+  select("X", "PSICOTICISMO1", "PSICOTICISMO2", "PSICOTICISMO3", "depreposparto") %>%
+  gather(trimester, psicoticism, PSICOTICISMO1:PSICOTICISMO3, -depreposparto)
+
+
+ggplot(tidy_psicoticism, aes(x = trimester, y = psicoticism, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Psicoticism", colour = "Postpartum Depression")+
+  ggtitle('Psicoticism') +
+  theme_bw() 
+```
+
+```{r}
+tidy_IGS <- data_eng %>%
+  select("X", "IGS1", "IGS2", "IGS3", "depreposparto") %>%
+  gather(trimester, IGS, IGS1:IGS3, -depreposparto)
+
+
+ggplot(tidy_IGS, aes(x = trimester, y = IGS, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Global Severity Index", colour = "Postpartum Depression")+
+  ggtitle('Global Severity Index') +
+  theme_bw() 
+```
+
+```{r}
+tidy_SP <- data_eng %>%
+  select("X", "SP1", "SP2", "SP3", "depreposparto") %>%
+  gather(trimester, SP, SP1:SP3, -depreposparto)
+
+
+ggplot(tidy_SP, aes(x = trimester, y = SP, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Positive symptoms total", colour = "Postpartum Depression")+
+  ggtitle('Positive symptoms total') +
+  theme_bw() 
+```
+
+```{r}
+tidy_PSDI <- data_eng %>%
+  select("X", "PSDI1", "PSDI2", "PSDI3", "depreposparto") %>%
+  gather(trimester, PSDI, PSDI1:PSDI3, -depreposparto)
+
+
+ggplot(tidy_PSDI, aes(x = trimester, y = PSDI, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Positive symptoms distress index", colour = "Postpartum Depression")+
+  ggtitle('Positive symptoms distress index') +
+  theme_bw() 
+```
+
+
+
+###Figure 3 Hair cortisol levels differences (pg/mg) in each trimester between women with and without postpartum depression symptoms.
+
+```{r}
+tidy_LNcor <- data_eng %>%
+  select("X", "LNCORTISOL1", "LNCORTISOL2", "LNCORTISOL3", "depreposparto") %>%
+  gather(trimester, LNCORTISOL, LNCORTISOL1:LNCORTISOL3, -depreposparto)
+
+tidy_LNcor$depreposparto <- as.factor(tidy_LNcor$depreposparto)
+
+ggplot(tidy_LNcor, aes(x = trimester, y = LNCORTISOL, colour = depreposparto)) +
+  stat_summary(fun.y = mean, geom = "point") + 
+  stat_summary(fun.y = mean, geom = "line", size = 1, aes(group= factor(depreposparto))) + 
+  stat_summary(fun.data = mean_cl_boot, geom = "errorbar", width = 0.1, size = 0.5) + 
+  labs(x = "Trimesters", y = "Hair cortisol levels differences", colour = "Postpartum Depression")+
+  theme_bw() 
+```
+
+###Table 3. Maternal hair cortisol levels and sex of the fetus.
+```{r}
+data_eng %>%
+  group_by(SexFetalDico) %>%
+  summarise(mean_cor1 = mean(LNCORTISOL1), sd_cor1 = sd(LNCORTISOL1), mean_cor2 = mean(LNCORTISOL2), sd_cor2 = sd(LNCORTISOL2), mean_cor3 = mean(LNCORTISOL3), sd_cor3 = sd(LNCORTISOL3))
+
+t.test(data_eng$LNCORTISOL1 ~ data_eng$SexFetalDico, var.equal = T) 
+t.test(data_eng$LNCORTISOL2 ~ data_eng$SexFetalDico, var.equal = T) 
+t.test(data_eng$LNCORTISOL3 ~ data_eng$SexFetalDico, var.equal = T) 
+```
+
+##Multiple linear regression
+```{r}
+lm_ppd <- lm(epds ~ cortisol_tri1 + cortisol_tri2 + cortisol_tri3, data = pp_sad)
+lm_ppd
+
+summary(lm_ppd)
+```
+
+###Extension in MLR
+
+```{r}
+lm_ppd2 <- lm(epds ~ cortisol_tri1 + cortisol_tri3 + depression_tri2 + depression_tri1 + depression_tri3 + employed + first_pregnancy + fetus_sex, data = pp_sad)
+lm_ppd2
+
+summary(lm_ppd2)
+
+
+```
+
+```{r}
+#Performance
+##### Train Test Split
+library(caTools)
+set.seed(101)
+sample <- sample.split(pp_sad, SplitRatio = 0.75)
+train <- subset(pp_sad, sample==T)
+test <- subset(pp_sad, sample==F)
+
+lm_fit <- lm(epds ~ cortisol_tri1 + cortisol_tri3 + depression_tri2 + depression_tri1 + depression_tri3 + employed + first_pregnancy + fetus_sex, data = train)
+
+summary(lm_fit)
+
+## RMSE
+# Predict in-sample
+predicted <- predict(lm_fit, test)
+# Calculate RMSE
+actual <- test$epds
+sqrt(mean((predicted - actual)^2))
+
+
+##predict in test model
+test$lm_predict <- predict(lm_fit, test)
+
+test$obs_PPD <- ifelse(test$epds < 10, "OB_No_PPD", "OB_PPD")
+test$predict_PPD <- ifelse(test$lm_predict < 10, "No PPD", "PPD")
+
+# Table
+table(test$predict_PPD, test$obs_PPD)
+
+library(pROC)
+
+# ROC curve
+roc_PPD <- roc(obs_PPD ~ lm_predict, data = test, percent = T)
+print(roc_PPD)
+
+#Drow ROC curve
+plot.roc(roc_PPD, print.auc=TRUE, col="blue")
+
+```
+
