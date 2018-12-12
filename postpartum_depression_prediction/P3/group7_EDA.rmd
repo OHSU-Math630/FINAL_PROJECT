@@ -259,6 +259,7 @@ pp_sad %>% ggplot() +
 
 this was intresting because it switches to a positive correlation in the last semester. also there is not much difference it seems in the points and that the regression line is being pulled by sevral outliers.
 ```{r}
+pp_sad <- pp_sad %>% mutate(postpartum_depression = ifelse(postpartum_depression == 2, 'True', 'False'))
 ggplot(pp_sad,aes(x=depression_tri1,y=cortisol_tri1,color=postpartum_depression))+
   geom_point()+
   geom_smooth(method = "lm", se = FALSE)+
