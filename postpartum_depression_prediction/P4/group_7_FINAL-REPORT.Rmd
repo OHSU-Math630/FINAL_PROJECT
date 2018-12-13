@@ -21,6 +21,7 @@ library(tidyr)
 library(ggplot2)
 library(GGally)
 library(tidyverse)
+library(pROC)
 library(DescTools)
 ```
 
@@ -82,7 +83,7 @@ data_eng$depreposparto <-as.factor(data_eng$depreposparto)
 _"Differences in sociodemographic, obstetrics variables and depression symptomatology between women with postpartum depression and without postpartum depression."_ <br />
 In this table, t-test of students used to quantitative variables and Chi-square test to categorical variables. Sport is presented to inform whether participants practiced or did not practice any regular physical activity during pregnancy. Tests indicate no differences between groups in respect to main sociodemographic data, obstetrics, and hair characteristics. There are two significant differences were found between groups on previous miscarriages ($X^2$ = 4.71, p< .05) and the sex of the fetus ($X^2$ = 6.03, p< .05). 
 
-To replicate this table, we used â€œdplyrâ€ package to filter, summarise, mutate, and count the dataset to get the "mean", "standard deviation", "number", and "percentage" of each variables in two groups (depression/no depression). "t.test" and "chisq.test" were used to test the difference between no depression and depression groups. 
+To replicate this table, we used â..dplyrâ.. package to filter, summarise, mutate, and count the dataset to get the "mean", "standard deviation", "number", and "percentage" of each variables in two groups (depression/no depression). "t.test" and "chisq.test" were used to test the difference between no depression and depression groups. 
 
 **Observations:**
 There are three missing variables. We could not find marital status, labor and delivery, and pain relief in labor from the dataset. Several errors were found, the chi-square of "Nationality", "Wanted pregnancy", "Antenatal depression", and "Pregnancy method" are not correct. In addtion, the number of "Postnatal depression (EPDS)" is wrong. The p-values of all tests are the same or close to the original table. The errors and differences were labeled as red. 
@@ -248,7 +249,7 @@ _"Mean differences on stress and psychopathological symptoms with interaction ef
 This table shows the mean difference of stress and psychopathological scores between postpartum depression and no postpartum depression groups during three trimesters. The meaning of abbreviations are: PDQ = Prenatal Distress Questionnaire; SCL-90-R = Symptom CheckList 90 Revised; SOMS = Somatisation; DEP = Depression; ANX = Anxiety; GSI = Global Severity Index. Significant differences of pregnancy-specific stress levels between both groups were found during the third
 trimester regarding pregnancy-specific stress (t = -2.67, p = .01). Significant differences between both groups were found during the first trimester regarding the Somatization subscale (t = -2.70, p = .01); during the second trimester regarding the Somatization subscale (t = -2.34, p = .02), the Depression subscale (t = -2.67, p = .01), the Anxiety subscale (t = -3.22, p = .002) and the GSI global index (t = -2.38, p = .02). No significant differences were found between both groups during the third trimester.
 
-To replicate this table, we used â€œdplyrâ€ package to get the "mean", "standard deviation". Two sample t-test ("t.test") was used for comparising. 
+To replicate this table, we used â..dplyrâ.. package to get the "mean", "standard deviation". Two sample t-test ("t.test") was used for comparising. 
 
 **Observations:** <br />
 Several errors were found in first trimester including, t-statisitc and p value of distress, somatization, depression, and anxiety. The mean and standard deviation of somatization are not correct in third trimester. We need to correct that no significant difference was found for Somatization subscale in the first trimester. We think one possible reason of mistakes is: they filled the number in wrong place. For example, the t-statisitc and p value of somatization in first trimester is the same as t-statisitc and p value of distress in first trimister in original table. The errors and differences were labeled as red. 
@@ -601,8 +602,6 @@ test$predict_PPD <- ifelse(test$lm_predict < 10, "No PPD", "PPD")
 # Table
 table(test$predict_PPD, test$obs_PPD)
 
-library(pROC)
-
 # ROC curve
 roc_PPD <- roc(obs_PPD ~ lm_predict, data = test, percent = T)
 print(roc_PPD)
@@ -669,7 +668,8 @@ truth.tab <- data.frame(TP,TN,FP,FN, specificity, sensitivity)
 truth.tab
 ```
 ## Conclusion 
-This extension shows value as a feature extraction method and resulted in a statistically significant predictive variable. 
+
+Overall, we found three main takeaways from this paper. First we found that for this study to be externally valid, the paper should have included a larger and more representative sample group. Second, because of the large number of tests done, there really should have been a p-value adjustment applied to the displayed variables. Lastly, we found issue with the causal vs correlated nature of this data as well as the colinearity between variables. From our exploration through multiple linear regression, we showed that this is a real issue and therefore many of these variables should not be represented as causal factors to postpartum depression. Finally, our extension shows value as a feature extraction method and resulted in a statistically significant predictive variable. We think that applying this method to a larger more representative sample could be useful for a externally valid clinical tool. 
 
 # References 
 
