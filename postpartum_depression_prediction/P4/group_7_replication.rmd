@@ -57,7 +57,13 @@ The codebook went together fairly well after we got access to the .sav metadata 
 [Part 3 html](https://github.com/OHSU-Math630/FINAL_PROJECT/blob/master/postpartum_depression_prediction/P3/group7_EDA.html)
 
 ## Summary
-<lets add summary here>
+Our EDA consisted of several main parts. The first part consisted of creating several density plots of cortisol levels over the semesters and then facet wrapping them by postpartum depression outcome. This allowed us to see the large spike in cortisol in the second trimester of women afflicted with postpartum depression that was described to have been found by a previous paper that used urine to test for cortisol levels. We then investigated the relationship between different jobs and cortisol levels over the trimesters. This allowed us to see that there did seem to be jobs that had overall higher cortisol levels something we think may have affected the outcome. 
+
+Then we investigated the relationships between, employment status, fetal sex and first or second pregnancy and postpartum depression outcome. These were all investigated individually, showing that being unemployed, being on your second pregnancy or the fetus being male all seemed to cause the patient to be more likely to have postpartum depression. However, we believe that all of these would eventually even out if the sample size was increased. The population used for this study was to small to show convincing causality for any of these factors. 
+
+Next, we performed a linear regression between the cortisol levels and the depression score from the Edinburgh Postnatal Depression Scale. This was interesting because it showed us that the scores were often mixed depending on outcome some women scored highly on the test but did not experience postpartum depression, and some women who scored low on the test were afflicted. Also, interestingly for the first two trimesters the correlation is negative, but in the third trimester the correlation switches to become positive. We believe this is due once again to the small sample size and several outliers. 
+
+Finally, we compiled a correlation matrix of the values used in the study. We observed strong correlation between several of the psychological variables and the biological ones. This caused us to question the use of these variables as lone predictors of postpartum depression but rather as indicators in a larger mosaic of variables that would cause the disease. 
 
 # REPLICATION
 
